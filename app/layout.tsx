@@ -1,34 +1,19 @@
-import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
+import { Poppins } from "next/font/google" // <--- Changed from Geist/Inter
 import "./globals.css"
+import { Toaster } from "@/components/ui/toaster"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+// Configure Poppins font
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"], // Load multiple weights
+  variable: "--font-sans",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
-  title: "PAVE PRO - Premium Asphalt & Paving Services",
-  description:
-    "Professional residential and commercial paving services. Licensed, bonded, and insured. Get your free estimate today.",
-  generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
+  title: "Woolfolk Paving Co",
+  description: "Premium Asphalt & Paving Services",
 }
 
 export default function RootLayout({
@@ -38,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${poppins.variable} font-sans antialiased`}>
         {children}
-        <Analytics />
+        <Toaster />
       </body>
     </html>
   )

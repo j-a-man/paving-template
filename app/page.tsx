@@ -44,7 +44,7 @@ export default function Home() {
 
         <div className={`${containerClass} relative z-10 py-20 text-left`}>
           <div className="max-w-3xl">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
               Woolfolk Paving Co
             </h1>
             <p className="text-base md:text-lg mb-8 text-white/90 leading-relaxed max-w-xl drop-shadow-md">
@@ -63,60 +63,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ================= WELCOME SECTION ================= */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* ================= WELCOME SECTION (Updated Images) ================= */}
+      <section className="py-20 md:py-32 bg-white">
         <div className={containerClass}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Image Side */}
-            <div className="relative h-[400px] lg:h-[500px] w-full">
-              <Image
-                src="/paving.avif"
-                alt="Woolfolk Paving Crew"
-                fill
-                className="object-cover"
-              />
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-            {/* Right Content Side */}
-            <div>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 text-secondary">
-                Welcome to Woolfolk Paving
+            {/* Left Content Side */}
+            <div className="max-w-xl">
+              <h2 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 text-foreground">
+                Expert Paving. Deep-<br />
+                Rooted in <br />
+                <span className="text-primary">Community.</span>
               </h2>
-              <h3 className="text-xl font-bold mb-4 text-secondary">
-                Richmond's Best Commercial & Residential Paving Company
-              </h3>
-              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                We have more than 14 years of experience providing quality paving service for both Residential and Commercial Areas. Our commitment to quality and customer satisfaction makes us the preferred choice in the region.
+
+              <p className="text-muted-foreground text-lg leading-relaxed mb-8 font-light">
+                With over a decade of hands-on experience, we’ve built a reputation for reliable work, fair pricing, and strong client relationships. Whether it’s a home repair or a large-scale commercial project, our team is dedicated to delivering results that exceed expectations.
               </p>
 
-              {/* Bullet Points */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="font-semibold">Quality Services</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="font-semibold">Affordable Price</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="font-semibold">Professional Team</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="font-semibold">Best Support</span>
-                </div>
+              {/* Custom Button Style from Image */}
+              <Button
+                className="bg-[#7f1d1d] hover:bg-[#991b1b] text-white text-sm font-bold uppercase tracking-widest px-8 py-6 rounded-none shadow-md transition-all hover:shadow-lg"
+              >
+                Learn More
+              </Button>
+            </div>
+
+            {/* Right Image Collage Side */}
+            <div className="relative h-[500px] w-full hidden lg:block">
+              {/* Main Large Image (Right) */}
+              <div className="absolute right-0 top-10 w-[60%] h-[70%] z-10 shadow-xl">
+                <Image
+                  src="/paving1.jpg"  // <--- Updated to paving1.jpeg
+                  alt="Paving Main"
+                  fill
+                  className="object-cover"
+                />
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-wrap gap-4">
-                <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                  Our Services
-                </Button>
-                <Button variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                  Learn More
-                </Button>
+              {/* Top Left Small Image */}
+              <div className="absolute left-0 top-0 w-[45%] h-[45%] z-0 opacity-90">
+                <Image
+                  src="/paving2.jpg"  // <--- Updated to paving2.jpeg
+                  alt="Paving Detail"
+                  fill
+                  className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                />
+              </div>
+
+              {/* Bottom Left Medium Image */}
+              <div className="absolute left-10 bottom-0 w-[50%] h-[40%] z-20 shadow-lg border-4 border-white">
+                <Image
+                  src="/paving3.jpg"  // <--- Updated to paving3.jpeg
+                  alt="Paving Work"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
@@ -126,7 +127,7 @@ export default function Home() {
       {/* ================= SERVICES SECTION ================= */}
       <section className="py-16 md:py-24 bg-secondary text-white">
         <div className={`${containerClass} mb-12`}>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-left">
+          <h2 className="text-4xl md:text-5xl font-normal mb-4 text-left">
             Our Paving Services
           </h2>
           <p className="text-white/80 max-w-2xl text-left text-lg">
@@ -139,7 +140,7 @@ export default function Home() {
             {/* Card 1 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
               <Truck className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-bold mb-4 font-serif">Asphalt Paving</h3>
+              <h3 className="text-2xl font-normal mb-4 font-serif">Asphalt Paving</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
                 We provide expert asphalt paving for driveways, parking lots, and roads using top-grade materials for long-lasting results.
               </p>
@@ -150,7 +151,7 @@ export default function Home() {
             {/* Card 2 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
               <Layers className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-bold mb-4 font-serif">Sealcoating</h3>
+              <h3 className="text-2xl font-normal mb-4 font-serif">Sealcoating</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
                 Protect your investment with our professional sealcoating services, designed to extend the life of your pavement.
               </p>
@@ -161,7 +162,7 @@ export default function Home() {
             {/* Card 3 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
               <Orbit className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-bold mb-4 font-serif">Tar and Chip</h3>
+              <h3 className="text-2xl font-normal mb-4 font-serif">Tar and Chip</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
                 A cost-effective and durable alternative to traditional asphalt, providing a rustic look with excellent traction.
               </p>
@@ -176,7 +177,7 @@ export default function Home() {
       {/* ================= RECENT PROJECTS ================= */}
       <section className="py-16 md:py-24 bg-white">
         <div className={`${containerClass} mb-12`}>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-secondary text-left">
+          <h2 className="text-4xl md:text-5xl font-normal text-secondary text-left">
             Recent Projects
           </h2>
         </div>
@@ -190,13 +191,12 @@ export default function Home() {
             className="w-full"
           >
             <CarouselContent>
-              {/* Projects ... */}
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
                     <Image src="/placeholder.svg?height=500&width=400&query=paved-parking-lot" alt="Project 1" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-bold text-lg uppercase tracking-wider text-center">Commercial Parking Lot</h3>
+                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Commercial Parking Lot</h3>
                     </div>
                   </Card>
                 </div>
@@ -206,7 +206,7 @@ export default function Home() {
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
                     <Image src="/placeholder.svg?height=500&width=400&query=residential-driveway-paving" alt="Project 2" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-bold text-lg uppercase tracking-wider text-center">Residential Driveway</h3>
+                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Residential Driveway</h3>
                     </div>
                   </Card>
                 </div>
@@ -216,7 +216,7 @@ export default function Home() {
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
                     <Image src="/placeholder.svg?height=500&width=400&query=road-resurfacing" alt="Project 3" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-bold text-lg uppercase tracking-wider text-center">Road Resurfacing</h3>
+                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Road Resurfacing</h3>
                     </div>
                   </Card>
                 </div>
@@ -226,7 +226,7 @@ export default function Home() {
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
                     <Image src="/placeholder.svg?height=500&width=400&query=tar-and-chip-driveway" alt="Project 4" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-bold text-lg uppercase tracking-wider text-center">Tar & Chip Project</h3>
+                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Tar & Chip Project</h3>
                     </div>
                   </Card>
                 </div>
@@ -242,7 +242,7 @@ export default function Home() {
       <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
         <div className="absolute inset-0 bg-black/70"></div>
         <div className={`${containerClass} relative z-10 text-left`}>
-          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-8 leading-tight">
+          <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
             GET A FREE ESTIMATE FOR YOUR<br /> RESIDENTIAL OR COMMERCIAL PROJECT
           </h2>
           <div className="flex flex-wrap gap-4">
