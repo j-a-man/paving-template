@@ -26,7 +26,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-white/10 flex items-center justify-center rounded-sm">
                 <Truck className="w-6 h-6 text-white" />
               </div>
-              <span className="font-bold text-xl tracking-wider">PAVE PRO</span>
+              <span className="font-bold text-xl tracking-wider">Woolfolk Paving Co.</span>
             </div>
             <p className="text-white/70 leading-relaxed mb-6">
               Serving the Richmond area with top-tier paving services for over a decade. Quality workmanship guaranteed.
@@ -43,11 +43,11 @@ export default function Footer() {
           <div>
             <h3 className="font-serif text-2xl font-bold mb-6">Our Services</h3>
             <ul className="space-y-4">
-              <li><Link href="#" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Asphalt Paving</Link></li>
-              <li><Link href="#" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Sealcoating</Link></li>
-              <li><Link href="#" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Tar & Chip</Link></li>
-              <li><Link href="#" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Commercial Paving</Link></li>
-              <li><Link href="#" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Driveway Repair</Link></li>
+              <li><Link href="/asphalt-paving" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Asphalt Paving</Link></li>
+              <li><Link href="/sealcoating" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Sealcoating</Link></li>
+              <li><Link href="/tar-and-chip" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Tar & Chip</Link></li>
+              <li><Link href="/commercial-paving" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Commercial Paving</Link></li>
+              <li><Link href="/driveway-repair" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Driveway Repair</Link></li>
             </ul>
           </div>
 
@@ -57,9 +57,9 @@ export default function Footer() {
             <ul className="space-y-4">
               <li><Link href="/" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Home</Link></li>
               <li><Link href="/about" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> About Us</Link></li>
+              <li><Link href="/services" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Services</Link></li>
               <li><Link href="/projects" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Projects</Link></li>
-              <li><Link href="/contact" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Contact</Link></li>
-              <li><Link href="/faq" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> FAQ</Link></li>
+              <li><Link href="/contact" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Contact Us</Link></li>
             </ul>
           </div>
 
@@ -77,7 +77,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">info@pavepro.com</span>
+                <span className="text-white/70">krispatel9301@gmail.com</span>
               </li>
             </ul>
           </div>

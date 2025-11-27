@@ -4,6 +4,8 @@ import Image from "next/image"
 import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import ExitIntentPopup from "@/components/exit-intent-popup"
+import ReviewSection from "@/components/review-section"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {
@@ -29,10 +31,12 @@ export default function Home() {
     <main className="min-h-screen bg-background font-sans text-foreground">
       <Header />
 
+      {/* Exit Intent Popup */}
+      <ExitIntentPopup />
+
       {/* ================= HERO SECTION ================= */}
       <section className="relative min-h-[600px] flex items-center text-white overflow-hidden">
         <div
-          // Added 'bg-fixed' to create the parallax scrolling effect
           className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
           style={{
             backgroundImage: "url(/paving.avif)",
@@ -45,7 +49,7 @@ export default function Home() {
         <div className={`${containerClass} relative z-10 py-20 text-left`}>
           <div className="max-w-3xl">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-              Woolfolk Paving Co
+              Woolfolk Paving Co.
             </h1>
             <p className="text-base md:text-lg mb-8 text-white/90 leading-relaxed max-w-xl drop-shadow-md">
               We have more than 14 years of experience providing quality paving service for both Residential and Commercial Areas.
@@ -63,60 +67,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ================= WELCOME SECTION (Updated Images) ================= */}
+      {/* ================= WELCOME SECTION (MATCHING IMAGE LAYOUT) ================= */}
       <section className="py-20 md:py-32 bg-white">
         <div className={containerClass}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-            {/* Left Content Side */}
+            {/* LEFT SIDE: Text Content */}
             <div className="max-w-xl">
-              <h2 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 text-foreground">
+              {/* Exact Headline Style from Image */}
+              <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] mb-6 text-foreground tracking-tight">
                 Expert Paving. Deep-<br />
                 Rooted in <br />
-                <span className="text-primary">Community.</span>
+                <span className="text-[#7f1d1d]">Community.</span>
               </h2>
 
               <p className="text-muted-foreground text-lg leading-relaxed mb-8 font-light">
                 With over a decade of hands-on experience, we’ve built a reputation for reliable work, fair pricing, and strong client relationships. Whether it’s a home repair or a large-scale commercial project, our team is dedicated to delivering results that exceed expectations.
               </p>
 
-              {/* Custom Button Style from Image */}
+              {/* Exact Button Style from Image */}
               <Button
-                className="bg-[#7f1d1d] hover:bg-[#991b1b] text-white text-sm font-bold uppercase tracking-widest px-8 py-6 rounded-none shadow-md transition-all hover:shadow-lg"
+                className="bg-[#7f1d1d] hover:bg-[#991b1b] text-white text-sm font-bold uppercase tracking-widest px-10 py-7 rounded-none shadow-sm transition-all hover:shadow-md"
               >
                 Learn More
               </Button>
             </div>
 
-            {/* Right Image Collage Side */}
+            {/* RIGHT SIDE: Image Collage */}
             <div className="relative h-[500px] w-full hidden lg:block">
-              {/* Main Large Image (Right) */}
-              <div className="absolute right-0 top-10 w-[60%] h-[70%] z-10 shadow-xl">
+              {/* Main Tall Image (Right) */}
+              <div className="absolute right-0 top-8 w-[52%] h-[90%] z-20 shadow-xl overflow-hidden">
                 <Image
-                  src="/paving1.jpg"  // <--- Updated to paving1.jpeg
-                  alt="Paving Main"
+                  src="/paving1.jpg"
+                  alt="Construction Portrait"
                   fill
-                  className="object-cover"
+                  className="object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
 
               {/* Top Left Small Image */}
-              <div className="absolute left-0 top-0 w-[45%] h-[45%] z-0 opacity-90">
+              <div className="absolute left-0 top-0 w-[55%] h-[42%] z-10 shadow-lg overflow-hidden">
                 <Image
-                  src="/paving2.jpg"  // <--- Updated to paving2.jpeg
-                  alt="Paving Detail"
+                  src="/paving2.jpg"
+                  alt="Construction Site"
                   fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  className="object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
 
               {/* Bottom Left Medium Image */}
-              <div className="absolute left-10 bottom-0 w-[50%] h-[40%] z-20 shadow-lg border-4 border-white">
+              <div className="absolute left-8 bottom-0 w-[48%] h-[60%] z-30 shadow-[0_20px_50px_rgba(0,0,0,0.2)] border-[6px] border-white overflow-hidden">
                 <Image
-                  src="/paving3.jpg"  // <--- Updated to paving3.jpeg
-                  alt="Paving Work"
+                  src="/paving3.jpg"
+                  alt="Planning Construction"
                   fill
-                  className="object-cover"
+                  className="object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
             </div>
@@ -144,7 +149,7 @@ export default function Home() {
               <p className="text-white/70 mb-6 leading-relaxed">
                 We provide expert asphalt paving for driveways, parking lots, and roads using top-grade materials for long-lasting results.
               </p>
-              <Link href="#" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/asphalt-paving" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
@@ -155,7 +160,7 @@ export default function Home() {
               <p className="text-white/70 mb-6 leading-relaxed">
                 Protect your investment with our professional sealcoating services, designed to extend the life of your pavement.
               </p>
-              <Link href="#" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/sealcoating" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
@@ -166,7 +171,7 @@ export default function Home() {
               <p className="text-white/70 mb-6 leading-relaxed">
                 A cost-effective and durable alternative to traditional asphalt, providing a rustic look with excellent traction.
               </p>
-              <Link href="#" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/tar-and-chip" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
@@ -191,6 +196,7 @@ export default function Home() {
             className="w-full"
           >
             <CarouselContent>
+              {/* Projects ... */}
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
@@ -237,6 +243,9 @@ export default function Home() {
           </Carousel>
         </div>
       </section>
+
+      {/* ================= REVIEW SECTION ================= */}
+      <ReviewSection />
 
       {/* ================= CTA BANNER ================= */}
       <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
