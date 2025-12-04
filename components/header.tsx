@@ -32,7 +32,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
 
           {/* Logo Area */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative w-12 h-12 overflow-hidden rounded-sm">
                 <Image

@@ -13,6 +13,7 @@ import {
     SelectValue
 } from "@/components/ui/select"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import Link from "next/link"
 
 export default function ContactPage() {
     const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
@@ -195,6 +196,21 @@ export default function ContactPage() {
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* ================= REVIEW CTA ================= */}
+            <section className="py-16 bg-secondary/5 border-t border-secondary/10">
+                <div className={`${containerClass} text-center`}>
+                    <h2 className="text-2xl font-bold mb-4 text-secondary">Already a Customer?</h2>
+                    <p className="text-muted-foreground mb-6">
+                        We'd love to hear about your experience with Nuclearnick Construction.
+                    </p>
+                    <Link href="/review">
+                        <Button variant="outline" className="bg-white border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
+                            Leave a Review
+                        </Button>
+                    </Link>
                 </div>
             </section>
 

@@ -240,14 +240,25 @@ export default function Home() {
                 </div>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-4 bg-secondary text-white hover:bg-primary border-none rounded-none h-12 w-12" />
             <CarouselNext className="hidden md:flex -right-4 bg-secondary text-white hover:bg-primary border-none rounded-none h-12 w-12" />
           </Carousel>
+
+
+
+
         </div>
       </section>
 
       {/* ================= REVIEW SECTION ================= */}
       <ReviewSection />
+
+      <div className="mt-12 text-center pb-15 pb--5">
+        <Link href="/review">
+          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none transition-colors">
+            Leave a Review
+          </Button>
+        </Link>
+      </div>
 
       {/* ================= CTA BANNER ================= */}
       <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>

@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -82,7 +83,7 @@ export default function TarAndChipPage() {
 
                         {/* Image */}
                         <div className="relative h-[500px] w-full group">
-                            <div className="absolute inset-0 border-[8px] border-secondary z-10 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+                            <div className="absolute inset-0 border-8 border-secondary z-10 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
                             <div className="absolute inset-0 z-20 shadow-2xl overflow-hidden">
                                 <Image
                                     src="/placeholder.svg?height=600&width=800&query=tar-and-chip-road"
@@ -174,12 +175,16 @@ export default function TarAndChipPage() {
                         GO RUSTIC WITH TAR & CHIP
                     </h2>
                     <div className="flex flex-wrap gap-4">
-                        <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                            Get A Quote
-                        </Button>
-                        <Button variant="outline" className="text-white border-2 border-white bg-transparent hover:bg-white hover:text-secondary uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                            Contact Us
-                        </Button>
+                        <Link href="/contact">
+                            <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
+                                Get A Quote
+                            </Button>
+                        </Link>
+                        <Link href="/contact">
+                            <Button variant="outline" className="text-white border-2 border-white bg-transparent hover:bg-white hover:text-secondary uppercase tracking-widest font-bold px-8 py-6 rounded-none">
+                                Contact Us
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>
