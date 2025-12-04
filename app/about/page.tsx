@@ -82,7 +82,7 @@ export default function AboutPage() {
                             {/* Main Image */}
                             <div className="absolute inset-0 z-10 shadow-2xl border-12 border-white">
                                 <Image
-                                    src="/paving2.jpeg" // Using your uploaded image
+                                    src="/nick_image.jpg" // Using your uploaded image
                                     alt="Our Team Working"
                                     fill
                                     className="object-cover"
