@@ -55,13 +55,15 @@ export default function Home() {
               We have more than 14 years of experience providing quality paving service for both Residential and Commercial Areas.
             </p>
             <div>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-white border-white bg-transparent hover:bg-white hover:text-black rounded-none px-6 py-5 text-xs font-bold tracking-widest uppercase transition-all duration-300"
-              >
-                Get A Quote
-              </Button>
+              <Link href="/contact">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-white border-white bg-transparent hover:bg-white hover:text-black rounded-none px-6 py-5 text-xs font-bold tracking-widest uppercase transition-all duration-300"
+                >
+                  Get A Quote
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -86,7 +88,7 @@ export default function Home() {
               </p>
 
               {/* Exact Button Style from Image */}
-              <Link href="/contact">
+              <Link href="/about">
                 <Button
                   className="bg-primary hover:bg-primary/90 text-white text-sm font-bold uppercase tracking-widest px-10 py-7 rounded-none shadow-sm transition-all hover:shadow-md"
                 >
@@ -252,7 +254,7 @@ export default function Home() {
       {/* ================= REVIEW SECTION ================= */}
       <ReviewSection />
 
-      <div className="mt-12 text-center pb-15 pb--5">
+      <div className="mt-12 text-center pb-15">
         <Link href="/review">
           <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none transition-colors">
             Leave a Review
@@ -268,9 +270,11 @@ export default function Home() {
             GET A FREE ESTIMATE FOR YOUR<br /> RESIDENTIAL OR COMMERCIAL PROJECT
           </h2>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-              Get A Quote
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
+                Get A Quote
+              </Button>
+            </Link>
             <Link href="/contact">
               <Button variant="outline" className="text-white border-2 border-white bg-transparent hover:bg-white hover:text-secondary uppercase tracking-widest font-bold px-8 py-6 rounded-none">
                 Contact Us

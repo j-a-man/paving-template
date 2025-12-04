@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -31,13 +32,15 @@ export default function Hero() {
 
           {/* CTA Button - Smaller text and padding */}
           <div>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-white border-white bg-transparent hover:bg-white hover:text-black rounded-none px-6 py-5 text-xs font-bold tracking-widest uppercase transition-all duration-300"
-            >
-              Get A Quote
-            </Button>
+            <Link href="/contact">
+              <Button
+                variant="outline"
+                size="lg"
+                className="text-white border-white bg-transparent hover:bg-white hover:text-black rounded-none px-6 py-5 text-xs font-bold tracking-widest uppercase transition-all duration-300"
+              >
+                Get A Quote
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
