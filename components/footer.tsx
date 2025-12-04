@@ -1,41 +1,35 @@
+"use client"
+
 import Link from "next/link"
-import {
-  Truck,
-  ArrowRight,
-  MapPin,
-  Phone,
-  Mail,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram
-} from "lucide-react"
+import Image from "next/image"
+import { Facebook, Instagram, Linkedin, MapPin, Phone, Mail, ArrowRight, Truck, Clock } from "lucide-react"
 
 export default function Footer() {
-  // Matching the container class from page.tsx
-  const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
-
   return (
-    <footer className="bg-secondary text-white pt-16 md:pt-24">
-      <div className={containerClass}>
+    <footer className="bg-secondary text-white pt-20 pb-10">
+      <div className="container mx-auto px-6 md:px-24 lg:px-40">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 
           {/* Column 1 */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-white/10 flex items-center justify-center rounded-sm">
-                <Truck className="w-6 h-6 text-white" />
+            <Link href="/" className="flex items-center gap-3 mb-6 group">
+              <div className="relative w-10 h-10 overflow-hidden rounded-sm">
+                <Image
+                  src="/nick.png"
+                  alt="Nuclearnick Construction Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <span className="font-bold text-xl tracking-wider">Woolfolk Paving Co.</span>
-            </div>
+              <span className="font-bold text-xl tracking-wider text-white group-hover:text-primary transition-colors">Nuclearnick Construction</span>
+            </Link>
             <p className="text-white/70 leading-relaxed mb-6">
-              Serving the Richmond area with top-tier paving services for over a decade. Quality workmanship guaranteed.
+              Serving Indiana with top-tier paving and construction services. Quality workmanship guaranteed.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"><Facebook className="w-5 h-5" /></a>
-              <a href="#" className="w-10 h-10 bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"><Twitter className="w-5 h-5" /></a>
-              <a href="#" className="w-10 h-10 bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"><Linkedin className="w-5 h-5" /></a>
               <a href="#" className="w-10 h-10 bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"><Instagram className="w-5 h-5" /></a>
+              <a href="#" className="w-10 h-10 bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"><Linkedin className="w-5 h-5" /></a>
             </div>
           </div>
 
@@ -65,29 +59,37 @@ export default function Footer() {
 
           {/* Column 4 */}
           <div>
-            <h3 className="font-serif text-2xl font-bold mb-6">Contact Us</h3>
+            <h3 className="font-serif text-2xl font-bold mb-6">Contact Info</h3>
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">837 Murray Hill Rd, Vestal, NY 13850</span>
+                <span className="text-white/70">Indiana</span>
               </li>
               <li className="flex items-start gap-4">
                 <Phone className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">(607) 770-7134</span>
+                <span className="text-white/70">(219) 358-8794</span>
               </li>
               <li className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">krispatel9301@gmail.com</span>
+                <span className="text-white/70">risticnicholas@yahoo.com</span>
+              </li>
+              <li className="flex items-start gap-4">
+                <Clock className="w-6 h-6 text-primary mt-1 shrink-0" />
+                <span className="text-white/70">24/7 Service (Closed Sunday)</span>
               </li>
             </ul>
           </div>
-        </div>
-      </div>
 
-      {/* Copyright Bar */}
-      <div className="bg-black py-6 border-t border-white/10">
-        <div className={`${containerClass} text-left text-white/50 text-sm`}>
-          <p>&copy; {new Date().getFullYear()} Pave Pro. All Rights Reserved.</p>
+        </div>
+
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-white/50 text-sm">
+            © {new Date().getFullYear()} Nuclearnick Construction. All rights reserved.
+          </p>
+          <div className="flex gap-6 text-sm text-white/50">
+            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+          </div>
         </div>
       </div>
     </footer>

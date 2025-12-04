@@ -8,10 +8,9 @@ import { Card } from "@/components/ui/card"
 import {
     CheckCircle2,
     Hammer,
-    Droplets,
     AlertTriangle,
     ArrowRight,
-    Ruler
+    Construction
 } from "lucide-react"
 
 export default function DrivewayRepairPage() {
@@ -29,7 +28,7 @@ export default function DrivewayRepairPage() {
                         backgroundImage: "url(/paving.avif)",
                     }}
                 >
-                    <div className="absolute inset-0 bg-black/60" />
+                    <div className="absolute inset-0 bg-secondary/60" />
                 </div>
 
                 <div className={`${containerClass} relative z-10 text-left py-20`}>
@@ -39,7 +38,7 @@ export default function DrivewayRepairPage() {
                             Driveway Repair
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Restore the safety, functionality, and curb appeal of your driveway with our expert repair services.
+                            Restore the safety and appearance of your driveway with expert repair services from Nuclearnick Construction.
                         </p>
                     </div>
                 </div>
@@ -52,14 +51,14 @@ export default function DrivewayRepairPage() {
                         {/* Text Content */}
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                                Expert Repair & <span className="text-primary">Restoration</span>
+                                Don't Let Cracks <span className="text-primary">Spread</span>
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    Don't let cracks and potholes damage your vehicle or lower your property value. Woolfolk Paving Co. offers professional driveway repair services to address common issues like cracking, heaving, and drainage problems.
+                                    Small cracks and potholes can quickly turn into major problems if left untreated. Water infiltration, freeze-thaw cycles, and heavy traffic can all accelerate the deterioration of your driveway.
                                 </p>
                                 <p>
-                                    We assess the condition of your driveway and recommend the most effective solution, whether it's crack filling, patching, or a complete overlay. Our goal is to extend the life of your existing pavement and save you money in the long run.
+                                    At Nuclearnick Construction, we offer comprehensive driveway repair services to extend the life of your pavement. From crack filling and patching to resurfacing and drainage correction, we have the solutions to restore your driveway's integrity and curb appeal.
                                 </p>
                             </div>
 
@@ -69,13 +68,13 @@ export default function DrivewayRepairPage() {
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Structural Integrity</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Hot Crack Filling</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Seamless Patching</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Pothole Patching</span>
                                     </div>
                                 </div>
                             </div>
@@ -97,13 +96,13 @@ export default function DrivewayRepairPage() {
                 </div>
             </section>
 
-            {/* ================= BENEFITS GRID ================= */}
+            {/* ================= SIGNS GRID ================= */}
             <section className="py-20 bg-secondary text-white">
                 <div className={containerClass}>
                     <div className="text-left mb-16">
-                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Common Issues We Fix</h2>
+                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Signs You Need Repair</h2>
                         <p className="text-white/70 max-w-2xl font-light">
-                            Identifying problems early can prevent costly replacements.
+                            Watch out for these common issues that indicate your driveway needs attention.
                         </p>
                     </div>
 
@@ -114,9 +113,23 @@ export default function DrivewayRepairPage() {
                                     <AlertTriangle className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Cracks & Fissures</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Alligator Cracking</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        We clean and fill linear cracks with hot-pour sealant to prevent water infiltration and further expansion.
+                                        Interconnected cracks resembling alligator skin, usually indicating structural failure requiring patching or resurfacing.
+                                    </p>
+                                </div>
+                            </div>
+                        </Card>
+
+                        <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
+                            <div className="flex items-start gap-4">
+                                <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
+                                    <Construction className="w-6 h-6 text-white" />
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-bold text-white mb-2">Potholes</h3>
+                                    <p className="text-white/60 text-sm leading-relaxed">
+                                        Holes in the pavement caused by water infiltration and traffic, creating safety hazards and potential vehicle damage.
                                     </p>
                                 </div>
                             </div>
@@ -128,9 +141,9 @@ export default function DrivewayRepairPage() {
                                     <Hammer className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Potholes</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Depressions</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        We cut out damaged areas, repair the base if necessary, and patch with fresh hot-mix asphalt for a seamless repair.
+                                        Sunken areas that collect water (birdbaths), leading to further deterioration and ice hazards in winter.
                                     </p>
                                 </div>
                             </div>
@@ -139,26 +152,12 @@ export default function DrivewayRepairPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Droplets className="w-6 h-6 text-white" />
+                                    <CheckCircle2 className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Drainage Issues</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Fading & Raveling</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Standing water destroys asphalt. We can regrade surfaces or install drains to ensure water flows away from your pavement.
-                                    </p>
-                                </div>
-                            </div>
-                        </Card>
-
-                        <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Ruler className="w-6 h-6 text-white" />
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Resurfacing (Overlay)</h3>
-                                    <p className="text-white/60 text-sm leading-relaxed">
-                                        If the base is sound but the surface is worn, we can install a new layer of asphalt over the existing one for a brand-new look.
+                                        Loss of aggregate and binder, making the surface rough and loose. Sealcoating can often arrest this process.
                                     </p>
                                 </div>
                             </div>
@@ -169,10 +168,10 @@ export default function DrivewayRepairPage() {
 
             {/* ================= CTA BANNER ================= */}
             <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
-                <div className="absolute inset-0 bg-black/70"></div>
+                <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        FIX IT BEFORE IT GETS WORSE
+                        SAVE YOUR DRIVEWAY
                     </h2>
                     <div className="flex flex-wrap gap-4">
                         <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">

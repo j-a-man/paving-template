@@ -1,138 +1,121 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
+import { Menu, X, Phone, MapPin, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Phone, Mail, MapPin, Image as ImageIcon } from "lucide-react"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
-  // Custom color for the red accents
-  const accentColor = "text-[#7f1d1d]"
-  const buttonColor = "bg-[#7f1d1d] hover:bg-[#991b1b]"
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
-  // Consistent container alignment with extra padding
-  const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
+  const headerClass = scrolled
+    ? "bg-white/95 backdrop-blur-md shadow-md py-2"
+    : "bg-white py-4"
+
+  const navLinkClass = "text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors text-foreground"
+  const mobileNavLinkClass = "text-2xl font-serif font-bold text-white hover:text-primary transition-colors"
+  const buttonColor = scrolled ? "bg-primary hover:bg-primary/90 text-white" : "bg-primary hover:bg-primary/90 text-white"
 
   return (
-    <header className="w-full shadow-sm font-sans">
-      {/* --- TOP BAR (Logo & Contact Info) --- */}
-      <div className="bg-white py-4 md:py-6">
-        <div className={containerClass}>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerClass}`}>
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="flex items-center justify-between">
 
-            {/* Logo Area */}
-            <div className="flex-shrink-0">
-              <Link href="/" className="flex items-center gap-2">
-                <div className="w-16 h-16 bg-gray-100 border border-gray-200 flex items-center justify-center rounded-sm">
-                  <ImageIcon className="w-8 h-8 text-gray-400" />
-                </div>
-              </Link>
+          {/* Logo Area */}
+          <div className="flex-shrink-0">
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative w-12 h-12 overflow-hidden rounded-sm">
+                <Image
+                  src="/nick.png"
+                  alt="Nuclearnick Construction Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-serif text-2xl font-bold tracking-tighter text-black group-hover:text-primary transition-colors">
+                  NUCLEARNICK
+                </span>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-black/60 font-medium">
+                  Construction
+                </span>
+              </div>
+            </Link>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-8">
+            <Link href="/" className={navLinkClass}>Home</Link>
+            <Link href="/about" className={navLinkClass}>About</Link>
+            <Link href="/services" className={navLinkClass}>Services</Link>
+            <Link href="/projects" className={navLinkClass}>Projects</Link>
+            <Link href="/contact" className={navLinkClass}>Contact</Link>
+          </nav>
+
+          {/* CTA Button & Mobile Toggle */}
+          <div className="flex items-center gap-4">
+            <div className="hidden lg:flex flex-col items-end mr-4">
+              <a href="tel:+12193588794" className="flex items-center gap-2 text-sm font-bold text-foreground hover:text-primary transition-colors">
+                <Phone className="w-4 h-4" /> (219) 358-8794
+              </a>
+              <span className="text-xs text-muted-foreground">24/7 Service (Closed Sun)</span>
             </div>
-
-            {/* Contact Details Grid */}
-            <div className="hidden md:flex items-center gap-8 lg:gap-12">
-              <div className="flex items-start gap-3 group">
-                <MapPin className={`w-6 h-6 mt-1 ${accentColor}`} />
-                <div>
-                  <h4 className="font-bold text-foreground text-base leading-none mb-1">Location</h4>
-                  <p className="text-sm text-muted-foreground leading-tight">
-                    837 Murray Hill Rd, Vestal<br />
-                    NY 13850
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3 group">
-                <Mail className={`w-6 h-6 mt-1 ${accentColor}`} />
-                <div>
-                  <h4 className="font-bold text-foreground text-base leading-none mb-1">Email</h4>
-                  <a href="mailto:krispatel9301@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    krispatel9301@gmail.com
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3 group">
-                <Phone className={`w-6 h-6 mt-1 ${accentColor}`} />
-                <div>
-                  <h4 className="font-bold text-foreground text-base leading-none mb-1">Call or Text</h4>
-                  <a href="tel:+16077707134" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    (607) 770-7134
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Mobile Toggle */}
+            <Link href="/contact">
+              <Button className={`hidden md:flex uppercase tracking-widest font-bold px-6 rounded-none ${buttonColor}`}>
+                Get Quote
+              </Button>
+            </Link>
             <button
-              className="md:hidden absolute top-6 right-6 p-2 text-foreground"
+              className="lg:hidden text-foreground p-2"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+              {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* --- BOTTOM BAR (Navigation & CTA) --- */}
-      <div className="bg-black text-white sticky top-0 z-50">
-        <div className={containerClass}>
-          <div className="flex items-center justify-between h-14 md:h-16">
+      {/* Mobile Menu Overlay */}
+      {isOpen && (
+        <div className="fixed inset-0 z-40 bg-secondary/95 flex flex-col items-center justify-center lg:hidden">
+          <nav className="flex flex-col items-center gap-8 text-center">
+            <Link href="/" className={mobileNavLinkClass} onClick={() => setIsOpen(false)}>Home</Link>
+            <Link href="/about" className={mobileNavLinkClass} onClick={() => setIsOpen(false)}>About</Link>
+            <Link href="/services" className={mobileNavLinkClass} onClick={() => setIsOpen(false)}>Services</Link>
+            <Link href="/projects" className={mobileNavLinkClass} onClick={() => setIsOpen(false)}>Projects</Link>
+            <Link href="/contact" className={mobileNavLinkClass} onClick={() => setIsOpen(false)}>Contact</Link>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wider">
-              <Link href="/" className="hover:text-primary transition-colors py-2">Home</Link>
-              <Link href="/about" className="hover:text-primary transition-colors py-2">About Us</Link>
-              <Link href="/services" className="hover:text-primary transition-colors py-2">Services</Link>
-              <Link href="/projects" className="hover:text-primary transition-colors py-2">Projects</Link>
-              <Link href="/contact" className="hover:text-primary transition-colors py-2">Contact Us</Link>
-            </nav>
-
-            {/* CTA Button */}
-            <div className="hidden md:block h-full">
-              <Button
-                className={`h-full rounded-none px-8 text-sm font-bold uppercase tracking-widest ${buttonColor} border-none`}
-              >
-                Free Estimate
-              </Button>
-            </div>
-
-            {/* Mobile Logo */}
-            <div className="md:hidden font-bold text-lg tracking-wider">
-              PAVE PRO
-            </div>
-          </div>
-        </div>
-
-        {/* --- MOBILE MENU --- */}
-        {isOpen && (
-          <div className="md:hidden bg-zinc-900 border-t border-zinc-800">
-            <nav className="flex flex-col p-6 space-y-4 text-center">
-              <Link href="/" className="text-white hover:text-primary text-lg font-medium" onClick={() => setIsOpen(false)}>Home</Link>
-              <Link href="/about" className="text-white hover:text-primary text-lg font-medium" onClick={() => setIsOpen(false)}>About Us</Link>
-              <Link href="/services" className="text-white hover:text-primary text-lg font-medium" onClick={() => setIsOpen(false)}>Services</Link>
-              <Link href="/projects" className="text-white hover:text-primary text-lg font-medium" onClick={() => setIsOpen(false)}>Projects</Link>
-              <Link href="/contact" className="text-white hover:text-primary text-lg font-medium" onClick={() => setIsOpen(false)}>Contact Us</Link>
-
-              <div className="pt-4 space-y-4">
-                <Button className={`w-full py-6 text-lg font-bold uppercase ${buttonColor}`}>
+            <div className="mt-8 w-full max-w-xs space-y-4">
+              <Link href="/contact" onClick={() => setIsOpen(false)}>
+                <Button className="w-full py-6 text-lg font-bold uppercase bg-primary text-white rounded-none">
                   Free Estimate
                 </Button>
-                <div className="pt-6 border-t border-zinc-800 flex flex-col items-center gap-4 text-zinc-400">
-                  <a href="tel:+16077707134" className="flex items-center gap-2">
-                    <Phone className="w-4 h-4" /> (607) 770-7134
-                  </a>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" /> Vestal, NY 13850
-                  </div>
+              </Link>
+              <div className="pt-6 border-t border-white/10 flex flex-col items-center gap-4 text-white/60">
+                <a href="tel:+12193588794" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <Phone className="w-4 h-4" /> (219) 358-8794
+                </a>
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4" /> Indiana
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4" /> 24/7 (Closed Sun)
                 </div>
               </div>
-            </nav>
-          </div>
-        )}
-      </div>
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   )
 }

@@ -30,17 +30,17 @@ export default function AboutPage() {
                     }}
                 >
                     {/* Dark Overlay */}
-                    <div className="absolute inset-0 bg-black/60" />
+                    <div className="absolute inset-0 bg-secondary/60" />
                 </div>
 
                 <div className={`${containerClass} relative z-10 text-left py-20`}>
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div> {/* Decorative line */}
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            About Woolfolk Paving
+                            About Nuclearnick Construction
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Building trust, quality pavement, and lasting relationships in our community since 2010.
+                            Building trust, quality pavement, and lasting relationships in Indiana since 2010.
                         </p>
                     </div>
                 </div>
@@ -59,26 +59,19 @@ export default function AboutPage() {
 
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    Woolfolk Paving Co. started with a single truck, a paver, and a simple mission: to provide the highest quality paving services with unmatched integrity.
+                                    Hi, I'm Nicholas Ristic. I've been working in construction since I was 14 years old—that's nearly 14 years of hands-on experience. My expertise covers everything from plumbing, electrical, and drywall to flooring, carpentry, and roofing.
                                 </p>
                                 <p>
-                                    Over the last 14 years, we have grown into the region's leading paving contractor, but our core values haven't changed. We believe in transparency, hard work, and doing the job right the first time.
+                                    I also specialize in landscaping and deck building—you name it, I can do it. After years of honing my craft, I've launched my own fully licensed business, Nuclearnick Construction, and I'm excited to bring my dedication and quality workmanship to your next project.
                                 </p>
                                 <p>
-                                    Whether it's a residential driveway or a sprawling commercial parking lot, we bring the same level of attention to detail and craftsmanship to every single project.
+                                    I just got my business completely legit and I'm trying to get my name out there by providing the best possible service to my community.
                                 </p>
                             </div>
 
                             <div className="mt-10">
-                                <Image
-                                    src="/signature.png" // Placeholder for a signature if you have one, or remove
-                                    width={150}
-                                    height={80}
-                                    alt=""
-                                    className="opacity-60 hidden" // Hidden for now, enable if you have a signature image
-                                />
                                 <div className="font-serif text-xl italic text-foreground">
-                                    - The Woolfolk Team
+                                    - Nicholas Ristic, Founder
                                 </div>
                             </div>
                         </div>
@@ -153,7 +146,7 @@ export default function AboutPage() {
 
             {/* ================= CTA BANNER ================= */}
             <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
-                <div className="absolute inset-0 bg-black/70"></div>
+                <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
                         READY TO TRANSFORM YOUR PROPERTY?

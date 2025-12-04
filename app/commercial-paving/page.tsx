@@ -29,7 +29,7 @@ export default function CommercialPavingPage() {
                         backgroundImage: "url(/paving.avif)",
                     }}
                 >
-                    <div className="absolute inset-0 bg-black/60" />
+                    <div className="absolute inset-0 bg-secondary/60" />
                 </div>
 
                 <div className={`${containerClass} relative z-10 text-left py-20`}>
@@ -39,7 +39,7 @@ export default function CommercialPavingPage() {
                             Commercial Paving
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Heavy-duty paving solutions for businesses, municipalities, and industrial facilities. Built to last.
+                            Reliable, heavy-duty paving solutions for businesses in Indiana.
                         </p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ export default function CommercialPavingPage() {
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    First impressions matter. A well-maintained parking lot or access road speaks volumes about your business. Woolfolk Paving Co. provides comprehensive commercial paving services, from new installations to resurfacing and repairs.
+                                    First impressions matter. A well-maintained parking lot or access road speaks volumes about your business. Nuclearnick Construction provides comprehensive commercial paving services, from new installations to resurfacing and repairs.
                                 </p>
                                 <p>
                                     We understand the unique challenges of commercial projects, including tight schedules and the need to minimize disruption to your operations. Our experienced team works efficiently to deliver high-quality results on time and within budget.
@@ -169,7 +169,7 @@ export default function CommercialPavingPage() {
 
             {/* ================= CTA BANNER ================= */}
             <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
-                <div className="absolute inset-0 bg-black/70"></div>
+                <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
                         PARTNER WITH THE PROS

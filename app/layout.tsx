@@ -12,8 +12,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Woolfolk Paving Co",
-  description: "Premium Asphalt & Paving Services",
+  title: "Nuclearnick Construction | Premier Paving & Construction Services",
+  description: "Nuclearnick Construction offers top-tier paving and construction services in Indiana. Residential and commercial solutions available 24/7.",
 }
 
 export default function RootLayout({

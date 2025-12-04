@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {
     CheckCircle2,
-    Sprout,
-    DollarSign,
     Tractor,
+    DollarSign,
+    Layers,
     ArrowRight
 } from "lucide-react"
 
@@ -28,7 +28,7 @@ export default function TarAndChipPage() {
                         backgroundImage: "url(/paving.avif)",
                     }}
                 >
-                    <div className="absolute inset-0 bg-black/60" />
+                    <div className="absolute inset-0 bg-secondary/60" />
                 </div>
 
                 <div className={`${containerClass} relative z-10 text-left py-20`}>
@@ -38,7 +38,7 @@ export default function TarAndChipPage() {
                             Tar & Chip Paving
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            A rustic, cost-effective alternative to traditional asphalt that combines durability with natural aesthetics.
+                            A rustic, cost-effective alternative to asphalt. Durable, low-maintenance, and perfect for long driveways and rural roads.
                         </p>
                     </div>
                 </div>
@@ -55,10 +55,10 @@ export default function TarAndChipPage() {
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    Tar and chip, also known as chip seal, offers a unique combination of the strength of pavement and the natural look of stone. It’s an excellent choice for long driveways, rural roads, and estates where a more organic aesthetic is desired.
+                                    Tar and chip paving (also known as chip seal) combines the durability of asphalt with the rustic look of stone. It's an excellent choice for homeowners who want a natural aesthetic or need to pave a long driveway without breaking the bank.
                                 </p>
                                 <p>
-                                    Our process involves applying hot liquid asphalt to a prepared base, followed immediately by a layer of stone chips that are rolled into the surface. The result is a textured, high-traction surface that blends beautifully with the surrounding landscape.
+                                    Nuclearnick Construction is one of the few contractors in Indiana with the specialized equipment and expertise to install high-quality tar and chip surfaces. We offer a variety of stone colors to match your landscape and style.
                                 </p>
                             </div>
 
@@ -68,13 +68,13 @@ export default function TarAndChipPage() {
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">High Traction</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Custom Stone Colors</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Low Maintenance</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Excellent Traction</span>
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@ export default function TarAndChipPage() {
                             <div className="absolute inset-0 border-[8px] border-secondary z-10 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
                             <div className="absolute inset-0 z-20 shadow-2xl overflow-hidden">
                                 <Image
-                                    src="/paving3.jpg"
+                                    src="/placeholder.svg?height=600&width=800&query=tar-and-chip-road"
                                     alt="Tar and Chip Driveway"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -102,7 +102,7 @@ export default function TarAndChipPage() {
                     <div className="text-left mb-16">
                         <h2 className="text-3xl md:text-4xl font-normal mb-4">Why Choose Tar & Chip?</h2>
                         <p className="text-white/70 max-w-2xl font-light">
-                            An economical solution that doesn't compromise on performance or style.
+                            A practical and attractive paving solution.
                         </p>
                     </div>
 
@@ -110,40 +110,40 @@ export default function TarAndChipPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Tractor className="w-6 h-6 text-white" />
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Superior Traction</h3>
-                                    <p className="text-white/60 text-sm leading-relaxed">
-                                        The rough texture provides excellent grip in snow, rain, and ice, making it ideal for steep inclines or rural areas.
-                                    </p>
-                                </div>
-                            </div>
-                        </Card>
-
-                        <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Sprout className="w-6 h-6 text-white" />
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Natural Aesthetic</h3>
-                                    <p className="text-white/60 text-sm leading-relaxed">
-                                        Choose from various stone colors to complement your home and landscape, creating a softer, more rustic look than blacktop.
-                                    </p>
-                                </div>
-                            </div>
-                        </Card>
-
-                        <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
                                     <DollarSign className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Cost Effective</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Affordable</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Tar and chip is significantly cheaper to install than asphalt or concrete, offering a premium look for a lower price.
+                                        Typically costs significantly less than asphalt or concrete, making it ideal for long driveways or private roads.
+                                    </p>
+                                </div>
+                            </div>
+                        </Card>
+
+                        <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
+                            <div className="flex items-start gap-4">
+                                <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
+                                    <Tractor className="w-6 h-6 text-white" />
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-bold text-white mb-2">High Traction</h3>
+                                    <p className="text-white/60 text-sm leading-relaxed">
+                                        The rough texture provides excellent grip in rain, snow, and ice, improving safety on steep or winding driveways.
+                                    </p>
+                                </div>
+                            </div>
+                        </Card>
+
+                        <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
+                            <div className="flex items-start gap-4">
+                                <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
+                                    <Layers className="w-6 h-6 text-white" />
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-bold text-white mb-2">Low Maintenance</h3>
+                                    <p className="text-white/60 text-sm leading-relaxed">
+                                        Does not require regular sealcoating. Minor cracks are often self-healing in hot weather as the tar softens.
                                     </p>
                                 </div>
                             </div>
@@ -155,9 +155,9 @@ export default function TarAndChipPage() {
                                     <CheckCircle2 className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Self-Healing</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Natural Look</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        In hot weather, the tar can soften slightly, allowing it to reseal small cracks automatically, reducing maintenance needs.
+                                        Blends beautifully with rural landscapes and gardens. Choose from different stone colors to customize the appearance.
                                     </p>
                                 </div>
                             </div>
@@ -168,10 +168,10 @@ export default function TarAndChipPage() {
 
             {/* ================= CTA BANNER ================= */}
             <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
-                <div className="absolute inset-0 bg-black/70"></div>
+                <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        READY FOR A RUSTIC LOOK?
+                        GO RUSTIC WITH TAR & CHIP
                     </h2>
                     <div className="flex flex-wrap gap-4">
                         <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">

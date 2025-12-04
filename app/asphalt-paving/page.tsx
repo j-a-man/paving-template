@@ -28,17 +28,17 @@ export default function AsphaltPavingPage() {
                         backgroundImage: "url(/paving.avif)",
                     }}
                 >
-                    <div className="absolute inset-0 bg-black/60" />
+                    <div className="absolute inset-0 bg-secondary/60" />
                 </div>
 
                 <div className={`${containerClass} relative z-10 text-left py-20`}>
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div>
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            Asphalt Paving
+                            Asphalt Paving Services
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Durability meets aesthetics. Premium asphalt solutions designed to withstand heavy loads and harsh weather.
+                            Nuclearnick Construction delivers superior asphalt paving solutions for residential and commercial properties in Indiana.
                         </p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ export default function AsphaltPavingPage() {
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    At Woolfolk Paving Co., we specialize in high-quality asphalt paving for both residential and commercial properties. Whether you need a new driveway, a parking lot resurfaced, or a private road paved, our team has the expertise and equipment to get the job done right.
+                                    At Nuclearnick Construction, we specialize in high-quality asphalt paving for both residential and commercial properties. Whether you need a new driveway, a parking lot resurfaced, or a private road paved, our team has the expertise and equipment to get the job done right.
                                 </p>
                                 <p>
                                     We use only industrial-grade bituminous mixtures to ensure a smooth, durable finish. Our rigorous process—from sub-base grading to the final roll—guarantees longevity and curb appeal that adds real value to your property.
@@ -168,7 +168,7 @@ export default function AsphaltPavingPage() {
 
             {/* ================= CTA BANNER ================= */}
             <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
-                <div className="absolute inset-0 bg-black/70"></div>
+                <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
                         READY TO PAVE YOUR WAY?

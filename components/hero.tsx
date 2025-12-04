@@ -13,7 +13,7 @@ export default function Hero() {
         }}
       >
         {/* Dark Overlay to match the reference image's contrast */}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-secondary/60" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-20 text-left">
@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="max-w-2xl md:ml-12 lg:ml-24">
           {/* Main Headline - Scaled down font sizes */}
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight text-white drop-shadow-lg">
-            Woolfolk Paving Co
+            Nuclearnick Construction
           </h1>
 
           {/* Subheadline - Smaller text */}

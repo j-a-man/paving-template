@@ -43,13 +43,13 @@ export default function Home() {
           }}
         >
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-secondary/60" />
         </div>
 
         <div className={`${containerClass} relative z-10 py-20 text-left`}>
           <div className="max-w-3xl">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-              Woolfolk Paving Co.
+              Nuclearnick Construction
             </h1>
             <p className="text-base md:text-lg mb-8 text-white/90 leading-relaxed max-w-xl drop-shadow-md">
               We have more than 14 years of experience providing quality paving service for both Residential and Commercial Areas.
@@ -76,18 +76,18 @@ export default function Home() {
             <div className="max-w-xl">
               {/* Exact Headline Style from Image */}
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] mb-6 text-foreground tracking-tight">
-                Expert Paving. Deep-<br />
-                Rooted in <br />
-                <span className="text-[#7f1d1d]">Community.</span>
+                Expert Construction. <br />
+                Built for <br />
+                <span className="text-primary">Indiana.</span>
               </h2>
 
               <p className="text-muted-foreground text-lg leading-relaxed mb-8 font-light">
-                With over a decade of hands-on experience, we’ve built a reputation for reliable work, fair pricing, and strong client relationships. Whether it’s a home repair or a large-scale commercial project, our team is dedicated to delivering results that exceed expectations.
+                Nuclearnick Construction is Indiana's premier choice for residential and commercial paving and construction services. We combine years of experience with top-tier materials to deliver results that stand the test of time.
               </p>
 
               {/* Exact Button Style from Image */}
               <Button
-                className="bg-[#7f1d1d] hover:bg-[#991b1b] text-white text-sm font-bold uppercase tracking-widest px-10 py-7 rounded-none shadow-sm transition-all hover:shadow-md"
+                className="bg-primary hover:bg-primary/90 text-white text-sm font-bold uppercase tracking-widest px-10 py-7 rounded-none shadow-sm transition-all hover:shadow-md"
               >
                 Learn More
               </Button>
@@ -249,7 +249,7 @@ export default function Home() {
 
       {/* ================= CTA BANNER ================= */}
       <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-secondary/70"></div>
         <div className={`${containerClass} relative z-10 text-left`}>
           <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
             GET A FREE ESTIMATE FOR YOUR<br /> RESIDENTIAL OR COMMERCIAL PROJECT

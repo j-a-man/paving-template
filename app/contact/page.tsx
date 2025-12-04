@@ -32,7 +32,7 @@ export default function ContactPage() {
                         backgroundImage: "url(/paving.avif)",
                     }}
                 >
-                    <div className="absolute inset-0 bg-black/60" />
+                    <div className="absolute inset-0 bg-secondary/60" />
                 </div>
 
                 <div className={`${containerClass} relative z-10 text-left`}>
@@ -134,8 +134,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Address</h4>
                                             <p className="text-white font-light text-lg leading-relaxed">
-                                                837 Murray Hill Rd<br />
-                                                Vestal, NY 13850
+                                                Indiana
                                             </p>
                                         </div>
                                     </div>
@@ -147,7 +146,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Phone</h4>
                                             <p className="text-white font-light text-lg leading-relaxed">
-                                                (607) 770-7134
+                                                (219) 358-8794
                                             </p>
                                         </div>
                                     </div>
@@ -159,7 +158,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Email</h4>
                                             <p className="text-white font-light text-lg leading-relaxed">
-                                                krispatel9301@gmail.com
+                                                risticnicholas@yahoo.com
                                             </p>
                                         </div>
                                     </div>
@@ -172,12 +171,8 @@ export default function ContactPage() {
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Business Hours</h4>
                                             <div className="text-white font-light text-sm leading-relaxed space-y-2">
                                                 <div className="flex justify-between w-56 border-b border-white/10 pb-1">
-                                                    <span>Mon - Fri:</span>
-                                                    <span>8:00 AM - 6:00 PM</span>
-                                                </div>
-                                                <div className="flex justify-between w-56 border-b border-white/10 pb-1">
-                                                    <span>Saturday:</span>
-                                                    <span>9:00 AM - 2:00 PM</span>
+                                                    <span>Mon - Sat:</span>
+                                                    <span>24 Hours</span>
                                                 </div>
                                                 <div className="flex justify-between w-56 text-white/50 pt-1">
                                                     <span>Sunday:</span>
@@ -194,7 +189,7 @@ export default function ContactPage() {
                                 <p className="text-white/60 text-sm mb-4">
                                     Need immediate assistance? Call our emergency line 24/7.
                                 </p>
-                                <a href="tel:+16077707134" className="text-xl font-bold text-white hover:text-primary transition-colors flex items-center gap-2">
+                                <a href="tel:+12193588794" className="text-xl font-bold text-white hover:text-primary transition-colors flex items-center gap-2">
                                     Call Now <span className="text-primary text-2xl">→</span>
                                 </a>
                             </div>

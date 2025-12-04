@@ -59,11 +59,10 @@ export default function Portfolio() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 rounded-lg font-semibold transition-colors ${
-                selectedCategory === category
+              className={`px-6 py-2 rounded-lg font-semibold transition-colors ${selectedCategory === category
                   ? "bg-primary text-primary-foreground"
                   : "bg-muted text-foreground hover:bg-muted/80"
-              }`}
+                }`}
             >
               {category}
             </button>
@@ -80,7 +79,7 @@ export default function Portfolio() {
                   alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <div className="absolute inset-0 bg-secondary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <span className="text-white font-semibold">{item.title}</span>
                 </div>
               </div>
