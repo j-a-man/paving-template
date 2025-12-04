@@ -135,12 +135,16 @@ export default function ServicesPage() {
                         NEED A CUSTOM SOLUTION?
                     </h2>
                     <div className="flex flex-wrap gap-4">
-                        <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                            Get A Quote
-                        </Button>
-                        <Button variant="outline" className="text-white border-2 border-white bg-transparent hover:bg-white hover:text-secondary uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                            Contact Us
-                        </Button>
+                        <Link href="/contact">
+                            <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
+                                Get A Quote
+                            </Button>
+                        </Link>
+                        <Link href="/contact">
+                            <Button variant="outline" className="text-white border-2 border-white bg-transparent hover:bg-white hover:text-secondary uppercase tracking-widest font-bold px-8 py-6 rounded-none">
+                                Contact Us
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>

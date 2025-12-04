@@ -86,11 +86,13 @@ export default function Home() {
               </p>
 
               {/* Exact Button Style from Image */}
-              <Button
-                className="bg-primary hover:bg-primary/90 text-white text-sm font-bold uppercase tracking-widest px-10 py-7 rounded-none shadow-sm transition-all hover:shadow-md"
-              >
-                Learn More
-              </Button>
+              <Link href="/contact">
+                <Button
+                  className="bg-primary hover:bg-primary/90 text-white text-sm font-bold uppercase tracking-widest px-10 py-7 rounded-none shadow-sm transition-all hover:shadow-md"
+                >
+                  Learn More
+                </Button>
+              </Link>
             </div>
 
             {/* RIGHT SIDE: Image Collage */}
@@ -258,9 +260,11 @@ export default function Home() {
             <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
               Get A Quote
             </Button>
-            <Button variant="outline" className="text-white border-2 border-white bg-transparent hover:bg-white hover:text-secondary uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-              Contact Us
-            </Button>
+            <Link href="/contact">
+              <Button variant="outline" className="text-white border-2 border-white bg-transparent hover:bg-white hover:text-secondary uppercase tracking-widest font-bold px-8 py-6 rounded-none">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
