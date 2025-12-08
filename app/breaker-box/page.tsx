@@ -8,13 +8,12 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {
     CheckCircle2,
-    Tractor,
+    Clock,
     DollarSign,
-    Layers,
-    ArrowRight
+    Car
 } from "lucide-react"
 
-export default function TarAndChipPage() {
+export default function BreakerBoxPage() {
     const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
 
     return (
@@ -26,7 +25,7 @@ export default function TarAndChipPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/paving.avif)",
+                        backgroundImage: "url(/electric_image.jpg)",
                     }}
                 >
                     <div className="absolute inset-0 bg-secondary/60" />
@@ -36,10 +35,10 @@ export default function TarAndChipPage() {
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div>
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            Tar & Chip Paving
+                            Breaker Box Services
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            A rustic, cost-effective alternative to asphalt. Durable, low-maintenance, and perfect for long driveways and rural roads.
+                            Metrolake Electrical Services ensures your home stays powered safely with expert breaker box installation and repair.
                         </p>
                     </div>
                 </div>
@@ -52,14 +51,14 @@ export default function TarAndChipPage() {
                         {/* Text Content */}
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                                Rustic Charm & <span className="text-primary">Durability</span>
+                                Powering Your <span className="text-primary">Safety</span>
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    Tar and chip paving (also known as chip seal) combines the durability of asphalt with the rustic look of stone. It's an excellent choice for homeowners who want a natural aesthetic or need to pave a long driveway without breaking the bank.
+                                    Your breaker box is the heart of your home's electrical system. It protects your family and property by shutting off electricity during surges or faults. At Metrolake Electrical Services, we specialize in installing, repairing, and upgrading panels to meet modern safety standards.
                                 </p>
                                 <p>
-                                    Nuclearnick Construction is one of the few contractors in Indiana with the specialized equipment and expertise to install high-quality tar and chip surfaces. We offer a variety of stone colors to match your landscape and style.
+                                    Whether you have an outdated fuse box or need more capacity for new appliances, our team ensures your electrical panel is reliable and code-compliant.
                                 </p>
                             </div>
 
@@ -69,13 +68,13 @@ export default function TarAndChipPage() {
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Custom Stone Colors</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Panel Upgrades</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Excellent Traction</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Circuit Repair</span>
                                     </div>
                                 </div>
                             </div>
@@ -86,8 +85,8 @@ export default function TarAndChipPage() {
                             <div className="absolute inset-0 border-8 border-secondary z-10 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
                             <div className="absolute inset-0 z-20 shadow-2xl overflow-hidden">
                                 <Image
-                                    src="/placeholder.svg?height=600&width=800&query=tar-and-chip-road"
-                                    alt="Tar and Chip Driveway"
+                                    src="/placeholder.svg?height=600&width=800&query=circuit-breaker"
+                                    alt="Electrical Panel"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
@@ -101,9 +100,9 @@ export default function TarAndChipPage() {
             <section className="py-20 bg-secondary text-white">
                 <div className={containerClass}>
                     <div className="text-left mb-16">
-                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Why Choose Tar & Chip?</h2>
+                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Why Upgrade?</h2>
                         <p className="text-white/70 max-w-2xl font-light">
-                            A practical and attractive paving solution.
+                            A modern panel handles today's electrical loads safely and efficiently.
                         </p>
                     </div>
 
@@ -114,9 +113,9 @@ export default function TarAndChipPage() {
                                     <DollarSign className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Affordable</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Increased Safety</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Typically costs significantly less than asphalt or concrete, making it ideal for long driveways or private roads.
+                                        Prevent electrical fires and protect sensitive electronics from power surges.
                                     </p>
                                 </div>
                             </div>
@@ -125,12 +124,12 @@ export default function TarAndChipPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Tractor className="w-6 h-6 text-white" />
+                                    <Clock className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">High Traction</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">More Capacity</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        The rough texture provides excellent grip in rain, snow, and ice, improving safety on steep or winding driveways.
+                                        Support new appliances, EV chargers, and HVAC systems without tripping breakers.
                                     </p>
                                 </div>
                             </div>
@@ -139,12 +138,12 @@ export default function TarAndChipPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Layers className="w-6 h-6 text-white" />
+                                    <Car className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Low Maintenance</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Code Compliance</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Does not require regular sealcoating. Minor cracks are often self-healing in hot weather as the tar softens.
+                                        Ensure your home meets current electrical codes, crucial for insurance and resale value.
                                     </p>
                                 </div>
                             </div>
@@ -156,9 +155,9 @@ export default function TarAndChipPage() {
                                     <CheckCircle2 className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Natural Look</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Reliability</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Blends beautifully with rural landscapes and gardens. Choose from different stone colors to customize the appearance.
+                                        Eliminate flickering lights and power interruptions with a stable electrical supply.
                                     </p>
                                 </div>
                             </div>
@@ -172,7 +171,7 @@ export default function TarAndChipPage() {
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        GO RUSTIC WITH TAR & CHIP
+                        POWER UP YOUR HOME SAFELY
                     </h2>
                     <div className="flex flex-wrap gap-4">
                         <Link href="/contact">

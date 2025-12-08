@@ -36,18 +36,18 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative w-12 h-12 overflow-hidden rounded-sm">
                 <Image
-                  src="/nick.png"
-                  alt="Nuclearnick Construction Logo"
+                  src="/placeholder.svg?height=48&width=48"
+                  alt="Metrolake Logo"
                   fill
                   className="object-contain"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-serif text-2xl font-bold tracking-tighter text-black group-hover:text-primary transition-colors">
-                  NUCLEARNICK
+                <span className="font-serif text-xl font-bold tracking-tighter text-black group-hover:text-primary transition-colors uppercase">
+                  Metrolake
                 </span>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-black/60 font-medium">
-                  Construction
+                <span className="text-[10px] uppercase tracking-[0.2em] text-black/60 font-medium whitespace-nowrap">
+                  Electrical Services
                 </span>
               </div>
             </Link>
@@ -58,17 +58,16 @@ export default function Header() {
             <Link href="/" className={navLinkClass}>Home</Link>
             <Link href="/about" className={navLinkClass}>About</Link>
             <Link href="/services" className={navLinkClass}>Services</Link>
-            <Link href="/projects" className={navLinkClass}>Projects</Link>
             <Link href="/contact" className={navLinkClass}>Contact</Link>
           </nav>
 
           {/* CTA Button & Mobile Toggle */}
           <div className="flex items-center gap-4">
             <div className="hidden lg:flex flex-col items-end mr-4">
-              <a href="tel:+12193588794" className="flex items-center gap-2 text-sm font-bold text-foreground hover:text-primary transition-colors">
-                <Phone className="w-4 h-4" /> (219) 358-8794
+              <a href="tel:+12197460388" className="flex items-center gap-2 text-sm font-bold text-foreground hover:text-primary transition-colors">
+                <Phone className="w-4 h-4" /> (219) 746-0388
               </a>
-              <span className="text-xs text-muted-foreground">24/7 Service (Closed Sun)</span>
+              <span className="text-xs text-muted-foreground">Mon-Fri: 8am-5pm</span>
             </div>
             <Link href="/contact">
               <Button className={`hidden md:flex uppercase tracking-widest font-bold px-6 rounded-none ${buttonColor}`}>

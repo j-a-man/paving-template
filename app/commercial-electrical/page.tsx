@@ -8,13 +8,14 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {
     CheckCircle2,
-    Hammer,
-    AlertTriangle,
+    Building2,
+    Clock,
+    ShieldCheck,
     ArrowRight,
-    Construction
+    HardHat
 } from "lucide-react"
 
-export default function DrivewayRepairPage() {
+export default function CommercialElectricalPage() {
     const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
 
     return (
@@ -26,7 +27,7 @@ export default function DrivewayRepairPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/paving.avif)",
+                        backgroundImage: "url(/electric_image.jpg)",
                     }}
                 >
                     <div className="absolute inset-0 bg-secondary/60" />
@@ -36,10 +37,10 @@ export default function DrivewayRepairPage() {
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div>
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            Driveway Repair
+                            Commercial Electrical
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Restore the safety and appearance of your driveway with expert repair services from Nuclearnick Construction.
+                            Reliable, heavy-duty electrical solutions for businesses in Portage and surrounding areas.
                         </p>
                     </div>
                 </div>
@@ -52,14 +53,14 @@ export default function DrivewayRepairPage() {
                         {/* Text Content */}
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                                Don't Let Cracks <span className="text-primary">Spread</span>
+                                Power Your <span className="text-primary">Business</span>
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    Small cracks and potholes can quickly turn into major problems if left untreated. Water infiltration, freeze-thaw cycles, and heavy traffic can all accelerate the deterioration of your driveway.
+                                    Modern businesses rely on complex electrical systems to operate efficiently. From lighting and data cabling to heavy machinery power, your electrical infrastructure is the backbone of your operations.
                                 </p>
                                 <p>
-                                    At Nuclearnick Construction, we offer comprehensive driveway repair services to extend the life of your pavement. From crack filling and patching to resurfacing and drainage correction, we have the solutions to restore your driveway's integrity and curb appeal.
+                                    Metrolake Electrical Services provides comprehensive commercial electrical services. We understand the unique challenges of commercial projects, including tight schedules and the need to minimize disruption to your business. Our experienced team works efficiently to deliver high-quality results on time.
                                 </p>
                             </div>
 
@@ -69,13 +70,13 @@ export default function DrivewayRepairPage() {
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Hot Crack Filling</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Code Compliant</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Pothole Patching</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Minimal Downtime</span>
                                     </div>
                                 </div>
                             </div>
@@ -86,8 +87,8 @@ export default function DrivewayRepairPage() {
                             <div className="absolute inset-0 border-8 border-secondary z-10 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
                             <div className="absolute inset-0 z-20 shadow-2xl overflow-hidden">
                                 <Image
-                                    src="/placeholder.svg?height=600&width=800&query=driveway-repair"
-                                    alt="Driveway Repair"
+                                    src="/placeholder.svg?height=600&width=800&query=commercial-electrician"
+                                    alt="Commercial Electrical Project"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
@@ -97,13 +98,13 @@ export default function DrivewayRepairPage() {
                 </div>
             </section>
 
-            {/* ================= SIGNS GRID ================= */}
+            {/* ================= BENEFITS GRID ================= */}
             <section className="py-20 bg-secondary text-white">
                 <div className={containerClass}>
                     <div className="text-left mb-16">
-                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Signs You Need Repair</h2>
+                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Commercial Services</h2>
                         <p className="text-white/70 max-w-2xl font-light">
-                            Watch out for these common issues that indicate your driveway needs attention.
+                            Comprehensive solutions for every scale of business.
                         </p>
                     </div>
 
@@ -111,12 +112,12 @@ export default function DrivewayRepairPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <AlertTriangle className="w-6 h-6 text-white" />
+                                    <Building2 className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Alligator Cracking</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Office & Retail</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Interconnected cracks resembling alligator skin, usually indicating structural failure requiring patching or resurfacing.
+                                        Complete wiring, lighting design, and maintenance for retail centers, offices, and restaurants.
                                     </p>
                                 </div>
                             </div>
@@ -125,12 +126,12 @@ export default function DrivewayRepairPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Construction className="w-6 h-6 text-white" />
+                                    <HardHat className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Potholes</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Industrial Power</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Holes in the pavement caused by water infiltration and traffic, creating safety hazards and potential vehicle damage.
+                                        Heavy-duty conduit running, machinery hookups, and 3-phase power solutions.
                                     </p>
                                 </div>
                             </div>
@@ -139,12 +140,12 @@ export default function DrivewayRepairPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Hammer className="w-6 h-6 text-white" />
+                                    <ShieldCheck className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Depressions</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Safety & Compliance</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Sunken areas that collect water (birdbaths), leading to further deterioration and ice hazards in winter.
+                                        We ensure all work meets NEC codes and can perform safety audits and bring old systems up to code.
                                     </p>
                                 </div>
                             </div>
@@ -153,12 +154,12 @@ export default function DrivewayRepairPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <CheckCircle2 className="w-6 h-6 text-white" />
+                                    <Clock className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Fading & Raveling</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Efficient Scheduling</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Loss of aggregate and binder, making the surface rough and loose. Sealcoating can often arrest this process.
+                                        We offer flexible scheduling, including off-hours, to complete your project with minimal impact on your business.
                                     </p>
                                 </div>
                             </div>
@@ -172,7 +173,7 @@ export default function DrivewayRepairPage() {
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        SAVE YOUR DRIVEWAY
+                        PARTNER WITH THE PROS
                     </h2>
                     <div className="flex flex-wrap gap-4">
                         <Link href="/contact">

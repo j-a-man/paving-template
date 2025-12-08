@@ -8,12 +8,13 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {
     CheckCircle2,
-    Clock,
-    DollarSign,
-    Car
+    Shield,
+    Sun,
+    Droplets,
+    ArrowRight
 } from "lucide-react"
 
-export default function AsphaltPavingPage() {
+export default function GroundSetupPage() {
     const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
 
     return (
@@ -25,7 +26,7 @@ export default function AsphaltPavingPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/paving.avif)",
+                        backgroundImage: "url(/electric_image.jpg)",
                     }}
                 >
                     <div className="absolute inset-0 bg-secondary/60" />
@@ -35,10 +36,10 @@ export default function AsphaltPavingPage() {
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div>
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            Asphalt Paving Services
+                            Electrical Grounding Setup
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Nuclearnick Construction delivers superior asphalt paving solutions for residential and commercial properties in Indiana.
+                            Protect your home and appliances from power surges and electrical hazards with professional grounding systems.
                         </p>
                     </div>
                 </div>
@@ -51,14 +52,14 @@ export default function AsphaltPavingPage() {
                         {/* Text Content */}
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                                The Standard for <span className="text-primary">Quality Surfaces</span>
+                                Essential Protection for <span className="text-primary">Your Home</span>
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    At Nuclearnick Construction, we specialize in high-quality asphalt paving for both residential and commercial properties. Whether you need a new driveway, a parking lot resurfaced, or a private road paved, our team has the expertise and equipment to get the job done right.
+                                    A proper grounding system acts as a safety valve for your electrical system. It directs excess electricity safely into the ground during power surges or lightning strikes, preventing damage to your appliances and reducing shock hazards.
                                 </p>
                                 <p>
-                                    We use only industrial-grade bituminous mixtures to ensure a smooth, durable finish. Our rigorous process—from sub-base grading to the final roll—guarantees longevity and curb appeal that adds real value to your property.
+                                    Metrolake Electrical Services installs and inspects grounding systems to ensure they meet the latest safety codes. Don't risk costly damage—ensure your property is grounded effectively.
                                 </p>
                             </div>
 
@@ -68,13 +69,13 @@ export default function AsphaltPavingPage() {
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Hot Mix Asphalt</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Surge Protection</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Proper Drainage</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Code Compliant</span>
                                     </div>
                                 </div>
                             </div>
@@ -85,8 +86,8 @@ export default function AsphaltPavingPage() {
                             <div className="absolute inset-0 border-8 border-secondary z-10 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
                             <div className="absolute inset-0 z-20 shadow-2xl overflow-hidden">
                                 <Image
-                                    src="/paving1.jpg"
-                                    alt="Freshly Paved Asphalt"
+                                    src="/placeholder.svg?height=600&width=800&query=electrical-grounding-rod"
+                                    alt="Ground Setup"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
@@ -100,9 +101,9 @@ export default function AsphaltPavingPage() {
             <section className="py-20 bg-secondary text-white">
                 <div className={containerClass}>
                     <div className="text-left mb-16">
-                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Why Choose Asphalt?</h2>
+                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Why is Grounding Important?</h2>
                         <p className="text-white/70 max-w-2xl font-light">
-                            Asphalt remains the most popular paving material for good reason.
+                            Safety is the number one priority for any electrical system.
                         </p>
                     </div>
 
@@ -110,12 +111,12 @@ export default function AsphaltPavingPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <DollarSign className="w-6 h-6 text-white" />
+                                    <Shield className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Cost-Effective</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Shock Prevention</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Significantly lower installation costs compared to concrete, with easier and cheaper maintenance over its lifespan.
+                                        Reduces the risk of electrical shock by providing a safe path for stray voltage.
                                     </p>
                                 </div>
                             </div>
@@ -124,12 +125,12 @@ export default function AsphaltPavingPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Clock className="w-6 h-6 text-white" />
+                                    <Droplets className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Quick Installation</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Surge Protection</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Asphalt projects can often be completed in 1-2 days, and the surface cures quickly, allowing for use much sooner than concrete.
+                                        Protects expensive electronics and appliances from voltage spikes and lightning.
                                     </p>
                                 </div>
                             </div>
@@ -138,12 +139,12 @@ export default function AsphaltPavingPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Car className="w-6 h-6 text-white" />
+                                    <Shield className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Smooth & Quiet</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Voltage Stabilization</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Provides a smoother drive with reduced noise pollution, and its dark color reduces glare for safer driving.
+                                        Ensures voltage levels remain stable, helping your electrical system run efficiently.
                                     </p>
                                 </div>
                             </div>
@@ -155,9 +156,9 @@ export default function AsphaltPavingPage() {
                                     <CheckCircle2 className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Easy Maintenance</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Compliance</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Cracks and holes can be easily filled and sealed, extending the life of the pavement without full replacement.
+                                        Meets National Electrical Code (NEC) requirements for home safety.
                                     </p>
                                 </div>
                             </div>
@@ -171,7 +172,7 @@ export default function AsphaltPavingPage() {
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        READY TO PAVE YOUR WAY?
+                        PROTECT YOUR HOME WITH GROUNDING
                     </h2>
                     <div className="flex flex-wrap gap-4">
                         <Link href="/contact">

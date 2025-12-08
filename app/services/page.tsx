@@ -21,46 +21,46 @@ export default function ServicesPage() {
 
     const services = [
         {
-            title: "Asphalt Paving",
-            description: "Premium asphalt installation for driveways, parking lots, and roads. Durable, smooth, and built to last.",
-            icon: Truck,
-            link: "/asphalt-paving",
-            image: "/paving1.jpg"
-        },
-        {
-            title: "Commercial Paving",
-            description: "Heavy-duty paving solutions for businesses, industrial complexes, and municipalities. ADA compliant.",
+            title: "Breaker Box",
+            description: "We install, repair, and upgrade panels to ensure reliable, modern electrical service.",
             icon: Building2,
-            link: "/commercial-paving",
-            image: "/placeholder.svg?height=600&width=800&query=commercial-paving"
+            link: "/breaker-box",
+            image: "/placeholder.svg?height=600&width=800&query=circuit-breaker-panel"
         },
         {
-            title: "Driveway Repair",
-            description: "Expert repair services including crack filling, pothole patching, and resurfacing to restore your driveway.",
-            icon: Hammer,
-            link: "/driveway-repair",
-            image: "/placeholder.svg?height=600&width=800&query=driveway-repair"
-        },
-        {
-            title: "Sealcoating",
-            description: "Protect your pavement from UV rays, water, and chemicals while restoring its rich black appearance.",
+            title: "Ground Setup",
+            description: "We install proper grounding systems to protect homes and electrical equipment from power surges.",
             icon: Droplets,
-            link: "/sealcoating",
-            image: "/placeholder.svg?height=600&width=800&query=sealcoating"
+            link: "/ground-setup",
+            image: "/placeholder.svg?height=600&width=800&query=electrical-grounding"
         },
         {
-            title: "Tar & Chip",
-            description: "A cost-effective, rustic alternative to asphalt. Excellent traction and low maintenance.",
-            icon: Tractor,
-            link: "/tar-and-chip",
-            image: "/placeholder.svg?height=600&width=800&query=tar-and-chip-road"
+            title: "Electric Meter Box",
+            description: "We install and replace electric meter boxes to keep your power connection safe and up to code.",
+            icon: Hammer,
+            link: "/electric-meter-box",
+            image: "/placeholder.svg?height=600&width=800&query=electric-meter"
         },
         {
-            title: "Residential Services",
-            description: "Complete paving solutions for homeowners, from new installations to extensions and repairs.",
+            title: "Commercial Electrical",
+            description: "Reliable electrical solutions for your business. From rewiring to panel upgrades.",
+            icon: Truck,
+            link: "/commercial-electrical",
+            image: "/placeholder.svg?height=600&width=800&query=commercial-electrician"
+        },
+        {
+            title: "Real Estate Inspections",
+            description: "We offer real estate inspections to make sure your property is ready and secure.",
             icon: Home,
-            link: "/asphalt-paving", // Linking to main paving page for now
-            image: "/placeholder.svg?height=600&width=800&query=residential-driveway"
+            link: "/inspections",
+            image: "/placeholder.svg?height=600&width=800&query=home-inspection"
+        },
+        {
+            title: "Safe Rewiring",
+            description: "We handle complete rewiring projects safely and professionally for older homes and renovations.",
+            icon: Droplets,
+            link: "/breaker-box", // Fallback or separate page
+            image: "/placeholder.svg?height=600&width=800&query=electrical-wiring"
         }
     ]
 
@@ -73,7 +73,7 @@ export default function ServicesPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/paving.avif)",
+                        backgroundImage: "url(/electric_image.jpg)",
                     }}
                 >
                     <div className="absolute inset-0 bg-secondary/60" />
@@ -86,7 +86,7 @@ export default function ServicesPage() {
                             Our Services
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Comprehensive paving and construction solutions tailored to your needs. Quality you can trust, from Nuclearnick Construction.
+                            Comprehensive electrical solutions tailored to your needs. Quality you can trust, from Metrolake Electrical Services.
                         </p>
                     </div>
                 </div>

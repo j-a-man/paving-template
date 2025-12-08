@@ -11,8 +11,8 @@
   --card-foreground: oklch(0.13 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.13 0 0);
-  --primary: #e07b4c;
-  --primary-foreground: oklch(1 0 0);
+  --primary: #e2b918;
+  --primary-foreground: oklch(0.13 0 0);
   --secondary: #053870;
   --secondary-foreground: oklch(1 0 0);
   --muted: oklch(0.96 0 0);
@@ -23,8 +23,8 @@
   --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.87 0 0);
   --input: oklch(0.92 0 0);
-  --ring: #e07b4c;
-  --chart-1: #e07b4c;
+  --ring: #FACC15;
+  --chart-1: #FACC15;
   --chart-2: #053870;
   --chart-3: oklch(0.5 0 0);
   --chart-4: oklch(0.65 0.18 45);
@@ -32,12 +32,12 @@
   --radius: 0rem;
   --sidebar: oklch(0.98 0 0);
   --sidebar-foreground: oklch(0.13 0 0);
-  --sidebar-primary: #e07b4c;
-  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-primary: #FACC15;
+  --sidebar-primary-foreground: oklch(0.13 0 0);
   --sidebar-accent: oklch(0.96 0 0);
   --sidebar-accent-foreground: oklch(0.13 0 0);
   --sidebar-border: oklch(0.92 0 0);
-  --sidebar-ring: #e07b4c;
+  --sidebar-ring: #FACC15;
 }
 
 .dark {
@@ -47,8 +47,8 @@
   --card-foreground: oklch(0.98 0 0);
   --popover: #053870;
   --popover-foreground: oklch(0.98 0 0);
-  --primary: #e07b4c;
-  --primary-foreground: oklch(1 0 0);
+  --primary: #FACC15;
+  --primary-foreground: oklch(0.13 0 0);
   --secondary: #042d5a;
   /* Slightly darker for contrast if needed, or same blue */
   --secondary-foreground: oklch(0.98 0 0);
@@ -60,20 +60,20 @@
   --destructive-foreground: oklch(0.98 0 0);
   --border: #064080;
   --input: #064080;
-  --ring: #e07b4c;
-  --chart-1: #e07b4c;
+  --ring: #FACC15;
+  --chart-1: #FACC15;
   --chart-2: oklch(0.98 0 0);
   --chart-3: oklch(0.4 0 0);
   --chart-4: oklch(0.7 0.18 45);
   --chart-5: oklch(0.8 0.15 60);
   --sidebar: #053870;
   --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: #e07b4c;
-  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-primary: #FACC15;
+  --sidebar-primary-foreground: oklch(0.13 0 0);
   --sidebar-accent: #042d5a;
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: #064080;
-  --sidebar-ring: #e07b4c;
+  --sidebar-ring: #FACC15;
 }
 
 @theme inline {

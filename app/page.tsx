@@ -39,7 +39,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
           style={{
-            backgroundImage: "url(/paving.avif)",
+            backgroundImage: "url(/electric_image.jpg)",
           }}
         >
           {/* Dark Overlay */}
@@ -49,10 +49,10 @@ export default function Home() {
         <div className={`${containerClass} relative z-10 py-20 text-left`}>
           <div className="max-w-3xl">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-              Nuclearnick Construction
+              Energy you can trust.<br />Service you Deserve.
             </h1>
             <p className="text-base md:text-lg mb-8 text-white/90 leading-relaxed max-w-xl drop-shadow-md">
-              We have more than 14 years of experience providing quality paving service for both Residential and Commercial Areas.
+              At Metrolake Electrical Services, we bring reliable electrical solutions to your home and business. Safe, powered, and up to date.
             </p>
             <div>
               <Link href="/contact">
@@ -78,13 +78,13 @@ export default function Home() {
             <div className="max-w-xl">
               {/* Exact Headline Style from Image */}
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] mb-6 text-foreground tracking-tight">
-                Expert Construction. <br />
-                Built for <br />
-                <span className="text-primary">Indiana.</span>
+                Metrolake <br />
+                Electrical <br />
+                <span className="text-primary">Services.</span>
               </h2>
 
               <p className="text-muted-foreground text-lg leading-relaxed mb-8 font-light">
-                Nuclearnick Construction is Indiana's premier choice for residential and commercial paving and construction services. We combine years of experience with top-tier materials to deliver results that stand the test of time.
+                From rewiring to panel upgrades, our team is here to keep your property safe, powered, and up to date. With us, you get honest work, timely service, and the care you deserve.
               </p>
 
               {/* Exact Button Style from Image */}
@@ -137,10 +137,10 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-secondary text-white">
         <div className={`${containerClass} mb-12`}>
           <h2 className="text-4xl md:text-5xl font-normal mb-4 text-left">
-            Our Paving Services
+            Our Services
           </h2>
           <p className="text-white/80 max-w-2xl text-left text-lg">
-            High-quality, reliable paving solutions tailored to your specific needs.
+            We provide safe and reliable electrical solutions for your home or business.
           </p>
         </div>
 
@@ -148,34 +148,34 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
-              <Truck className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-normal mb-4 font-serif">Asphalt Paving</h3>
+              <Layers className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
+              <h3 className="text-2xl font-normal mb-4 font-serif">Breaker Box</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
-                We provide expert asphalt paving for driveways, parking lots, and roads using top-grade materials for long-lasting results.
+                We install, repair, and upgrade panels to ensure reliable, modern electrical service.
               </p>
-              <Link href="/asphalt-paving" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/breaker-box" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
             {/* Card 2 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
-              <Layers className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-normal mb-4 font-serif">Sealcoating</h3>
+              <Orbit className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
+              <h3 className="text-2xl font-normal mb-4 font-serif">Ground Setup</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
-                Protect your investment with our professional sealcoating services, designed to extend the life of your pavement.
+                We install proper grounding systems to protect homes and electrical equipment from power surges.
               </p>
-              <Link href="/sealcoating" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/ground-setup" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
             {/* Card 3 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
-              <Orbit className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-normal mb-4 font-serif">Tar and Chip</h3>
+              <Truck className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
+              <h3 className="text-2xl font-normal mb-4 font-serif">Electric Meter Box</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
-                A cost-effective and durable alternative to traditional asphalt, providing a rustic look with excellent traction.
+                We install and replace electric meter boxes to keep your power connection safe and up to code.
               </p>
-              <Link href="/tar-and-chip" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/electric-meter-box" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>

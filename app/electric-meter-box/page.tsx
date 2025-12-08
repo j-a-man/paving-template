@@ -8,13 +8,13 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {
     CheckCircle2,
-    Shield,
-    Sun,
-    Droplets,
+    Tractor,
+    DollarSign,
+    Layers,
     ArrowRight
 } from "lucide-react"
 
-export default function SealcoatingPage() {
+export default function MeterBoxPage() {
     const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
 
     return (
@@ -26,7 +26,7 @@ export default function SealcoatingPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/paving.avif)",
+                        backgroundImage: "url(/electric_image.jpg)",
                     }}
                 >
                     <div className="absolute inset-0 bg-secondary/60" />
@@ -36,10 +36,10 @@ export default function SealcoatingPage() {
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div>
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            Asphalt Sealcoating
+                            Electric Meter Box Services
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Protect your investment and restore that rich, black finish with professional sealcoating from Nuclearnick Construction.
+                            Ensure accurate readings and safe power delivery with professional meter box installation and replacement.
                         </p>
                     </div>
                 </div>
@@ -52,14 +52,14 @@ export default function SealcoatingPage() {
                         {/* Text Content */}
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                                Protection Against <span className="text-primary">The Elements</span>
+                                Reliable Connection, <span className="text-primary">Safe Power</span>
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    Asphalt is durable, but it's not invincible. UV rays, water, oil spills, and freeze-thaw cycles all contribute to oxidation and deterioration. Sealcoating acts as a protective barrier, doubling the life of your pavement.
+                                    The electric meter box is the gateway for electricity entering your home. Old, damaged, or obsolete meter boxes can be hazardous and may not meet current utility standards. Metrolake Electrical Services provides expert installation and replacement to keep your power connection safe and up to code.
                                 </p>
                                 <p>
-                                    Nuclearnick Construction uses premium-grade sealers that replenish the binder in your asphalt, locking out moisture and chemicals. Not only does it protect, but it also restores the deep black color, making your property look brand new.
+                                    Whether you're upgrading your service, renovating your home, or need to replace a damaged enclosure, our team works quickly and professionally to minimize downtime.
                                 </p>
                             </div>
 
@@ -69,13 +69,13 @@ export default function SealcoatingPage() {
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Brush Applied</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Utility Coordinated</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Premium Sealer</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Weatherproof</span>
                                     </div>
                                 </div>
                             </div>
@@ -86,8 +86,8 @@ export default function SealcoatingPage() {
                             <div className="absolute inset-0 border-8 border-secondary z-10 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
                             <div className="absolute inset-0 z-20 shadow-2xl overflow-hidden">
                                 <Image
-                                    src="/placeholder.svg?height=600&width=800&query=sealcoating"
-                                    alt="Sealcoating Application"
+                                    src="/placeholder.svg?height=600&width=800&query=electric-meter-box"
+                                    alt="Electric Meter Box"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
@@ -101,9 +101,9 @@ export default function SealcoatingPage() {
             <section className="py-20 bg-secondary text-white">
                 <div className={containerClass}>
                     <div className="text-left mb-16">
-                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Benefits of Sealing</h2>
+                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Why Upgrade Your Meter Box?</h2>
                         <p className="text-white/70 max-w-2xl font-light">
-                            Regular maintenance is key to longevity.
+                            Safety and compliance are critical for your power supply.
                         </p>
                     </div>
 
@@ -111,12 +111,12 @@ export default function SealcoatingPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Sun className="w-6 h-6 text-white" />
+                                    <DollarSign className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">UV Protection</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Code Compliance</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Blocks harmful sun rays that dry out the asphalt binder, preventing brittleness and cracking.
+                                        Ensure your meter socket meets the latest requirements from your local utility company.
                                     </p>
                                 </div>
                             </div>
@@ -125,12 +125,12 @@ export default function SealcoatingPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Droplets className="w-6 h-6 text-white" />
+                                    <Tractor className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Water Resistance</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Durability</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Seals the porous surface, preventing water penetration that leads to freeze-thaw damage and potholes.
+                                        New enclosures are built to withstand harsh weather, preventing corrosion and water ingress.
                                     </p>
                                 </div>
                             </div>
@@ -139,12 +139,12 @@ export default function SealcoatingPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Shield className="w-6 h-6 text-white" />
+                                    <Layers className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Oil & Gas Resistance</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Safety</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Creates a barrier against chemical spills that can dissolve asphalt, making cleanup easier.
+                                        Eliminate loose connections and overheating risks associated with aging meter sockets.
                                     </p>
                                 </div>
                             </div>
@@ -156,9 +156,9 @@ export default function SealcoatingPage() {
                                     <CheckCircle2 className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Enhanced Appearance</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Higher Capacity</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Restores the slate-black color of new asphalt, dramatically improving curb appeal for homes and businesses.
+                                        Supports upgrades to 200-amp service or higher to handle modern electrical loads.
                                     </p>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@ export default function SealcoatingPage() {
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        PROTECT YOUR PAVEMENT
+                        SAFE AND ACCURATE POWER
                     </h2>
                     <div className="flex flex-wrap gap-4">
                         <Link href="/contact">

@@ -27,7 +27,7 @@ export default function AboutPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/paving.avif)",
+                        backgroundImage: "url(/electric_image.jpg)",
                     }}
                 >
                     {/* Dark Overlay */}
@@ -38,10 +38,10 @@ export default function AboutPage() {
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div> {/* Decorative line */}
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            About Nuclearnick Construction
+                            About Metrolake Electrical Services
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Building trust, quality pavement, and lasting relationships in Indiana since 2010.
+                            Serving Portage and surrounding communities with safe and reliable electrical work for over 15 years.
                         </p>
                     </div>
                 </div>
@@ -54,25 +54,25 @@ export default function AboutPage() {
                         {/* Left: Content */}
                         <div>
                             <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] mb-8 text-foreground">
-                                A Legacy of <br />
-                                <span className="text-primary">Excellence.</span>
+                                Friendly, Cooperative, <br />
+                                <span className="text-primary">Reliable.</span>
                             </h2>
 
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    Hi, I'm Nicholas Ristic. I've been working in construction since I was 14 years old—that's nearly 14 years of hands-on experience. My expertise covers everything from plumbing, electrical, and drywall to flooring, carpentry, and roofing.
+                                    For over 15 years, Metrolake Electrical Services has been proudly serving Portage and the surrounding communities. From replacing meters and installing new panels to complete rewiring and inspections, we handle every job with care and professionalism.
                                 </p>
                                 <p>
-                                    I also specialize in landscaping and deck building—you name it, I can do it. After years of honing my craft, I've launched my own fully licensed business, Nuclearnick Construction, and I'm excited to bring my dedication and quality workmanship to your next project.
+                                    Our mission is simple — to provide honest, affordable, and high-quality services that keep your home or business running smoothly. We believe in doing the job right the first time, on schedule, and with your safety as our top priority.
                                 </p>
                                 <p>
-                                    I just got my business completely legit and I'm trying to get my name out there by providing the best possible service to my community.
+                                    Whether it’s an upgrade, repair, or a full inspection, we make the process easy and worry-free. With Metrolake, you’re choosing experience, trust, and a team that treats your property like it’s our own.
                                 </p>
                             </div>
 
                             <div className="mt-10">
                                 <div className="font-serif text-xl italic text-foreground">
-                                    - Nicholas Ristic, Founder
+                                    - Herman R. Perez, Contact Person
                                 </div>
                             </div>
                         </div>
@@ -118,27 +118,27 @@ export default function AboutPage() {
                         {/* Value 2 */}
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <Clock className="w-10 h-10 text-primary mb-6 group-hover:scale-110 transition-transform" />
-                            <h3 className="text-xl font-bold text-white mb-3">14+ Years Exp.</h3>
+                            <h3 className="text-xl font-bold text-white mb-3">15+ Years Exp.</h3>
                             <p className="text-white/60 text-sm leading-relaxed">
-                                A decade and a half of hands-on experience means we've seen it all and know how to solve it.
+                                Trusted by the community for over 15 years. We have the experience to handle any electrical challenge.
                             </p>
                         </Card>
 
                         {/* Value 3 */}
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <Award className="w-10 h-10 text-primary mb-6 group-hover:scale-110 transition-transform" />
-                            <h3 className="text-xl font-bold text-white mb-3">Quality Materials</h3>
+                            <h3 className="text-xl font-bold text-white mb-3">High Quality</h3>
                             <p className="text-white/60 text-sm leading-relaxed">
-                                We never cut corners. We use only industrial-grade asphalt and sealants for longevity.
+                                We believe every project deserves careful attention. Safety, precision, and lasting results.
                             </p>
                         </Card>
 
                         {/* Value 4 */}
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <FileCheck className="w-10 h-10 text-primary mb-6 group-hover:scale-110 transition-transform" />
-                            <h3 className="text-xl font-bold text-white mb-3">Free Estimates</h3>
+                            <h3 className="text-xl font-bold text-white mb-3">Trusted Services</h3>
                             <p className="text-white/60 text-sm leading-relaxed">
-                                Transparent pricing with no hidden fees. Get a detailed quote before we start any work.
+                                Our customers trust us for safe, efficient, and dependable work that keeps their property running.
                             </p>
                         </Card>
                     </div>

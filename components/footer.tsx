@@ -15,16 +15,16 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-6 group">
               <div className="relative w-10 h-10 overflow-hidden rounded-sm">
                 <Image
-                  src="/nick.png"
-                  alt="Nuclearnick Construction Logo"
+                  src="/placeholder.svg?height=40&width=40"
+                  alt="Metrolake Logo"
                   fill
                   className="object-contain"
                 />
               </div>
-              <span className="font-bold text-xl tracking-wider text-white group-hover:text-primary transition-colors">Nuclearnick Construction</span>
+              <span className="font-bold text-lg tracking-wider text-white group-hover:text-primary transition-colors uppercase">Metrolake Electrical</span>
             </Link>
             <p className="text-white/70 leading-relaxed mb-6">
-              Serving Indiana with top-tier paving and construction services. Quality workmanship guaranteed.
+              Energy you can trust. Service you Deserve. Reliable electrical solutions for your home and business.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-white/5 flex items-center justify-center hover:bg-primary transition-colors"><Facebook className="w-5 h-5" /></a>
@@ -37,11 +37,11 @@ export default function Footer() {
           <div>
             <h3 className="font-serif text-2xl font-bold mb-6">Our Services</h3>
             <ul className="space-y-4">
-              <li><Link href="/asphalt-paving" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Asphalt Paving</Link></li>
-              <li><Link href="/sealcoating" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Sealcoating</Link></li>
-              <li><Link href="/tar-and-chip" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Tar & Chip</Link></li>
-              <li><Link href="/commercial-paving" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Commercial Paving</Link></li>
-              <li><Link href="/driveway-repair" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Driveway Repair</Link></li>
+              <li><Link href="/breaker-box" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Breaker Box</Link></li>
+              <li><Link href="/ground-setup" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Ground Setup</Link></li>
+              <li><Link href="/electric-meter-box" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Electric Meter Box</Link></li>
+              <li><Link href="/commercial-electrical" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Commercial Electrical</Link></li>
+              <li><Link href="/inspections" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Real Estate Inspections</Link></li>
             </ul>
           </div>
 
@@ -52,7 +52,6 @@ export default function Footer() {
               <li><Link href="/" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Home</Link></li>
               <li><Link href="/about" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> About Us</Link></li>
               <li><Link href="/services" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Services</Link></li>
-              <li><Link href="/projects" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Projects</Link></li>
               <li><Link href="/contact" className="text-white/70 hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4 text-primary" /> Contact Us</Link></li>
             </ul>
           </div>
@@ -63,19 +62,19 @@ export default function Footer() {
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">Indiana</span>
+                <span className="text-white/70">5226 Stone Avenue, Portage, IN 46368</span>
               </li>
               <li className="flex items-start gap-4">
                 <Phone className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">(219) 358-8794</span>
+                <span className="text-white/70">(219) 746-0388</span>
               </li>
               <li className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">risticnicholas@yahoo.com</span>
+                <span className="text-white/70">perezherman@aol.com</span>
               </li>
               <li className="flex items-start gap-4">
                 <Clock className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">24/7 Service (Closed Sunday)</span>
+                <span className="text-white/70">Mon-Fri: 8am-5pm</span>
               </li>
             </ul>
           </div>
@@ -84,7 +83,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/50 text-sm">
-            © {new Date().getFullYear()} Nuclearnick Construction. All rights reserved.
+            © {new Date().getFullYear()} Metrolake Electrical Services. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-white/50">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>

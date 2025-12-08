@@ -30,7 +30,7 @@ export default function ContactPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/paving.avif)",
+                        backgroundImage: "url(/electric_image.jpg)",
                     }}
                 >
                     <div className="absolute inset-0 bg-secondary/60" />
@@ -38,10 +38,10 @@ export default function ContactPage() {
 
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-4 tracking-tight text-white drop-shadow-lg font-normal">
-                        Contact Us
+                        Contact Metrolake
                     </h1>
                     <p className="text-lg text-white/90 max-w-xl font-light">
-                        Get in touch for a free, detailed estimate or consultation.
+                        Get in touch for honest work and timely service.
                     </p>
                 </div>
             </section>
@@ -96,10 +96,11 @@ export default function ContactPage() {
                                             <SelectValue placeholder="Select a Service" />
                                         </SelectTrigger>
                                         <SelectContent className="rounded-none border-gray-200">
-                                            <SelectItem value="driveway">Residential Driveway</SelectItem>
-                                            <SelectItem value="commercial">Commercial Paving</SelectItem>
-                                            <SelectItem value="sealcoating">Sealcoating</SelectItem>
-                                            <SelectItem value="repair">Driveway Repair</SelectItem>
+                                            <SelectItem value="breaker-box">Breaker Box / Panel Upgrade</SelectItem>
+                                            <SelectItem value="ground-setup">Ground Setup</SelectItem>
+                                            <SelectItem value="meter-box">Electric Meter Box</SelectItem>
+                                            <SelectItem value="inspection">Real Estate Inspection</SelectItem>
+                                            <SelectItem value="rewiring">Rewiring</SelectItem>
                                             <SelectItem value="other">Other</SelectItem>
                                         </SelectContent>
                                     </Select>
@@ -135,7 +136,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Address</h4>
                                             <p className="text-white font-light text-lg leading-relaxed">
-                                                Indiana
+                                                5226 Stone Avenue,<br />Portage, IN 46368
                                             </p>
                                         </div>
                                     </div>
@@ -147,7 +148,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Phone</h4>
                                             <p className="text-white font-light text-lg leading-relaxed">
-                                                (219) 358-8794
+                                                (219) 746-0388
                                             </p>
                                         </div>
                                     </div>
@@ -159,7 +160,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Email</h4>
                                             <p className="text-white font-light text-lg leading-relaxed">
-                                                risticnicholas@yahoo.com
+                                                perezherman@aol.com
                                             </p>
                                         </div>
                                     </div>
@@ -172,11 +173,11 @@ export default function ContactPage() {
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Business Hours</h4>
                                             <div className="text-white font-light text-sm leading-relaxed space-y-2">
                                                 <div className="flex justify-between w-56 border-b border-white/10 pb-1">
-                                                    <span>Mon - Sat:</span>
-                                                    <span>24 Hours</span>
+                                                    <span>Mon - Fri:</span>
+                                                    <span>8:00 AM – 5:00 PM</span>
                                                 </div>
                                                 <div className="flex justify-between w-56 text-white/50 pt-1">
-                                                    <span>Sunday:</span>
+                                                    <span>Sat & Sun:</span>
                                                     <span>Closed</span>
                                                 </div>
                                             </div>
@@ -190,7 +191,7 @@ export default function ContactPage() {
                                 <p className="text-white/60 text-sm mb-4">
                                     Need immediate assistance? Call our emergency line 24/7.
                                 </p>
-                                <a href="tel:+12193588794" className="text-xl font-bold text-white hover:text-primary transition-colors flex items-center gap-2">
+                                <a href="tel:+12197460388" className="text-xl font-bold text-white hover:text-primary transition-colors flex items-center gap-2">
                                     Call Now <span className="text-primary text-2xl">→</span>
                                 </a>
                             </div>
@@ -204,7 +205,7 @@ export default function ContactPage() {
                 <div className={`${containerClass} text-center`}>
                     <h2 className="text-2xl font-bold mb-4 text-secondary">Already a Customer?</h2>
                     <p className="text-muted-foreground mb-6">
-                        We'd love to hear about your experience with Nuclearnick Construction.
+                        We'd love to hear about your experience with Metrolake Electrical Services.
                     </p>
                     <Link href="/review">
                         <Button variant="outline" className="bg-white border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">

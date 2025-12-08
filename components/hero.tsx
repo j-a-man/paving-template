@@ -10,7 +10,8 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: "url(/placeholder.svg?height=800&width=1600&query=asphalt-paving-roller-construction)",
+          // The leading slash '/' tells it to look in the public folder
+          backgroundImage: "url('/electric_image.jpg')",
         }}
       >
         {/* Dark Overlay to match the reference image's contrast */}

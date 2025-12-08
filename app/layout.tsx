@@ -12,8 +12,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Nuclearnick Construction | Premier Paving & Construction Services",
-  description: "Nuclearnick Construction offers top-tier paving and construction services in Indiana. Residential and commercial solutions available 24/7.",
+  title: "Metrolake Electrical Services | Energy you can trust",
+  description: "Reliable electrical solutions for your home and business. From rewiring to panel upgrades, we keep your property safe and powered.",
 }
 
 export default function RootLayout({

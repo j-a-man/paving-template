@@ -16,30 +16,23 @@ import { Button } from "react-day-picker"
 const reviews = [
     {
         id: 1,
-        name: "Sarah Jenkins",
+        name: "Pam R.",
         role: "Homeowner",
-        content: "Nuclearnick Construction transformed our driveway! The team was professional, efficient, and the quality of work is outstanding. Highly recommend!",
+        content: "Difficult job but it was handled expertly and everything was explained to me. Very polite. Very good value for the money. Would hire again.",
         rating: 5,
     },
     {
         id: 2,
-        name: "Michael Ross",
-        role: "Property Manager",
-        content: "We hired Nuclearnick for a large commercial parking lot project. They finished on time and under budget. The new pavement looks fantastic.",
+        name: "Frank S.",
+        role: "Homeowner",
+        content: "Rob was the best electrician to work in my house. He listened carefully to my requests, brought the materials in, did the work to my specifications, and cleaned up.",
         rating: 5,
     },
     {
         id: 3,
-        name: "David Miller",
-        role: "Business Owner",
-        content: "Great experience from start to finish. The crew was polite and cleaned up perfectly. Our new tar and chip road is exactly what we wanted.",
-        rating: 5,
-    },
-    {
-        id: 4,
-        name: "Emily Chen",
+        name: "Sarah P.",
         role: "Homeowner",
-        content: "I was impressed by their attention to detail. They fixed drainage issues we've had for years. Thank you Nuclearnick Construction!",
+        content: "Directly connected with the service and they answered the phone! They were able to come out in hours. Appreciated the customer service!",
         rating: 5,
     },
 ]
@@ -50,10 +43,10 @@ export default function ReviewSection() {
             <div className="container mx-auto px-6 md:px-24 lg:px-40">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
-                        What Our Clients <span className="text-primary">Say</span>
+                        What Our Customers <span className="text-primary">Say About Us</span>
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light">
-                        Don't just take our word for it. Here's what our customers have to say about their experience with Nuclearnick Construction.
+                         5/5
                     </p>
                 </div>
 

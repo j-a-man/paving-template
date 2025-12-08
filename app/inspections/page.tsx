@@ -8,14 +8,13 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import {
     CheckCircle2,
-    Building2,
-    Clock,
-    ShieldCheck,
+    Hammer,
+    AlertTriangle,
     ArrowRight,
-    HardHat
+    Construction
 } from "lucide-react"
 
-export default function CommercialPavingPage() {
+export default function InspectionsPage() {
     const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
 
     return (
@@ -27,7 +26,7 @@ export default function CommercialPavingPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/paving.avif)",
+                        backgroundImage: "url(/electric_image.jpg)",
                     }}
                 >
                     <div className="absolute inset-0 bg-secondary/60" />
@@ -37,10 +36,10 @@ export default function CommercialPavingPage() {
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div>
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            Commercial Paving
+                            Real Estate Inspections
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Reliable, heavy-duty paving solutions for businesses in Indiana.
+                            Ensure the electrical safety of your new home with comprehensive inspections from Metrolake Electrical Services.
                         </p>
                     </div>
                 </div>
@@ -53,14 +52,14 @@ export default function CommercialPavingPage() {
                         {/* Text Content */}
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                                Industrial Strength & <span className="text-primary">Precision</span>
+                                Buy & Sell with <span className="text-primary">Confidence</span>
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    First impressions matter. A well-maintained parking lot or access road speaks volumes about your business. Nuclearnick Construction provides comprehensive commercial paving services, from new installations to resurfacing and repairs.
+                                    Buying a home is a major investment, and the electrical system is one of its most critical components. Hidden electrical issues can be dangerous and costly to fix.
                                 </p>
                                 <p>
-                                    We understand the unique challenges of commercial projects, including tight schedules and the need to minimize disruption to your operations. Our experienced team works efficiently to deliver high-quality results on time and within budget.
+                                    Metrolake Electrical Services offers detailed electrical inspections for real estate transactions. We thoroughly check the panel, wiring, outlets, and grounding to identify potential hazards and code violations, giving you peace of mind before you close the deal.
                                 </p>
                             </div>
 
@@ -70,13 +69,13 @@ export default function CommercialPavingPage() {
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">ADA Compliant</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Detailed Reports</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                             <CheckCircle2 className="w-5 h-5 text-primary" />
                                         </div>
-                                        <span className="font-medium text-sm uppercase tracking-wide">Minimal Downtime</span>
+                                        <span className="font-medium text-sm uppercase tracking-wide">Code Verification</span>
                                     </div>
                                 </div>
                             </div>
@@ -87,8 +86,8 @@ export default function CommercialPavingPage() {
                             <div className="absolute inset-0 border-8 border-secondary z-10 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
                             <div className="absolute inset-0 z-20 shadow-2xl overflow-hidden">
                                 <Image
-                                    src="/placeholder.svg?height=600&width=800&query=commercial-paving"
-                                    alt="Commercial Paving Project"
+                                    src="/placeholder.svg?height=600&width=800&query=home-inspector"
+                                    alt="Electrical Inspection"
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
@@ -98,13 +97,13 @@ export default function CommercialPavingPage() {
                 </div>
             </section>
 
-            {/* ================= BENEFITS GRID ================= */}
+            {/* ================= SIGNS GRID ================= */}
             <section className="py-20 bg-secondary text-white">
                 <div className={containerClass}>
                     <div className="text-left mb-16">
-                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Commercial Services</h2>
+                        <h2 className="text-3xl md:text-4xl font-normal mb-4">What We Look For</h2>
                         <p className="text-white/70 max-w-2xl font-light">
-                            Comprehensive solutions for every scale of business.
+                            Our inspections cover all key aspects of your electrical system.
                         </p>
                     </div>
 
@@ -112,12 +111,12 @@ export default function CommercialPavingPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Building2 className="w-6 h-6 text-white" />
+                                    <AlertTriangle className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Parking Lots</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Outdated Wiring</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Complete installation, resurfacing, and maintenance for retail centers, office parks, and industrial complexes.
+                                        Identifying knob-and-tube or aluminum wiring that may pose fire risks and insurance issues.
                                     </p>
                                 </div>
                             </div>
@@ -126,12 +125,12 @@ export default function CommercialPavingPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <HardHat className="w-6 h-6 text-white" />
+                                    <Construction className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Industrial Roadways</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Panel Hazards</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        Heavy-duty paving designed to withstand constant truck traffic and heavy machinery loads.
+                                        Checking for rust, corrosion, double-tapped breakers, and signs of overheating in the main panel.
                                     </p>
                                 </div>
                             </div>
@@ -140,12 +139,12 @@ export default function CommercialPavingPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <ShieldCheck className="w-6 h-6 text-white" />
+                                    <Hammer className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Safety & Compliance</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Unsafe Outlets</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        We ensure all paving meets local codes and ADA requirements, including proper grading, drainage, and striping.
+                                        Testing GFCI protection in kitchens/baths and ensuring outlets are properly grounded and polarized.
                                     </p>
                                 </div>
                             </div>
@@ -154,12 +153,12 @@ export default function CommercialPavingPage() {
                         <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-primary flex items-center justify-center shrink-0">
-                                    <Clock className="w-6 h-6 text-white" />
+                                    <CheckCircle2 className="w-6 h-6 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Efficient Scheduling</h3>
+                                    <h3 className="text-xl font-bold text-white mb-2">Safety Devices</h3>
                                     <p className="text-white/60 text-sm leading-relaxed">
-                                        We offer flexible scheduling, including nights and weekends, to complete your project with minimal impact on your business.
+                                        Verifying functional smoke and carbon monoxide detectors as required by law.
                                     </p>
                                 </div>
                             </div>
@@ -173,7 +172,7 @@ export default function CommercialPavingPage() {
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        PARTNER WITH THE PROS
+                        SCHEDULE YOUR INSPECTION
                     </h2>
                     <div className="flex flex-wrap gap-4">
                         <Link href="/contact">
