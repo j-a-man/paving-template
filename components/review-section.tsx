@@ -46,7 +46,7 @@ export default function ReviewSection() {
                         What Our Customers <span className="text-primary">Say About Us</span>
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light">
-                         5/5
+                        ⭐⭐⭐⭐⭐ 5/5
                     </p>
                 </div>
 
