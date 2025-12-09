@@ -1,58 +1,60 @@
 "use client"
 
-import Image from "next/image"
-import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight } from "lucide-react"
+import Link from "next/link"
+import { Card } from "@/components/ui/card"
+import { MapPin, Calendar } from "lucide-react"
 
 export default function ProjectsPage() {
+    // Increased padding for consistency
     const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
+
 
     const projects = [
         {
-            title: "Commercial Shopping Center",
-            category: "Commercial Paving",
-            location: "Indiana",
-            description: "Complete resurfacing of a 50,000 sq ft parking lot including striping and ADA compliance.",
-            image: "/placeholder.svg?height=600&width=800&query=commercial-parking-lot"
+            title: "Convenience Store ATM Placement",
+            location: "Gary, IN",
+            date: "October 2024",
+            image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800&q=80", // Placeholder for ATM
+            description: "Installed a new Genmega ATM for a high-traffic convenience store. The owner saw a 15% increase in in-store cash sales within the first month."
         },
         {
-            title: "Luxury Estate Driveway",
-            category: "Residential Paving",
-            location: "Indiana",
-            description: "Installation of a winding asphalt driveway with Belgian block curbing for a private estate.",
-            image: "/placeholder.svg?height=600&width=800&query=luxury-driveway"
+            title: "Festival Mobile ATM Fleet",
+            location: "Merillville, IN",
+            date: "September 2024",
+            image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80", // Concert crowd
+            description: "Deployed 4 mobile ATM units for a weekend music festival. Ensured 99.9% uptime with on-site technician support throughout the event."
         },
         {
-            title: "Industrial Warehouse Complex",
-            category: "Industrial Paving",
-            location: "Indiana",
-            description: "Heavy-duty paving for a logistics center designed to withstand constant semi-truck traffic.",
-            image: "/placeholder.svg?height=600&width=800&query=industrial-paving"
+            title: "Bar & Lounge Installation",
+            location: "Hammond, IN",
+            date: "August 2024",
+            image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80", // Bar interior
+            description: "Replaced an outdated machine with a modern Hyosung Halo II. Custom screen graphics were added to promote the venue's drink specials."
         },
         {
-            title: "Farm Lane Restoration",
-            category: "Tar & Chip",
-            location: "Indiana",
-            description: "Restored a mile-long farm lane using tar and chip for a durable, rustic finish.",
-            image: "/placeholder.svg?height=600&width=800&query=tar-and-chip-road"
+            title: "Hotel Lobby ATM Upgrade",
+            location: "Valparaiso, IN",
+            date: "July 2024",
+            image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80", // Hotel lobby
+            description: "Upgraded the hotel's lobby ATM to a new EMV-compliant model. Provide ongoing cash loading and maintenance services."
         },
         {
-            title: "HOA Roadway Maintenance",
-            category: "Sealcoating",
-            location: "Indiana",
-            description: "Sealcoating and crack filling for a residential community to extend pavement life.",
-            image: "/placeholder.svg?height=600&width=800&query=sealcoating-road"
+            title: "Gas Station Fleet Mangement",
+            location: "Michigan City, IN",
+            date: "June 2024",
+            image: "https://images.unsplash.com/photo-1527018601619-a508a2be00cd?w=800&q=80", // Gas station
+            description: "Took over management of a 3-location gas station chain's ATMs. Improved cash availability and reduced downtime by 40%."
         },
         {
-            title: "Municipal Parking Lot",
-            category: "Commercial Paving",
-            location: "Indiana",
-            description: "New construction of a public parking area with proper drainage and lighting integration.",
-            image: "/placeholder.svg?height=600&width=800&query=public-parking"
+            title: "Shopping Plaza Outdoor Kiosk",
+            location: "Portage, IN",
+            date: "May 2024",
+            image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=800&q=80", // Shopping center
+            description: "Installed a secure, weather-resistant outdoor ATM kiosk for a busy shopping plaza, providing 24/7 access to cash for shoppers."
         }
     ]
 
@@ -61,26 +63,24 @@ export default function ProjectsPage() {
             <Header />
 
             {/* ================= HERO SECTION ================= */}
-            <section className="relative min-h-[500px] flex items-center text-white overflow-hidden">
+            <section className="relative h-[400px] flex items-center text-white overflow-hidden">
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
                         backgroundImage: "url(/electric_image.jpg)",
                     }}
                 >
+                    {/* Dark Overlay */}
                     <div className="absolute inset-0 bg-secondary/60" />
                 </div>
 
-                <div className={`${containerClass} relative z-10 text-left py-20`}>
-                    <div className="max-w-3xl">
-                        <div className="w-20 h-1 bg-primary mb-6"></div>
-                        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            Our Projects
-                        </h1>
-                        <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            See the quality and craftsmanship we bring to every job. From driveways to highways, Nuclearnick Construction delivers.
-                        </p>
-                    </div>
+                <div className={`${containerClass} relative z-10 text-left`}>
+                    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
+                        Our Projects
+                    </h1>
+                    <p className="text-lg text-white/90 max-w-xl font-light">
+                        See how Five Star ATM helps businesses succeed across Indiana.
+                    </p>
                 </div>
             </section>
 
@@ -89,33 +89,35 @@ export default function ProjectsPage() {
                 <div className={containerClass}>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projects.map((project, index) => (
-                            <Card key={index} className="group rounded-none border-0 shadow-lg overflow-hidden">
-                                <div className="relative h-64 overflow-hidden">
+                            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full rounded-none">
+                                <div className="relative h-64 w-full bg-gray-100 overflow-hidden group">
                                     <Image
                                         src={project.image}
                                         alt={project.title}
                                         fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
-                                    <div className="absolute inset-0 bg-secondary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                                        <Button variant="outline" className="text-white border-white hover:bg-white hover:text-black rounded-none">
-                                            View Details
-                                        </Button>
-                                    </div>
+                                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                                 </div>
-                                <CardContent className="p-8 bg-white relative">
-                                    <div className="absolute top-0 left-8 -translate-y-1/2 bg-primary text-white text-xs font-bold uppercase tracking-wider py-1 px-3">
-                                        {project.category}
+                                <div className="p-8 flex flex-col grow bg-white">
+                                    <div className="flex items-center gap-4 text-xs font-bold uppercase tracking-wider text-muted-foreground mb-4">
+                                        <div className="flex items-center gap-1">
+                                            <MapPin className="w-3 h-3 text-primary" />
+                                            {project.location}
+                                        </div>
+                                        <div className="w-1 h-1 rounded-full bg-gray-300"></div>
+                                        <div className="flex items-center gap-1">
+                                            <Calendar className="w-3 h-3 text-primary" />
+                                            {project.date}
+                                        </div>
                                     </div>
-                                    <h3 className="text-xl font-bold mb-2 mt-2 group-hover:text-primary transition-colors">{project.title}</h3>
-                                    <p className="text-sm text-muted-foreground mb-4 flex items-center gap-2">
-                                        <span className="w-2 h-2 rounded-full bg-secondary"></span>
-                                        {project.location}
-                                    </p>
-                                    <p className="text-muted-foreground text-sm leading-relaxed">
+                                    <h3 className="text-2xl font-serif font-bold mb-3 text-secondary group-hover:text-primary transition-colors">
+                                        {project.title}
+                                    </h3>
+                                    <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
                                         {project.description}
                                     </p>
-                                </CardContent>
+                                </div>
                             </Card>
                         ))}
                     </div>
@@ -123,24 +125,17 @@ export default function ProjectsPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
-                <div className="absolute inset-0 bg-secondary/70"></div>
-                <div className={`${containerClass} relative z-10 text-left`}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
+                <div className="absolute inset-0 bg-secondary/80"></div>
+                <div className={`${containerClass} relative z-10 text-center`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        START YOUR PROJECT TODAY
+                        Start Generating Revenue Today
                     </h2>
-                    <div className="flex flex-wrap gap-4">
-                        <Link href="/contact">
-                            <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                                Get A Quote
-                            </Button>
-                        </Link>
-                        <Link href="/contact">
-                            <Button variant="outline" className="text-white border-2 border-white bg-transparent hover:bg-white hover:text-secondary uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                                Contact Us
-                            </Button>
-                        </Link>
-                    </div>
+                    <Link href="/contact">
+                        <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-10 py-7 rounded-none">
+                            Get Your Free ATM
+                        </Button>
+                    </Link>
                 </div>
             </section>
 

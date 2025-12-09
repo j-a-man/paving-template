@@ -20,12 +20,31 @@ import {
   Truck,
   Orbit,
   Layers,
-  ArrowRight
+  ArrowRight,
+  MapPin
 } from "lucide-react"
 
 export default function Home() {
   // Increased horizontal padding for more "breathing room"
   const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
+
+  const recentProjects = [
+    {
+      title: "Convenience Store ATM Placement",
+      location: "Gary, IN",
+      image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800&q=80",
+    },
+    {
+      title: "Festival Mobile ATM Fleet",
+      location: "Merillville, IN",
+      image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    },
+    {
+      title: "Bar & Lounge Installation",
+      location: "Hammond, IN",
+      image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
+    }
+  ]
 
   return (
     <main className="min-h-screen bg-background font-sans text-foreground">
@@ -49,10 +68,10 @@ export default function Home() {
         <div className={`${containerClass} relative z-10 py-20 text-left`}>
           <div className="max-w-3xl">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-              Energy you can trust.<br />Service you Deserve.
+              Reliable ATM Solutions.<br />Service you Can Trust.
             </h1>
             <p className="text-base md:text-lg mb-8 text-white/90 leading-relaxed max-w-xl drop-shadow-md">
-              At Metrolake Electrical Services, we bring reliable electrical solutions to your home and business. Safe, powered, and up to date.
+              At Five Star ATM, we provide seamless ATM placement, cash loading, and maintenance for your business. Fast, secure, and hassle-free.
             </p>
             <div>
               <Link href="/contact">
@@ -78,13 +97,13 @@ export default function Home() {
             <div className="max-w-xl">
               {/* Exact Headline Style from Image */}
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] mb-6 text-foreground tracking-tight">
-                Metrolake <br />
-                Electrical <br />
+                Five Star <br />
+                ATM <br />
                 <span className="text-primary">Services.</span>
               </h2>
 
               <p className="text-muted-foreground text-lg leading-relaxed mb-8 font-light">
-                From rewiring to panel upgrades, our team is here to keep your property safe, powered, and up to date. With us, you get honest work, timely service, and the care you deserve.
+                From installation to daily cash management, our team ensures your ATMs are always running. With us, you get honest work, timely service, and the revenue you deserve.
               </p>
 
               {/* Exact Button Style from Image */}
@@ -140,7 +159,7 @@ export default function Home() {
             Our Services
           </h2>
           <p className="text-white/80 max-w-2xl text-left text-lg">
-            We provide safe and reliable electrical solutions for your home or business.
+            We provide full-service ATM solutions including placement, processing, and maintenance.
           </p>
         </div>
 
@@ -149,33 +168,33 @@ export default function Home() {
             {/* Card 1 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
               <Layers className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-normal mb-4 font-serif">Breaker Box</h3>
+              <h3 className="text-2xl font-normal mb-4 font-serif">ATM Placement</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
-                We install, repair, and upgrade panels to ensure reliable, modern electrical service.
+                Free ATM placement for your business. We handle the installation while you earn revenue.
               </p>
-              <Link href="/breaker-box" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/services" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
             {/* Card 2 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
               <Orbit className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-normal mb-4 font-serif">Ground Setup</h3>
+              <h3 className="text-2xl font-normal mb-4 font-serif">Cash Loading</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
-                We install proper grounding systems to protect homes and electrical equipment from power surges.
+                Never run empty. Our reliable cash loading service ensures your ATM is always ready for customers.
               </p>
-              <Link href="/ground-setup" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/services" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
             {/* Card 3 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
               <Truck className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-normal mb-4 font-serif">Electric Meter Box</h3>
+              <h3 className="text-2xl font-normal mb-4 font-serif">Maintenance</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
-                We install and replace electric meter boxes to keep your power connection safe and up to code.
+                24/7 monitoring and repair services to keep your machine operational and profitable.
               </p>
-              <Link href="/electric-meter-box" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/services" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
@@ -200,49 +219,32 @@ export default function Home() {
             className="w-full"
           >
             <CarouselContent>
-              {/* Projects ... */}
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                  <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=paved-parking-lot" alt="Project 1" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
-                    <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Commercial Parking Lot</h3>
+              {recentProjects.map((project, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="group relative h-96 overflow-hidden border border-gray-100 hover:border-primary/50 transition-all cursor-pointer">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity duration-300"></div>
+
+                    <div className="absolute bottom-0 left-0 p-8 w-full">
+                      <div className="flex items-center gap-2 mb-3">
+                        <MapPin className="text-primary w-4 h-4" />
+                        <span className="text-white/80 text-xs font-bold uppercase tracking-widest">{project.location}</span>
+                      </div>
+                      <h3 className="text-white text-2xl font-serif font-normal group-hover:text-primary transition-colors">
+                        {project.title}
+                      </h3>
                     </div>
-                  </Card>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                  <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=residential-driveway-paving" alt="Project 2" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
-                    <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Residential Driveway</h3>
-                    </div>
-                  </Card>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                  <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=road-resurfacing" alt="Project 3" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
-                    <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Road Resurfacing</h3>
-                    </div>
-                  </Card>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-1">
-                  <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=tar-and-chip-driveway" alt="Project 4" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
-                    <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Tar & Chip Project</h3>
-                    </div>
-                  </Card>
-                </div>
-              </CarouselItem>
+                  </div>
+                </CarouselItem>
+              ))}
             </CarouselContent>
-            <CarouselNext className="hidden md:flex -right-4 bg-secondary text-white hover:bg-primary border-none rounded-none h-12 w-12" />
+            <CarouselPrevious className="hidden md:flex left-[-50px]" />
+            <CarouselNext className="hidden md:flex right-[-50px]" />
           </Carousel>
 
 
@@ -263,11 +265,11 @@ export default function Home() {
       </div>
 
       {/* ================= CTA BANNER ================= */}
-      <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
+      <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
         <div className="absolute inset-0 bg-secondary/70"></div>
         <div className={`${containerClass} relative z-10 text-left`}>
           <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-            GET A FREE ESTIMATE FOR YOUR<br /> RESIDENTIAL OR COMMERCIAL PROJECT
+            GET A FREE ATM PLACEMENT<br /> FOR YOUR BUSINESS TODAY
           </h2>
           <div className="flex flex-wrap gap-4">
             <Link href="/contact">

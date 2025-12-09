@@ -5,13 +5,10 @@ import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
 import {
-    ShieldCheck,
+    Shield,
     Clock,
-    Award,
-    FileCheck,
-    ArrowRight
+    CheckCircle2
 } from "lucide-react"
 
 export default function AboutPage() {
@@ -38,147 +35,125 @@ export default function AboutPage() {
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div> {/* Decorative line */}
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            About Metrolake Electrical Services
+                            About Five Star ATM
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Serving Portage and surrounding communities with safe and reliable electrical work for over 15 years.
+                            Serving Indiana and surrounding communities with reliable, full-service ATM solutions.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* ================= OUR STORY SECTION ================= */}
+            {/* ================= STORY SECTION ================= */}
             <section className="py-20 md:py-32 bg-white">
                 <div className={containerClass}>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        {/* Left: Content */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                        {/* Text Content */}
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] mb-8 text-foreground">
-                                Friendly, Cooperative, <br />
-                                <span className="text-primary">Reliable.</span>
+                            <div className="inline-block border-b-4 border-primary pb-2 mb-8">
+                                <span className="text-sm font-bold uppercase tracking-widest text-secondary">Our Story</span>
+                            </div>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8 text-secondary leading-tight">
+                                Built on Trust, Reliability, and Service.
                             </h2>
-
-                            <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
+                            <div className="space-y-6 text-muted-foreground text-lg leading-relaxed font-light">
                                 <p>
-                                    For over 15 years, Metrolake Electrical Services has been proudly serving Portage and the surrounding communities. From replacing meters and installing new panels to complete rewiring and inspections, we handle every job with care and professionalism.
+                                    Five Star ATM was founded with a simple mission: to provide businesses with hassle-free ATM solutions that drive revenue and customer satisfaction. We understand that cash access is critical for many businesses, and we make it our job to ensure your customers always have access to their funds.
                                 </p>
                                 <p>
-                                    Our mission is simple — to provide honest, affordable, and high-quality services that keep your home or business running smoothly. We believe in doing the job right the first time, on schedule, and with your safety as our top priority.
+                                    Under the leadership of owner Phil, we have grown into a trusted partner for businesses across Indiana. We pride ourselves on our responsiveness—when you call, we answer. We don't just place machines; we build partnerships.
                                 </p>
                                 <p>
-                                    Whether it’s an upgrade, repair, or a full inspection, we make the process easy and worry-free. With Metrolake, you’re choosing experience, trust, and a team that treats your property like it’s our own.
+                                    Whether you need a single ATM for your convenience store or mobile ATMs for a large festival, Five Star ATM has the expertise and equipment to deliver.
                                 </p>
                             </div>
 
-                            <div className="mt-10">
-                                <div className="font-serif text-xl italic text-foreground">
-                                    - Herman R. Perez, Contact Person
+                            <div className="mt-12 p-8 bg-secondary/5 border-l-4 border-primary">
+                                <blockquote className="text-xl font-serif italic text-secondary mb-6">
+                                    "Our goal is to make ATM ownership completely hands-off for our clients. We handle the cash, the maintenance, and the paper—you just cash the checks."
+                                </blockquote>
+                                <cite className="text-sm font-bold uppercase tracking-widest text-secondary not-italic">
+                                    - Phil, Owner
+                                </cite>
+                            </div>
+                        </div>
+
+                        {/* Image/Stats */}
+                        <div className="relative">
+                            <div className="relative h-[600px] w-full bg-secondary overflow-hidden shadow-2xl">
+                                <Image
+                                    src="/electric_image.jpg" // Using existing image for now
+                                    alt="ATM Service"
+                                    fill
+                                    className="object-cover opacity-90"
+                                />
+                                <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+                            </div>
+
+                            {/* Floating Stat Card */}
+                            <div className="absolute -bottom-10 -left-10 bg-white p-8 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 max-w-xs">
+                                <div className="text-5xl font-bold text-primary mb-2">100+</div>
+                                <div className="text-sm font-bold uppercase tracking-widest text-secondary">
+                                    Locations Served
                                 </div>
                             </div>
                         </div>
-
-                        {/* Right: Image */}
-                        <div className="relative h-[600px] w-full">
-                            {/* Main Image */}
-                            <div className="absolute inset-0 z-10 shadow-2xl border-12 border-white">
-                                <Image
-                                    src="/nick_image.jpg" // Using your uploaded image
-                                    alt="Our Team Working"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                            {/* Decorative Background Element */}
-                            <div className="absolute -right-6 -bottom-6 w-full h-full border-2 border-primary z-0"></div>
-                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* ================= CORE VALUES GRID ================= */}
+            {/* ================= VALUES SECTION ================= */}
             <section className="py-20 bg-secondary text-white">
                 <div className={containerClass}>
-                    <div className="text-left mb-16">
-                        <h2 className="text-3xl md:text-4xl font-normal mb-4">Why Choose Us?</h2>
-                        <p className="text-white/70 max-w-2xl font-light">
-                            We don't just pave roads; we pave the way for a better customer experience.
-                        </p>
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Why Choose Us?</h2>
+                        <div className="w-24 h-1 bg-primary mx-auto"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {/* Value 1 */}
-                        <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
-                            <ShieldCheck className="w-10 h-10 text-primary mb-6 group-hover:scale-110 transition-transform" />
-                            <h3 className="text-xl font-bold text-white mb-3">Licensed & Insured</h3>
-                            <p className="text-white/60 text-sm leading-relaxed">
-                                Fully credentialed for your peace of mind. We adhere to all local regulations and safety standards.
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                        <div className="text-center">
+                            <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <CheckCircle2 className="w-10 h-10 text-primary" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-4">Reliability</h3>
+                            <p className="text-white/70 leading-relaxed">
+                                Our machines are monitored 24/7. We know before you do if there's an issue, and we fix it fast.
                             </p>
-                        </Card>
-
-                        {/* Value 2 */}
-                        <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
-                            <Clock className="w-10 h-10 text-primary mb-6 group-hover:scale-110 transition-transform" />
-                            <h3 className="text-xl font-bold text-white mb-3">15+ Years Exp.</h3>
-                            <p className="text-white/60 text-sm leading-relaxed">
-                                Trusted by the community for over 15 years. We have the experience to handle any electrical challenge.
+                        </div>
+                        <div className="text-center">
+                            <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <Clock className="w-10 h-10 text-primary" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-4">Fast Service</h3>
+                            <p className="text-white/70 leading-relaxed">
+                                We pride ourselves on our quick response times for refills and maintenance.
                             </p>
-                        </Card>
-
-                        {/* Value 3 */}
-                        <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
-                            <Award className="w-10 h-10 text-primary mb-6 group-hover:scale-110 transition-transform" />
-                            <h3 className="text-xl font-bold text-white mb-3">High Quality</h3>
-                            <p className="text-white/60 text-sm leading-relaxed">
-                                We believe every project deserves careful attention. Safety, precision, and lasting results.
+                        </div>
+                        <div className="text-center">
+                            <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <Shield className="w-10 h-10 text-primary" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-4">Transparency</h3>
+                            <p className="text-white/70 leading-relaxed">
+                                Clear contracts, no hidden fees, and transparent reporting on your ATM's performance.
                             </p>
-                        </Card>
-
-                        {/* Value 4 */}
-                        <Card className="bg-white/5 border-white/10 p-8 rounded-none hover:bg-white/10 transition-colors group">
-                            <FileCheck className="w-10 h-10 text-primary mb-6 group-hover:scale-110 transition-transform" />
-                            <h3 className="text-xl font-bold text-white mb-3">Trusted Services</h3>
-                            <p className="text-white/60 text-sm leading-relaxed">
-                                Our customers trust us for safe, efficient, and dependable work that keeps their property running.
-                            </p>
-                        </Card>
+                        </div>
                     </div>
-                </div>
-            </section>
-
-            {/* ================= REVIEW CTA ================= */}
-            <section className="py-20 bg-white">
-                <div className={containerClass} style={{ textAlign: 'center' }}>
-                    <h2 className="text-3xl font-bold mb-6 text-secondary">Have You Worked With Us?</h2>
-                    <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-                        We value your feedback. Let us know about your experience to help us serve you better.
-                    </p>
-                    <Link href="/review">
-                        <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                            Leave a Review
-                        </Button>
-                    </Link>
                 </div>
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
-                <div className="absolute inset-0 bg-secondary/70"></div>
-                <div className={`${containerClass} relative z-10 text-left`}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
+                <div className="absolute inset-0 bg-secondary/80"></div>
+                <div className={`${containerClass} relative z-10 text-center`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        READY TO TRANSFORM YOUR PROPERTY?
+                        Partner with Indiana's Trusted ATM Provider
                     </h2>
-                    <div className="flex flex-wrap gap-4">
-                        <Link href="/contact">
-                            <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                                Get A Quote
-                            </Button>
-                        </Link>
-                        <Link href="/contact">
-                            <Button variant="outline" className="text-white border-2 border-white bg-transparent hover:bg-white hover:text-secondary uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                                Contact Us
-                            </Button>
-                        </Link>
-                    </div>
+                    <Link href="/contact">
+                        <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-10 py-7 rounded-none">
+                            Contact Phil Today
+                        </Button>
+                    </Link>
                 </div>
             </section>
 

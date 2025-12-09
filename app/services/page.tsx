@@ -1,19 +1,17 @@
 "use client"
 
-import Image from "next/image"
-import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import {
     ArrowRight,
+    CheckCircle2,
     Truck,
-    Building2,
-    Home,
-    Droplets,
-    Hammer,
-    Tractor
+    Layers,
+    Orbit,
+    CreditCard,
+    DollarSign
 } from "lucide-react"
 
 export default function ServicesPage() {
@@ -21,46 +19,40 @@ export default function ServicesPage() {
 
     const services = [
         {
-            title: "Breaker Box",
-            description: "We install, repair, and upgrade panels to ensure reliable, modern electrical service.",
-            icon: Building2,
-            link: "/breaker-box",
-            image: "/placeholder.svg?height=600&width=800&query=circuit-breaker-panel"
+            icon: <Layers className="w-12 h-12 text-primary mb-6" />,
+            title: "Free ATM Placement",
+            description: "We place a brand new, state-of-the-art ATM in your business at no cost to you. You provide the space and power, we handle the rest.",
+            link: "/contact"
         },
         {
-            title: "Ground Setup",
-            description: "We install proper grounding systems to protect homes and electrical equipment from power surges.",
-            icon: Droplets,
-            link: "/ground-setup",
-            image: "/placeholder.svg?height=600&width=800&query=electrical-grounding"
+            icon: <DollarSign className="w-12 h-12 text-primary mb-6" />,
+            title: "Cash Loading Services",
+            description: "Eliminate the hassle of filling your ATM. Our cash loading service ensures your machine is always stocked and ready for customers.",
+            link: "/contact"
         },
         {
-            title: "Electric Meter Box",
-            description: "We install and replace electric meter boxes to keep your power connection safe and up to code.",
-            icon: Hammer,
-            link: "/electric-meter-box",
-            image: "/placeholder.svg?height=600&width=800&query=electric-meter"
+            icon: <Orbit className="w-12 h-12 text-primary mb-6" />,
+            title: "ATM Maintenance",
+            description: "We provide comprehensive maintenance and repairs. If your machine goes down, our technicians are there to fix it fast.",
+            link: "/contact"
         },
         {
-            title: "Commercial Electrical",
-            description: "Reliable electrical solutions for your business. From rewiring to panel upgrades.",
-            icon: Truck,
-            link: "/commercial-electrical",
-            image: "/placeholder.svg?height=600&width=800&query=commercial-electrician"
+            icon: <Truck className="w-12 h-12 text-primary mb-6" />,
+            title: "Mobile ATM Events",
+            description: "Hosting an event? We bring mobile ATMs to festivals, concerts, and fairs to keep cash flowing for your vendors.",
+            link: "/contact"
         },
         {
-            title: "Real Estate Inspections",
-            description: "We offer real estate inspections to make sure your property is ready and secure.",
-            icon: Home,
-            link: "/inspections",
-            image: "/placeholder.svg?height=600&width=800&query=home-inspection"
+            icon: <CreditCard className="w-12 h-12 text-primary mb-6" />,
+            title: "Transaction Processing",
+            description: "Secure and fast transaction processing services. We ensure every transaction is handled safely and efficiently.",
+            link: "/contact"
         },
         {
-            title: "Safe Rewiring",
-            description: "We handle complete rewiring projects safely and professionally for older homes and renovations.",
-            icon: Droplets,
-            link: "/breaker-box", // Fallback or separate page
-            image: "/placeholder.svg?height=600&width=800&query=electrical-wiring"
+            icon: <CheckCircle2 className="w-12 h-12 text-primary mb-6" />,
+            title: "Compliance Upgrades",
+            description: "We keep your ATM up to date with the latest ADA and EMV compliance standards so you never have to worry.",
+            link: "/contact"
         }
     ]
 
@@ -69,7 +61,7 @@ export default function ServicesPage() {
             <Header />
 
             {/* ================= HERO SECTION ================= */}
-            <section className="relative min-h-[500px] flex items-center text-white overflow-hidden">
+            <section className="relative h-[400px] flex items-center text-white overflow-hidden">
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
@@ -79,16 +71,13 @@ export default function ServicesPage() {
                     <div className="absolute inset-0 bg-secondary/60" />
                 </div>
 
-                <div className={`${containerClass} relative z-10 text-left py-20`}>
-                    <div className="max-w-3xl">
-                        <div className="w-20 h-1 bg-primary mb-6"></div>
-                        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            Our Services
-                        </h1>
-                        <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Comprehensive electrical solutions tailored to your needs. Quality you can trust, from Metrolake Electrical Services.
-                        </p>
-                    </div>
+                <div className={`${containerClass} relative z-10 text-left`}>
+                    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
+                        Our Services
+                    </h1>
+                    <p className="text-lg text-white/90 max-w-xl font-light">
+                        Comprehensive ATM solutions provided by Five Star ATM.
+                    </p>
                 </div>
             </section>
 
@@ -97,55 +86,40 @@ export default function ServicesPage() {
                 <div className={containerClass}>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
-                            <Link href={service.link} key={index} className="group block h-full">
-                                <Card className="h-full rounded-none border-0 shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-                                    <div className="relative h-56 overflow-hidden">
-                                        <Image
-                                            src={service.image}
-                                            alt={service.title}
-                                            fill
-                                            className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                        />
-                                        <div className="absolute inset-0 bg-secondary/20 group-hover:bg-secondary/40 transition-colors duration-300" />
-                                        <div className="absolute bottom-4 left-4 bg-white p-3 shadow-md">
-                                            <service.icon className="w-6 h-6 text-primary" />
-                                        </div>
-                                    </div>
-                                    <CardContent className="p-8 bg-white">
-                                        <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors flex items-center justify-between">
-                                            {service.title}
-                                            <ArrowRight className="w-5 h-5 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
-                                        </h3>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            {service.description}
-                                        </p>
-                                    </CardContent>
-                                </Card>
-                            </Link>
+                            <div key={index} className="bg-white p-10 border border-gray-100 hover:border-primary/50 hover:shadow-xl transition-all duration-300 group">
+                                <div className="group-hover:scale-110 transition-transform duration-300 origin-left">
+                                    {service.icon}
+                                </div>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-secondary group-hover:text-primary transition-colors">
+                                    {service.title}
+                                </h3>
+                                <p className="text-muted-foreground mb-8 leading-relaxed">
+                                    {service.description}
+                                </p>
+                                <Link href={service.link} className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-secondary hover:text-primary transition-colors">
+                                    Contact Us <ArrowRight className="ml-2 w-4 h-4" />
+                                </Link>
+                            </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
-                <div className="absolute inset-0 bg-secondary/70"></div>
-                <div className={`${containerClass} relative z-10 text-left`}>
-                    <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        NEED A CUSTOM SOLUTION?
+            {/* ================= CALL TO ACTION ================= */}
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
+                <div className="absolute inset-0 bg-secondary/80"></div>
+                <div className={`${containerClass} relative z-10 text-center`}>
+                    <h2 className="font-serif text-3xl md:text-5xl font-normal mb-6 leading-tight">
+                        Ready to Boost Your Revenue?
                     </h2>
-                    <div className="flex flex-wrap gap-4">
-                        <Link href="/contact">
-                            <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                                Get A Quote
-                            </Button>
-                        </Link>
-                        <Link href="/contact">
-                            <Button variant="outline" className="text-white border-2 border-white bg-transparent hover:bg-white hover:text-secondary uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                                Contact Us
-                            </Button>
-                        </Link>
-                    </div>
+                    <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
+                        Contact Five Star ATM today to get a free ATM placement for your business.
+                    </p>
+                    <Link href="/contact">
+                        <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-10 py-7 rounded-none">
+                            Get Started
+                        </Button>
+                    </Link>
                 </div>
             </section>
 

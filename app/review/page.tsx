@@ -15,7 +15,8 @@ export default function ReviewPage() {
     const [feedback, setFeedback] = useState("")
     const [submitted, setSubmitted] = useState(false)
 
-    const googleReviewUrl = "https://www.google.com/search?sca_esv=711d87e2c6f6d006&rlz=1C1OPNX_enUS983US983&sxsrf=AE3TifORBH3hW6eArALOVKeamFnPwu2Slg:1764884830519&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E1pYmrg6bn4pO25KzyNMakwUm1OB937yjyxnZ_kULEfDU3UhWVfk0iopFYJ4sQsseWTYGG_sJvrfBDKsZBQpd3EbqptPL0Udbbaw-XO9-arqCbU6Yw%3D%3D&q=Nuclearnick+Construction+Reviews&sa=X&ved=2ahUKEwiq1pGr9KSRAxU5FmIAHY0OARoQ0bkNegQILhAC&biw=1536&bih=695&dpr=1.25#lrd=0x65ed24f551f422f1:0xc38c56de710ad148,3,,,,"
+    // Updated Google Review URL for Five Star ATM
+    const googleReviewUrl = "https://www.google.com/search?sca_esv=ad1c47de9cd56ce0&rlz=1C1OPNX_enUS983US983&sxsrf=AE3TifNvkAmuCVf38rLgkRX7Qx2P3Bq0bA:1765251202685&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-Ex39GJueWfeIuZPYQirfreZs9aob1RsGKRWnbopNL5y3WeTnPGwv1V_NPBeoXXlqxmBdqbtVbwVuFgDUNbQv6uvskc7y&q=Five+Star+ATM+Reviews&sa=X&ved=2ahUKEwj4jYCXya-RAxWr0PACHebzCu8Q0bkNegQIOxAC&biw=1536&bih=695&dpr=1.25#lrd=0xa3db494b5ca7c21d:0x4c2c117075d9f3d1,3,,,,"
 
     const handleStarClick = (selectedRating: number) => {
         setRating(selectedRating)
@@ -29,7 +30,7 @@ export default function ReviewPage() {
         // Construct mailto link
         const subject = encodeURIComponent(`New Feedback - ${rating} Stars`)
         const body = encodeURIComponent(`Rating: ${rating} Stars\n\nFeedback:\n${feedback}`)
-        window.location.href = `mailto:risticnicholas@yahoo.com?subject=${subject}&body=${body}`
+        window.location.href = `mailto:fivestarelectricatm@gmail.com?subject=${subject}&body=${body}`
         setSubmitted(true)
     }
 
@@ -90,7 +91,7 @@ export default function ReviewPage() {
                                         We're thrilled to hear that!
                                     </h2>
                                     <p className="text-muted-foreground">
-                                        It would mean the world to us if you could share your experience on Google. It helps other neighbors find quality paving services.
+                                        It would mean the world to us if you could share your experience on Google. It helps other neighbors find quality services.
                                     </p>
                                     <div className="pt-4">
                                         <Link href={googleReviewUrl} target="_blank" rel="noopener noreferrer">
