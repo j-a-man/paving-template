@@ -73,7 +73,7 @@ export default function ReviewSection() {
                                                         />
                                                     ))}
                                                 </div>
-                                                <p className="text-muted-foreground mb-6 flex-grow italic">"{review.content}"</p>
+                                                <p className="text-muted-foreground mb-6 grow italic">"{review.content}"</p>
                                                 <div className="mt-auto">
                                                     <p className="font-bold text-foreground">{review.name}</p>
                                                     <p className="text-sm text-primary">{review.role}</p>
