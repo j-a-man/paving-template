@@ -100,9 +100,9 @@ export default function Home() {
             {/* RIGHT SIDE: Image Collage */}
             <div className="relative h-[500px] w-full hidden lg:block">
               {/* Main Tall Image (Right) */}
-              <div className="absolute right-0 top-8 w-[52%] h-[90%] z-20 shadow-xl overflow-hidden">
+              <div className="absolute right-0 top-8 w-[52%] h-[90%] z-20 shadow-xl overflow-hidden border-[6px] border-white">
                 <Image
-                  src="/paving1.jpg"
+                  src="/electric1.jpg"
                   alt="Construction Portrait"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
@@ -110,9 +110,9 @@ export default function Home() {
               </div>
 
               {/* Top Left Small Image */}
-              <div className="absolute left-0 top-0 w-[55%] h-[42%] z-10 shadow-lg overflow-hidden">
+              <div className="absolute left-0 top-0 w-[55%] h-[42%] z-10 shadow-lg overflow-hidden border-[6px] border-white">
                 <Image
-                  src="/paving2.jpg"
+                  src="/electric2.jpg"
                   alt="Construction Site"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
@@ -120,9 +120,9 @@ export default function Home() {
               </div>
 
               {/* Bottom Left Medium Image */}
-              <div className="absolute left-8 bottom-0 w-[48%] h-[60%] z-30 shadow-[0_20px_50px_rgba(0,0,0,0.2)] border-[6px] border-white overflow-hidden">
+              <div className="absolute left-8 bottom-0 w-[48%] h-[60%] z-30 shadow-[0_20px_50px_rgba(0,0,0,0.2)] overflow-hidden border-[6px] border-white">
                 <Image
-                  src="/paving3.jpg"
+                  src="/electric3.jpeg"
                   alt="Planning Construction"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"

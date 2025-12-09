@@ -15,7 +15,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-6 group">
               <div className="relative w-10 h-10 overflow-hidden rounded-sm">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
+                  src="logo.svg"
                   alt="Metrolake Logo"
                   fill
                   className="object-contain"

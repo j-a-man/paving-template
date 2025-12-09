@@ -36,7 +36,7 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative w-12 h-12 overflow-hidden rounded-sm">
                 <Image
-                  src="/placeholder.svg?height=48&width=48"
+                  src="logo.svg"
                   alt="Metrolake Logo"
                   fill
                   className="object-contain"
