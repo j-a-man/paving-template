@@ -11,48 +11,49 @@ import { ArrowRight } from "lucide-react"
 export default function ProjectsPage() {
     const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
 
+
     const projects = [
         {
-            title: "Commercial Shopping Center",
-            category: "Commercial Paving",
-            location: "Indiana",
-            description: "Complete resurfacing of a 50,000 sq ft parking lot including striping and ADA compliance.",
-            image: "/placeholder.svg?height=600&width=800&query=commercial-parking-lot"
+            title: "Commercial Lighting Upgrade",
+            category: "Commercial Electrical",
+            location: "Tallahassee",
+            description: "Complete LED retrofit for a 50,000 sq ft shopping center, improving energy efficiency.",
+            image: "/placeholder.svg?height=600&width=800&query=commercial-lighting"
         },
         {
-            title: "Luxury Estate Driveway",
-            category: "Residential Paving",
-            location: "Indiana",
-            description: "Installation of a winding asphalt driveway with Belgian block curbing for a private estate.",
-            image: "/placeholder.svg?height=600&width=800&query=luxury-driveway"
+            title: "Residential Panel Upgrade",
+            category: "Residential Electrical",
+            location: "Tallahassee",
+            description: "Upgraded a 100-amp fuse box to a modern 200-amp breaker panel for a historic home.",
+            image: "/placeholder.svg?height=600&width=800&query=electrical-panel"
         },
         {
-            title: "Industrial Warehouse Complex",
-            category: "Industrial Paving",
-            location: "Indiana",
-            description: "Heavy-duty paving for a logistics center designed to withstand constant semi-truck traffic.",
-            image: "/placeholder.svg?height=600&width=800&query=industrial-paving"
+            title: "Industrial Warehouse Wiring",
+            category: "Industrial Electrical",
+            location: "Tallahassee",
+            description: "Heavy-duty conduit running and 3-phase power installation for a logistics center.",
+            image: "/placeholder.svg?height=600&width=800&query=industrial-wiring"
         },
         {
-            title: "Farm Lane Restoration",
-            category: "Tar & Chip",
-            location: "Indiana",
-            description: "Restored a mile-long farm lane using tar and chip for a durable, rustic finish.",
-            image: "/placeholder.svg?height=600&width=800&query=tar-and-chip-road"
+            title: "Smart Home Integration",
+            category: "Smart Home",
+            location: "Tallahassee",
+            description: "Full smart home wiring including automated lighting, security, and climate control.",
+            image: "/placeholder.svg?height=600&width=800&query=smart-home"
         },
         {
-            title: "HOA Roadway Maintenance",
-            category: "Sealcoating",
-            location: "Indiana",
-            description: "Sealcoating and crack filling for a residential community to extend pavement life.",
-            image: "/placeholder.svg?height=600&width=800&query=sealcoating-road"
+            title: "Emergency Generator Install",
+            category: "Generators",
+            location: "Tallahassee",
+            description: "Installation of a whole-home standby generator to ensure power during outages.",
+            image: "/placeholder.svg?height=600&width=800&query=generator"
         },
         {
-            title: "Municipal Parking Lot",
-            category: "Commercial Paving",
-            location: "Indiana",
-            description: "New construction of a public parking area with proper drainage and lighting integration.",
-            image: "/placeholder.svg?height=600&width=800&query=public-parking"
+            title: "Outdoor Landscape Lighting",
+            category: "Lighting",
+            location: "Tallahassee",
+            description: "Design and installation of landscape lighting to enhance security and curb appeal.",
+            image: "/placeholder.svg?height=600&width=800&query=landscape-lighting"
         }
     ]
 
@@ -78,7 +79,7 @@ export default function ProjectsPage() {
                             Our Projects
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            See the quality and craftsmanship we bring to every job. From driveways to highways, Nuclearnick Construction delivers.
+                            See the quality and craftsmanship we bring to every job. From driveways to highways, Tallahassee Energy Solutions delivers.
                         </p>
                     </div>
                 </div>
@@ -123,7 +124,7 @@ export default function ProjectsPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">

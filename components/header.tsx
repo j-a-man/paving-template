@@ -36,18 +36,18 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative w-12 h-12 overflow-hidden rounded-sm">
                 <Image
-                  src="/placeholder.svg?height=48&width=48"
-                  alt="Metrolake Logo"
+                  src="/logo.svg"
+                  alt="Tallahassee Energy Solutions Logo"
                   fill
                   className="object-contain"
                 />
               </div>
               <div className="flex flex-col">
                 <span className="font-serif text-xl font-bold tracking-tighter text-black group-hover:text-primary transition-colors uppercase">
-                  Metrolake
+                  Tallahassee
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.2em] text-black/60 font-medium whitespace-nowrap">
-                  Electrical Services
+                  Energy Solutions
                 </span>
               </div>
             </Link>
@@ -64,10 +64,10 @@ export default function Header() {
           {/* CTA Button & Mobile Toggle */}
           <div className="flex items-center gap-4">
             <div className="hidden lg:flex flex-col items-end mr-4">
-              <a href="tel:+12197460388" className="flex items-center gap-2 text-sm font-bold text-foreground hover:text-primary transition-colors">
-                <Phone className="w-4 h-4" /> (219) 746-0388
+              <a href="tel:+14485009492" className="flex items-center gap-2 text-sm font-bold text-foreground hover:text-primary transition-colors">
+                <Phone className="w-4 h-4" /> (448) 500-9492
               </a>
-              <span className="text-xs text-muted-foreground">Mon-Fri: 8am-5pm</span>
+              <span className="text-xs text-muted-foreground">Open 24 Hours</span>
             </div>
             <Link href="/contact">
               <Button className={`hidden md:flex uppercase tracking-widest font-bold px-6 rounded-none ${buttonColor}`}>
@@ -101,14 +101,14 @@ export default function Header() {
                 </Button>
               </Link>
               <div className="pt-6 border-t border-white/10 flex flex-col items-center gap-4 text-white/60">
-                <a href="tel:+12193588794" className="flex items-center gap-2 hover:text-white transition-colors">
-                  <Phone className="w-4 h-4" /> (219) 358-8794
+                <a href="tel:+14485009492" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <Phone className="w-4 h-4" /> (448) 500-9492
                 </a>
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" /> Indiana
+                  <MapPin className="w-4 h-4" /> Tallahassee, FL
                 </div>
                 <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" /> 24/7 (Closed Sun)
+                  <Clock className="w-4 h-4" /> Open 24 Hours
                 </div>
               </div>
             </div>

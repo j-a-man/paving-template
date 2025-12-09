@@ -38,7 +38,7 @@ export default function BreakerBoxPage() {
                             Breaker Box Services
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Metrolake Electrical Services ensures your home stays powered safely with expert breaker box installation and repair.
+                            Tallahassee Energy Solutions ensures your home stays powered safely with expert breaker box installation and repair.
                         </p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ export default function BreakerBoxPage() {
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    Your breaker box is the heart of your home's electrical system. It protects your family and property by shutting off electricity during surges or faults. At Metrolake Electrical Services, we specialize in installing, repairing, and upgrading panels to meet modern safety standards.
+                                    Your breaker box is the heart of your home's electrical system. It protects your family and property by shutting off electricity during surges or faults. At Tallahassee Energy Solutions, we specialize in installing, repairing, and upgrading panels to meet modern safety standards.
                                 </p>
                                 <p>
                                     Whether you have an outdated fuse box or need more capacity for new appliances, our team ensures your electrical panel is reliable and code-compliant.
@@ -167,7 +167,7 @@ export default function BreakerBoxPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">

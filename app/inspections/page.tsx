@@ -39,7 +39,7 @@ export default function InspectionsPage() {
                             Real Estate Inspections
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Ensure the electrical safety of your new home with comprehensive inspections from Metrolake Electrical Services.
+                            Ensure the electrical safety of your new home with comprehensive inspections from Tallahassee Energy Solutions.
                         </p>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ export default function InspectionsPage() {
                                     Buying a home is a major investment, and the electrical system is one of its most critical components. Hidden electrical issues can be dangerous and costly to fix.
                                 </p>
                                 <p>
-                                    Metrolake Electrical Services offers detailed electrical inspections for real estate transactions. We thoroughly check the panel, wiring, outlets, and grounding to identify potential hazards and code violations, giving you peace of mind before you close the deal.
+                                    Tallahassee Energy Solutions offers detailed electrical inspections for real estate transactions. We thoroughly check the panel, wiring, outlets, and grounding to identify potential hazards and code violations, giving you peace of mind before you close the deal.
                                 </p>
                             </div>
 
@@ -168,7 +168,7 @@ export default function InspectionsPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">

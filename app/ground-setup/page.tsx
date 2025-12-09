@@ -59,7 +59,7 @@ export default function GroundSetupPage() {
                                     A proper grounding system acts as a safety valve for your electrical system. It directs excess electricity safely into the ground during power surges or lightning strikes, preventing damage to your appliances and reducing shock hazards.
                                 </p>
                                 <p>
-                                    Metrolake Electrical Services installs and inspects grounding systems to ensure they meet the latest safety codes. Don't risk costly damage—ensure your property is grounded effectively.
+                                    Tallahassee Energy Solutions installs and inspects grounding systems to ensure they meet the latest safety codes. Don't risk costly damage—ensure your property is grounded effectively.
                                 </p>
                             </div>
 
@@ -168,7 +168,7 @@ export default function GroundSetupPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">

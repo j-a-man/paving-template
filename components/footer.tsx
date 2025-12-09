@@ -15,13 +15,13 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-6 group">
               <div className="relative w-10 h-10 overflow-hidden rounded-sm">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
-                  alt="Metrolake Logo"
+                  src="/logo.svg"
+                  alt="Tallahassee Energy Solutions Logo"
                   fill
                   className="object-contain"
                 />
               </div>
-              <span className="font-bold text-lg tracking-wider text-white group-hover:text-primary transition-colors uppercase">Metrolake Electrical</span>
+              <span className="font-bold text-lg tracking-wider text-white group-hover:text-primary transition-colors uppercase">Tallahassee Energy</span>
             </Link>
             <p className="text-white/70 leading-relaxed mb-6">
               Energy you can trust. Service you Deserve. Reliable electrical solutions for your home and business.
@@ -62,19 +62,19 @@ export default function Footer() {
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">5226 Stone Avenue, Portage, IN 46368</span>
+                <span className="text-white/70">Tallahassee and nearby areas</span>
               </li>
               <li className="flex items-start gap-4">
                 <Phone className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">(219) 746-0388</span>
+                <span className="text-white/70">(448) 500-9492</span>
               </li>
               <li className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">perezherman@aol.com</span>
+                <span className="text-white/70">contact@tallahasseeenergysolutions.com</span>
               </li>
               <li className="flex items-start gap-4">
                 <Clock className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">Mon-Fri: 8am-5pm</span>
+                <span className="text-white/70">Open 24 Hours</span>
               </li>
             </ul>
           </div>
@@ -83,7 +83,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/50 text-sm">
-            © {new Date().getFullYear()} Metrolake Electrical Services. All rights reserved.
+            © {new Date().getFullYear()} Tallahassee Energy Solutions. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-white/50">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>

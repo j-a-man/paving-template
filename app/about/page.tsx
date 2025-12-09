@@ -38,10 +38,10 @@ export default function AboutPage() {
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div> {/* Decorative line */}
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            About Metrolake Electrical Services
+                            About Tallahassee Energy Solutions
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Serving Portage and surrounding communities with safe and reliable electrical work for over 15 years.
+                            Serving Tallahassee and nearby areas with safe and reliable electrical work for over 15 years.
                         </p>
                     </div>
                 </div>
@@ -60,19 +60,19 @@ export default function AboutPage() {
 
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    For over 15 years, Metrolake Electrical Services has been proudly serving Portage and the surrounding communities. From replacing meters and installing new panels to complete rewiring and inspections, we handle every job with care and professionalism.
+                                    For over 15 years, Tallahassee Energy Solutions has been proudly serving Tallahassee and nearby areas. From replacing meters and installing new panels to complete rewiring and inspections, we handle every job with care and professionalism.
                                 </p>
                                 <p>
                                     Our mission is simple — to provide honest, affordable, and high-quality services that keep your home or business running smoothly. We believe in doing the job right the first time, on schedule, and with your safety as our top priority.
                                 </p>
                                 <p>
-                                    Whether it’s an upgrade, repair, or a full inspection, we make the process easy and worry-free. With Metrolake, you’re choosing experience, trust, and a team that treats your property like it’s our own.
+                                    Whether it’s an upgrade, repair, or a full inspection, we make the process easy and worry-free. With Tallahassee Energy Solutions, you’re choosing experience, trust, and a team that treats your property like it’s our own.
                                 </p>
                             </div>
 
                             <div className="mt-10">
                                 <div className="font-serif text-xl italic text-foreground">
-                                    - Herman R. Perez, Contact Person
+                                    - Tommy, Contact Person
                                 </div>
                             </div>
                         </div>
@@ -161,7 +161,7 @@ export default function AboutPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">

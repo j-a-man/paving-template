@@ -38,7 +38,7 @@ export default function ContactPage() {
 
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-4 tracking-tight text-white drop-shadow-lg font-normal">
-                        Contact Metrolake
+                        Contact Tallahassee Energy Solutions
                     </h1>
                     <p className="text-lg text-white/90 max-w-xl font-light">
                         Get in touch for honest work and timely service.
@@ -136,7 +136,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Address</h4>
                                             <p className="text-white font-light text-lg leading-relaxed">
-                                                5226 Stone Avenue,<br />Portage, IN 46368
+                                                Tallahassee and nearby areas
                                             </p>
                                         </div>
                                     </div>
@@ -148,7 +148,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Phone</h4>
                                             <p className="text-white font-light text-lg leading-relaxed">
-                                                (219) 746-0388
+                                                (448) 500-9492
                                             </p>
                                         </div>
                                     </div>
@@ -160,7 +160,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Email</h4>
                                             <p className="text-white font-light text-lg leading-relaxed">
-                                                perezherman@aol.com
+                                                contact@tallahasseeenergysolutions.com
                                             </p>
                                         </div>
                                     </div>
@@ -174,11 +174,11 @@ export default function ContactPage() {
                                             <div className="text-white font-light text-sm leading-relaxed space-y-2">
                                                 <div className="flex justify-between w-56 border-b border-white/10 pb-1">
                                                     <span>Mon - Fri:</span>
-                                                    <span>8:00 AM – 5:00 PM</span>
+                                                    <span>Open 24 Hours</span>
                                                 </div>
                                                 <div className="flex justify-between w-56 text-white/50 pt-1">
                                                     <span>Sat & Sun:</span>
-                                                    <span>Closed</span>
+                                                    <span>Open 24 Hours</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -191,7 +191,7 @@ export default function ContactPage() {
                                 <p className="text-white/60 text-sm mb-4">
                                     Need immediate assistance? Call our emergency line 24/7.
                                 </p>
-                                <a href="tel:+12197460388" className="text-xl font-bold text-white hover:text-primary transition-colors flex items-center gap-2">
+                                <a href="tel:+14485009492" className="text-xl font-bold text-white hover:text-primary transition-colors flex items-center gap-2">
                                     Call Now <span className="text-primary text-2xl">→</span>
                                 </a>
                             </div>
@@ -205,7 +205,7 @@ export default function ContactPage() {
                 <div className={`${containerClass} text-center`}>
                     <h2 className="text-2xl font-bold mb-4 text-secondary">Already a Customer?</h2>
                     <p className="text-muted-foreground mb-6">
-                        We'd love to hear about your experience with Metrolake Electrical Services.
+                        We'd love to hear about your experience with Tallahassee Energy Solutions.
                     </p>
                     <Link href="/review">
                         <Button variant="outline" className="bg-white border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">

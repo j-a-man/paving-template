@@ -40,7 +40,7 @@ export default function CommercialElectricalPage() {
                             Commercial Electrical
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Reliable, heavy-duty electrical solutions for businesses in Portage and surrounding areas.
+                            Reliable, heavy-duty electrical solutions for businesses in Tallahassee and nearby areas.
                         </p>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ export default function CommercialElectricalPage() {
                                     Modern businesses rely on complex electrical systems to operate efficiently. From lighting and data cabling to heavy machinery power, your electrical infrastructure is the backbone of your operations.
                                 </p>
                                 <p>
-                                    Metrolake Electrical Services provides comprehensive commercial electrical services. We understand the unique challenges of commercial projects, including tight schedules and the need to minimize disruption to your business. Our experienced team works efficiently to deliver high-quality results on time.
+                                    Tallahassee Energy Solutions provides comprehensive commercial electrical services. We understand the unique challenges of commercial projects, including tight schedules and the need to minimize disruption to your business. Our experienced team works efficiently to deliver high-quality results on time.
                                 </p>
                             </div>
 
@@ -169,7 +169,7 @@ export default function CommercialElectricalPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">

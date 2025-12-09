@@ -56,7 +56,7 @@ export default function MeterBoxPage() {
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg font-light leading-relaxed">
                                 <p>
-                                    The electric meter box is the gateway for electricity entering your home. Old, damaged, or obsolete meter boxes can be hazardous and may not meet current utility standards. Metrolake Electrical Services provides expert installation and replacement to keep your power connection safe and up to code.
+                                    The electric meter box is the gateway for electricity entering your home. Old, damaged, or obsolete meter boxes can be hazardous and may not meet current utility standards. Tallahassee Energy Solutions provides expert installation and replacement to keep your power connection safe and up to code.
                                 </p>
                                 <p>
                                     Whether you're upgrading your service, renovating your home, or need to replace a damaged enclosure, our team works quickly and professionally to minimize downtime.
@@ -168,7 +168,7 @@ export default function MeterBoxPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">

@@ -52,7 +52,7 @@ export default function Home() {
               Energy you can trust.<br />Service you Deserve.
             </h1>
             <p className="text-base md:text-lg mb-8 text-white/90 leading-relaxed max-w-xl drop-shadow-md">
-              At Metrolake Electrical Services, we bring reliable electrical solutions to your home and business. Safe, powered, and up to date.
+              At Tallahassee Energy Solutions, we bring reliable electrical solutions to your home and business. Safe, powered, and up to date.
             </p>
             <div>
               <Link href="/contact">
@@ -78,9 +78,9 @@ export default function Home() {
             <div className="max-w-xl">
               {/* Exact Headline Style from Image */}
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] mb-6 text-foreground tracking-tight">
-                Metrolake <br />
-                Electrical <br />
-                <span className="text-primary">Services.</span>
+                Tallahassee <br />
+                Energy <br />
+                <span className="text-primary">Solutions.</span>
               </h2>
 
               <p className="text-muted-foreground text-lg leading-relaxed mb-8 font-light">
@@ -100,9 +100,9 @@ export default function Home() {
             {/* RIGHT SIDE: Image Collage */}
             <div className="relative h-[500px] w-full hidden lg:block">
               {/* Main Tall Image (Right) */}
-              <div className="absolute right-0 top-8 w-[52%] h-[90%] z-20 shadow-xl overflow-hidden">
+              <div className="absolute right-0 top-8 w-[52%] h-[90%] z-20 shadow-xl overflow-hidden border-[6px] border-white">
                 <Image
-                  src="/paving1.jpg"
+                  src="/electric1.jpg"
                   alt="Construction Portrait"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
@@ -110,9 +110,9 @@ export default function Home() {
               </div>
 
               {/* Top Left Small Image */}
-              <div className="absolute left-0 top-0 w-[55%] h-[42%] z-10 shadow-lg overflow-hidden">
+              <div className="absolute left-0 top-0 w-[55%] h-[42%] z-10 shadow-lg overflow-hidden border-[6px] border-white">
                 <Image
-                  src="/paving2.jpg"
+                  src="/electric2.jpg"
                   alt="Construction Site"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
@@ -120,9 +120,9 @@ export default function Home() {
               </div>
 
               {/* Bottom Left Medium Image */}
-              <div className="absolute left-8 bottom-0 w-[48%] h-[60%] z-30 shadow-[0_20px_50px_rgba(0,0,0,0.2)] border-[6px] border-white overflow-hidden">
+              <div className="absolute left-8 bottom-0 w-[48%] h-[60%] z-30 shadow-[0_20px_50px_rgba(0,0,0,0.2)] overflow-hidden border-[6px] border-white">
                 <Image
-                  src="/paving3.jpg"
+                  src="/electric3.jpeg"
                   alt="Planning Construction"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-700"
@@ -204,9 +204,9 @@ export default function Home() {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=paved-parking-lot" alt="Project 1" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image src="/placeholder.svg?height=500&width=400&query=commercial-lighting" alt="Project 1" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Commercial Parking Lot</h3>
+                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Commercial Lighting Upgrade</h3>
                     </div>
                   </Card>
                 </div>
@@ -214,9 +214,9 @@ export default function Home() {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=residential-driveway-paving" alt="Project 2" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image src="/placeholder.svg?height=500&width=400&query=residential-panel" alt="Project 2" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Residential Driveway</h3>
+                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Home Panel Upgrade</h3>
                     </div>
                   </Card>
                 </div>
@@ -224,9 +224,9 @@ export default function Home() {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=road-resurfacing" alt="Project 3" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image src="/placeholder.svg?height=500&width=400&query=generator-install" alt="Project 3" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Road Resurfacing</h3>
+                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Generator Installation</h3>
                     </div>
                   </Card>
                 </div>
@@ -234,9 +234,9 @@ export default function Home() {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=tar-and-chip-driveway" alt="Project 4" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image src="/placeholder.svg?height=500&width=400&query=smart-home-wiring" alt="Project 4" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
-                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Tar & Chip Project</h3>
+                      <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Smart Home Wiring</h3>
                     </div>
                   </Card>
                 </div>
@@ -263,7 +263,7 @@ export default function Home() {
       </div>
 
       {/* ================= CTA BANNER ================= */}
-      <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
+      <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
         <div className="absolute inset-0 bg-secondary/70"></div>
         <div className={`${containerClass} relative z-10 text-left`}>
           <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">

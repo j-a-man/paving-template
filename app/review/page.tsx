@@ -15,7 +15,7 @@ export default function ReviewPage() {
     const [feedback, setFeedback] = useState("")
     const [submitted, setSubmitted] = useState(false)
 
-    const googleReviewUrl = "https://www.google.com/search?sca_esv=711d87e2c6f6d006&rlz=1C1OPNX_enUS983US983&sxsrf=AE3TifORBH3hW6eArALOVKeamFnPwu2Slg:1764884830519&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E1pYmrg6bn4pO25KzyNMakwUm1OB937yjyxnZ_kULEfDU3UhWVfk0iopFYJ4sQsseWTYGG_sJvrfBDKsZBQpd3EbqptPL0Udbbaw-XO9-arqCbU6Yw%3D%3D&q=Nuclearnick+Construction+Reviews&sa=X&ved=2ahUKEwiq1pGr9KSRAxU5FmIAHY0OARoQ0bkNegQILhAC&biw=1536&bih=695&dpr=1.25#lrd=0x65ed24f551f422f1:0xc38c56de710ad148,3,,,,"
+    const googleReviewUrl = "https://www.google.com/search?sca_esv=834acf79ff0bb001&rlz=1C1OPNX_enUS983US983&sxsrf=AE3TifNM5xvFpzRnfbkXJenHRzPKwaszdg:1765248263350&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E-w7NkuVuC4F32qa9opAn9gGqcvKYw1wsoCZMXNRxWekg0ep3AKbQuhfpyaQLqRj5TUJ6_LstwKoLaeSsF8MkN3Coj6wvlqfPq5OWEhco2dtu4Owpw%3D%3D&q=Tallahassee+Energy+Solutions+Reviews&sa=X&ved=2ahUKEwjOrrWdvq-RAxUUl4kEHe1TBM4Q0bkNegQINBAC&biw=1536&bih=695&dpr=1.25#lrd=0xadcb66a628d125e3:0x3c34385f2c393729,3,,,,"
 
     const handleStarClick = (selectedRating: number) => {
         setRating(selectedRating)
@@ -29,7 +29,7 @@ export default function ReviewPage() {
         // Construct mailto link
         const subject = encodeURIComponent(`New Feedback - ${rating} Stars`)
         const body = encodeURIComponent(`Rating: ${rating} Stars\n\nFeedback:\n${feedback}`)
-        window.location.href = `mailto:risticnicholas@yahoo.com?subject=${subject}&body=${body}`
+        window.location.href = `mailto:contact@tallahasseeenergysolutions.com?subject=${subject}&body=${body}`
         setSubmitted(true)
     }
 

@@ -13,7 +13,9 @@ import {
     Home,
     Droplets,
     Hammer,
-    Tractor
+    Tractor,
+    Zap,
+    Shield
 } from "lucide-react"
 
 export default function ServicesPage() {
@@ -30,21 +32,21 @@ export default function ServicesPage() {
         {
             title: "Ground Setup",
             description: "We install proper grounding systems to protect homes and electrical equipment from power surges.",
-            icon: Droplets,
+            icon: Zap,
             link: "/ground-setup",
             image: "/placeholder.svg?height=600&width=800&query=electrical-grounding"
         },
         {
             title: "Electric Meter Box",
             description: "We install and replace electric meter boxes to keep your power connection safe and up to code.",
-            icon: Hammer,
+            icon: Zap,
             link: "/electric-meter-box",
             image: "/placeholder.svg?height=600&width=800&query=electric-meter"
         },
         {
             title: "Commercial Electrical",
             description: "Reliable electrical solutions for your business. From rewiring to panel upgrades.",
-            icon: Truck,
+            icon: Building2,
             link: "/commercial-electrical",
             image: "/placeholder.svg?height=600&width=800&query=commercial-electrician"
         },
@@ -58,7 +60,7 @@ export default function ServicesPage() {
         {
             title: "Safe Rewiring",
             description: "We handle complete rewiring projects safely and professionally for older homes and renovations.",
-            icon: Droplets,
+            icon: Shield,
             link: "/breaker-box", // Fallback or separate page
             image: "/placeholder.svg?height=600&width=800&query=electrical-wiring"
         }
@@ -86,7 +88,7 @@ export default function ServicesPage() {
                             Our Services
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Comprehensive electrical solutions tailored to your needs. Quality you can trust, from Metrolake Electrical Services.
+                            Comprehensive electrical solutions tailored to your needs. Quality you can trust, from Tallahassee Energy Solutions.
                         </p>
                     </div>
                 </div>
@@ -128,7 +130,7 @@ export default function ServicesPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/placeholder.svg?height=400&width=1600&query=asphalt-paver-machine)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/70"></div>
                 <div className={`${containerClass} relative z-10 text-left`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
