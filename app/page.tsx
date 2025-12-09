@@ -17,9 +17,9 @@ import {
 } from "@/components/ui/carousel"
 import {
   CheckCircle2,
-  Truck,
-  Orbit,
-  Layers,
+  Scan,
+  ShieldCheck,
+  Wrench,
   ArrowRight,
   MapPin
 } from "lucide-react"
@@ -30,19 +30,19 @@ export default function Home() {
 
   const recentProjects = [
     {
-      title: "Convenience Store ATM Placement",
-      location: "Gary, IN",
-      image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800&q=80",
+      title: "Lakefront Rescreening",
+      location: "Sarasota, FL",
+      image: "https://images.unsplash.com/photo-1572331165267-854da2b00dc1?w=800&q=80",
     },
     {
-      title: "Festival Mobile ATM Fleet",
-      location: "Merillville, IN",
-      image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      title: "Storm Panel Repair",
+      location: "Bradenton, FL",
+      image: "https://images.unsplash.com/photo-1562778612-e1e0cda9915c?w=800&q=80",
     },
     {
-      title: "Bar & Lounge Installation",
-      location: "Hammond, IN",
-      image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80",
+      title: "Pet Screen Upgrade",
+      location: "Venice, FL",
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
     }
   ]
 
@@ -58,20 +58,22 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
           style={{
-            backgroundImage: "url(/electric_image.jpg)",
+            backgroundImage: "url(/pool-screen.jpg)", // Will rely on fallback or need to find an asset
           }}
         >
+          {/* Fallback to blue gradient if no image */}
+          <div className="absolute inset-0 bg-gradient-to-br from-secondary to-primary" />
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-secondary/60" />
+          <div className="absolute inset-0 bg-secondary/50" />
         </div>
 
         <div className={`${containerClass} relative z-10 py-20 text-left`}>
           <div className="max-w-3xl">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-              Reliable ATM Solutions.<br />Service you Can Trust.
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-7xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
+              Keep The Bugs Out.<br />Enjoy The View.
             </h1>
-            <p className="text-base md:text-lg mb-8 text-white/90 leading-relaxed max-w-xl drop-shadow-md">
-              At Five Star ATM, we provide seamless ATM placement, cash loading, and maintenance for your business. Fast, secure, and hassle-free.
+            <p className="text-base md:text-xl mb-8 text-white/90 leading-relaxed max-w-xl drop-shadow-md">
+              Victor Pool Screen Repair specializes in pool enclosure rescreening and restoration. Professional, affordable, and reliable service.
             </p>
             <div>
               <Link href="/contact">
@@ -80,7 +82,7 @@ export default function Home() {
                   size="lg"
                   className="text-white border-white bg-transparent hover:bg-white hover:text-black rounded-none px-6 py-5 text-xs font-bold tracking-widest uppercase transition-all duration-300"
                 >
-                  Get A Quote
+                  Get A Free Quote
                 </Button>
               </Link>
             </div>
@@ -97,13 +99,13 @@ export default function Home() {
             <div className="max-w-xl">
               {/* Exact Headline Style from Image */}
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.15] mb-6 text-foreground tracking-tight">
-                Five Star <br />
-                ATM <br />
-                <span className="text-primary">Services.</span>
+                Quality <br />
+                Screen <br />
+                <span className="text-primary">Repair.</span>
               </h2>
 
               <p className="text-muted-foreground text-lg leading-relaxed mb-8 font-light">
-                From installation to daily cash management, our team ensures your ATMs are always running. With us, you get honest work, timely service, and the revenue you deserve.
+                Your pool cage protects your outdoor oasis, but it takes a beating from the Florida sun and storms. Whether you need a few panels replaced or a full rescreen, we use only the highest quality materials to ensure your enclosure looks great and lasts for years.
               </p>
 
               {/* Exact Button Style from Image */}
@@ -117,84 +119,73 @@ export default function Home() {
             </div>
 
             {/* RIGHT SIDE: Image Collage */}
-            <div className="relative h-[500px] w-full hidden lg:block">
-              {/* Main Tall Image (Right) */}
-              <div className="absolute right-0 top-8 w-[52%] h-[90%] z-20 shadow-xl overflow-hidden border-[6px] border-white">
+            <div className="relative h-[600px] w-full">
+              <div className="absolute top-0 right-0 w-4/5 h-4/5 bg-gray-200 shadow-xl overflow-hidden z-20">
                 <Image
-                  src="/electric1.jpg"
-                  alt="Construction Portrait"
+                  src="/placeholder.svg?height=800&width=600&query=pool-cage-florida"
+                  alt="Pool Screen Rescreening"
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  className="object-cover"
                 />
               </div>
-
-              {/* Top Left Small Image */}
-              <div className="absolute left-0 top-0 w-[55%] h-[42%] z-10 shadow-lg overflow-hidden border-[6px] border-white">
-                <Image
-                  src="/electric2.jpg"
-                  alt="Construction Site"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-
-              {/* Bottom Left Medium Image */}
-              <div className="absolute left-8 bottom-0 w-[48%] h-[60%] z-30 shadow-[0_20px_50px_rgba(0,0,0,0.2)] overflow-hidden border-[6px] border-white">
-                <Image
-                  src="/electric3.jpeg"
-                  alt="Planning Construction"
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
-                />
+              <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-primary/20 -z-10 translate-x-[-20px] translate-y-[20px]"></div>
+              <div className="absolute bottom-10 left-10 w-3/5 h-2/5 bg-white border border-gray-100 shadow-lg p-6 z-30 flex flex-col justify-center">
+                <div className="flex items-center gap-3 mb-2">
+                  <CheckCircle2 className="w-8 h-8 text-primary" />
+                  <span className="font-bold text-lg text-secondary">Phifer Screen</span>
+                </div>
+                <p className="text-sm text-muted-foreground">We use industry-standard Phifer insect screen for maximum durability.</p>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* ================= SERVICES SECTION ================= */}
-      <section className="py-16 md:py-24 bg-secondary text-white">
-        <div className={`${containerClass} mb-12`}>
-          <h2 className="text-4xl md:text-5xl font-normal mb-4 text-left">
-            Our Services
-          </h2>
-          <p className="text-white/80 max-w-2xl text-left text-lg">
-            We provide full-service ATM solutions including placement, processing, and maintenance.
-          </p>
-        </div>
-
+      {/* ================= SERVICES SNIPPETS ================= */}
+      <section className="py-20 bg-secondary text-white">
         <div className={containerClass}>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div className="max-w-2xl">
+              <span className="text-primary font-bold tracking-widest uppercase text-xs mb-2 block">Our Services</span>
+              <h2 className="text-4xl font-serif">What We Do</h2>
+            </div>
+            <Link href="/services" className="hidden md:flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors mt-4 md:mt-0">
+              View All Services <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
-              <Layers className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-normal mb-4 font-serif">ATM Placement</h3>
+              <Scan className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
+              <h3 className="text-2xl font-normal mb-4 font-serif">Full Rescreening</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
-                Free ATM placement for your business. We handle the installation while you earn revenue.
+                Complete replacement of all screen, spline, and door hardware. Bring your cage back to life.
               </p>
-              <Link href="/services" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/rescreening" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
             {/* Card 2 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
-              <Orbit className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-normal mb-4 font-serif">Cash Loading</h3>
+              <ShieldCheck className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
+              <h3 className="text-2xl font-normal mb-4 font-serif">Panel Repair</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
-                Never run empty. Our reliable cash loading service ensures your ATM is always ready for customers.
+                Storm damage? Rips or tears? We replace individual panels quickly and affordably.
               </p>
-              <Link href="/services" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/panel-repair" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
             {/* Card 3 */}
             <div className="bg-secondary-foreground/5 p-8 text-left border border-white/10 hover:border-primary/50 transition-colors group">
-              <Truck className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
-              <h3 className="text-2xl font-normal mb-4 font-serif">Maintenance</h3>
+              <Wrench className="w-12 h-12 text-white mb-6 group-hover:text-primary transition-colors" />
+              <h3 className="text-2xl font-normal mb-4 font-serif">Hardware</h3>
               <p className="text-white/70 mb-6 leading-relaxed">
-                24/7 monitoring and repair services to keep your machine operational and profitable.
+                Door kit replacements, cable installation, and rusted tapcon removal to ensure safety.
               </p>
-              <Link href="/services" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+              <Link href="/hardware" className="inline-flex items-center text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
                 Read More <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
@@ -246,10 +237,6 @@ export default function Home() {
             <CarouselPrevious className="hidden md:flex left-[-50px]" />
             <CarouselNext className="hidden md:flex right-[-50px]" />
           </Carousel>
-
-
-
-
         </div>
       </section>
 
@@ -265,16 +252,16 @@ export default function Home() {
       </div>
 
       {/* ================= CTA BANNER ================= */}
-      <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
-        <div className="absolute inset-0 bg-secondary/70"></div>
+      <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/pool-screen.jpg)' }}>
+        <div className="absolute inset-0 bg-secondary/80"></div>
         <div className={`${containerClass} relative z-10 text-left`}>
           <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-            GET A FREE ATM PLACEMENT<br /> FOR YOUR BUSINESS TODAY
+            GET A FREE ESTIMATE<br /> FOR YOUR POOL CAGE
           </h2>
           <div className="flex flex-wrap gap-4">
             <Link href="/contact">
               <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                Get A Quote
+                Call Now
               </Button>
             </Link>
             <Link href="/contact">

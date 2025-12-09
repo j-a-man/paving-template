@@ -15,46 +15,46 @@ export default function ProjectsPage() {
 
     const projects = [
         {
-            title: "Convenience Store ATM Placement",
-            location: "Gary, IN",
+            title: "Lakefront Cage Restoration",
+            location: "Sarasota, FL",
+            date: "November 2024",
+            image: "https://images.unsplash.com/photo-1572331165267-854da2b00dc1?w=800&q=80", // Pool layout
+            description: "Complete rescreening of a large lakefront pool cage. Used 20/20 No-See-Um mesh to prevent midges while maintaining the view."
+        },
+        {
+            title: "Storm Damage Repair",
+            location: "Bradenton, FL",
             date: "October 2024",
-            image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800&q=80", // Placeholder for ATM
-            description: "Installed a new Genmega ATM for a high-traffic convenience store. The owner saw a 15% increase in in-store cash sales within the first month."
+            image: "https://images.unsplash.com/photo-1562778612-e1e0cda9915c?w=800&q=80", // Storm/Modern pool
+            description: "Replaced 12 roof panels torn by high winds. Inspected and replaced rusted tapcons to ensure structural integrity for the next storm."
         },
         {
-            title: "Festival Mobile ATM Fleet",
-            location: "Merillville, IN",
+            title: "Pet Screen Installation",
+            location: "Venice, FL",
             date: "September 2024",
-            image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80", // Concert crowd
-            description: "Deployed 4 mobile ATM units for a weekend music festival. Ensured 99.9% uptime with on-site technician support throughout the event."
+            image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80", // Patio with dog usually but just patio
+            description: "Installed Phifer Pet Screen on the lower walls of a lanai to prevent damage from the homeowner's two large dogs."
         },
         {
-            title: "Bar & Lounge Installation",
-            location: "Hammond, IN",
+            title: "Pool Enclosure Painting & Rescreen",
+            location: "North Port, FL",
             date: "August 2024",
-            image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80", // Bar interior
-            description: "Replaced an outdated machine with a modern Hyosung Halo II. Custom screen graphics were added to promote the venue's drink specials."
+            image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&q=80", // Luxury pool
+            description: "Combined service: Painted existing bronze cage to white and installed new standard 18/14 screen for a complete makeover."
         },
         {
-            title: "Hotel Lobby ATM Upgrade",
-            location: "Valparaiso, IN",
+            title: "Condo Complex Maintenance",
+            location: "Osprey, FL",
             date: "July 2024",
-            image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80", // Hotel lobby
-            description: "Upgraded the hotel's lobby ATM to a new EMV-compliant model. Provide ongoing cash loading and maintenance services."
+            image: "https://images.unsplash.com/photo-1596263576753-2bd9d9c2235c?w=800&q=80", // Condo pool
+            description: "Ongoing maintenance contract for a condo association. Replacing door kits and repairing panels as needed for residents."
         },
         {
-            title: "Gas Station Fleet Mangement",
-            location: "Michigan City, IN",
+            title: "Florida Glass Privacy Wall",
+            location: "Lakewood Ranch, FL",
             date: "June 2024",
-            image: "https://images.unsplash.com/photo-1527018601619-a508a2be00cd?w=800&q=80", // Gas station
-            description: "Took over management of a 3-location gas station chain's ATMs. Improved cash availability and reduced downtime by 40%."
-        },
-        {
-            title: "Shopping Plaza Outdoor Kiosk",
-            location: "Portage, IN",
-            date: "May 2024",
-            image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=800&q=80", // Shopping center
-            description: "Installed a secure, weather-resistant outdoor ATM kiosk for a busy shopping plaza, providing 24/7 access to cash for shoppers."
+            image: "https://images.unsplash.com/photo-1532415747656-74dbb8637731?w=800&q=80", // Privacy
+            description: "Installed Florida Glass (laminated screen) on the side wall of a pool cage to provide privacy from the neighboring property."
         }
     ]
 
@@ -67,7 +67,7 @@ export default function ProjectsPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/electric_image.jpg)",
+                        backgroundImage: "url(/pool-screen.jpg)",
                     }}
                 >
                     {/* Dark Overlay */}
@@ -79,7 +79,7 @@ export default function ProjectsPage() {
                         Our Projects
                     </h1>
                     <p className="text-lg text-white/90 max-w-xl font-light">
-                        See how Five Star ATM helps businesses succeed across Indiana.
+                        See the difference Victor Pool Screen Repair makes for homes in our community.
                     </p>
                 </div>
             </section>
@@ -125,15 +125,15 @@ export default function ProjectsPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/pool-screen.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/80"></div>
                 <div className={`${containerClass} relative z-10 text-center`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        Start Generating Revenue Today
+                        Start Your Project Today
                     </h2>
                     <Link href="/contact">
                         <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-10 py-7 rounded-none">
-                            Get Your Free ATM
+                            Get A Quote
                         </Button>
                     </Link>
                 </div>

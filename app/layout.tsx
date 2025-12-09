@@ -12,8 +12,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Metrolake Electrical Services | Energy you can trust",
-  description: "Reliable electrical solutions for your home and business. From rewiring to panel upgrades, we keep your property safe and powered.",
+  title: "Victor Pool Screen Repair | Sarasota & Manatee County",
+  description: "Professional pool cage rescreening, panel repair, and hardware upgrades. High-quality Phifer screen materials. Call Victor at (941) 565-2667.",
 }
 
 export default function RootLayout({

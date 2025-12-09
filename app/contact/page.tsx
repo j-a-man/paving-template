@@ -2,24 +2,14 @@
 
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue
-} from "@/components/ui/select"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
-import Link from "next/link"
+import { Phone, MapPin, Mail, Clock, ArrowRight } from "lucide-react"
 
 export default function ContactPage() {
     const containerClass = "container mx-auto px-6 md:px-24 lg:px-40"
-
-    // Unified style for all input fields to ensure consistency
-    const inputStyles = "rounded-none border-gray-200 bg-gray-50/50 px-4 py-6 text-base shadow-sm transition-all duration-300 placeholder:text-muted-foreground/50 focus-visible:border-primary focus-visible:bg-white focus-visible:ring-1 focus-visible:ring-primary/20"
 
     return (
         <main className="min-h-screen bg-background font-sans text-foreground">
@@ -30,192 +20,121 @@ export default function ContactPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/electric_image.jpg)",
+                        backgroundImage: "url(/pool-screen.jpg)",
                     }}
                 >
-                    <div className="absolute inset-0 bg-secondary/60" />
+                    <div className="absolute inset-0 bg-secondary/80" />
                 </div>
 
-                <div className={`${containerClass} relative z-10 text-left`}>
-                    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-4 tracking-tight text-white drop-shadow-lg font-normal">
-                        Contact Five Star ATM
+                <div className={`${containerClass} relative z-10 text-center`}>
+                    <h1 className="font-serif text-4xl md:text-6xl mb-6 font-bold tracking-tight text-white drop-shadow-lg">
+                        Get A Free Quote
                     </h1>
-                    <p className="text-lg text-white/90 max-w-xl font-light">
-                        Get in touch for reliable ATM placement and services.
+                    <p className="text-xl text-white/90 max-w-2xl mx-auto font-light">
+                        Call us or fill out the form below. We'll get back to you with a competitive estimate.
                     </p>
                 </div>
             </section>
 
-            {/* ================= CONTACT FORM & INFO ================= */}
-            <section className="py-20 md:py-32 bg-white">
+            {/* ================= CONTACT CONTENT ================= */}
+            <section className="py-20 bg-white">
                 <div className={containerClass}>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-gray-100 shadow-2xl">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
-                        {/* LEFT: Contact Form */}
-                        <div className="p-10 md:p-14 bg-white">
-                            <h2 className="text-3xl font-bold mb-2 text-secondary">Send Us A Message</h2>
-                            <p className="text-muted-foreground mb-10 text-sm">
-                                Fill out the form below and we'll get back to you within 24 hours.
+                        {/* LEFT: Contact Info */}
+                        <div>
+                            <div className="inline-block border-b-4 border-primary pb-2 mb-8">
+                                <span className="text-sm font-bold uppercase tracking-widest text-secondary">Contact Information</span>
+                            </div>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8 text-secondary leading-tight">
+                                We're Here to Help.
+                            </h2>
+                            <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
+                                Don't let a torn screen or broken door ruin your day. Reach out to Victor Pool Screen Repair for prompt, professional service in Sarasota and surrounding areas.
                             </p>
 
-                            <form className="space-y-8">
+                            <div className="space-y-8">
+                                <div className="flex items-start gap-6">
+                                    <div className="w-12 h-12 bg-primary/10 flex items-center justify-center shrink-0">
+                                        <Phone className="w-6 h-6 text-primary" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-bold text-secondary mb-1">Phone Number</h3>
+                                        <p className="text-muted-foreground mb-1">Call or Text anytime</p>
+                                        <a href="tel:9415652667" className="text-xl font-bold text-primary hover:underline">(941) 565-2667</a>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-6">
+                                    <div className="w-12 h-12 bg-primary/10 flex items-center justify-center shrink-0">
+                                        <MapPin className="w-6 h-6 text-primary" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-bold text-secondary mb-1">Service Area</h3>
+                                        <p className="text-muted-foreground">Sarasota, Bradenton, Venice, Osprey, Nokomis, North Port</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-6">
+                                    <div className="w-12 h-12 bg-primary/10 flex items-center justify-center shrink-0">
+                                        <Clock className="w-6 h-6 text-primary" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg font-bold text-secondary mb-1">Business Hours</h3>
+                                        <p className="text-muted-foreground">Mon - Sat: 8:00 AM - 6:00 PM</p>
+                                        <p className="text-muted-foreground">Sun: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* RIGHT: Form */}
+                        <div className="bg-gray-50 p-10 border border-gray-100 shadow-lg">
+                            <h3 className="text-2xl font-serif font-bold mb-6 text-secondary">Send Us a Message</h3>
+                            <form className="space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label htmlFor="name" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Name</label>
-                                        <Input
-                                            id="name"
-                                            placeholder="John Doe"
-                                            className={inputStyles}
-                                        />
+                                        <label htmlFor="firstName" className="text-sm font-bold uppercase tracking-wider text-muted-foreground">First Name</label>
+                                        <Input id="firstName" placeholder="John" className="bg-white border-gray-200" />
                                     </div>
                                     <div className="space-y-2">
-                                        <label htmlFor="email" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Email</label>
-                                        <Input
-                                            id="email"
-                                            type="email"
-                                            placeholder="john@example.com"
-                                            className={inputStyles}
-                                        />
+                                        <label htmlFor="lastName" className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Last Name</label>
+                                        <Input id="lastName" placeholder="Doe" className="bg-white border-gray-200" />
                                     </div>
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label htmlFor="phone" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Phone</label>
-                                    <Input
-                                        id="phone"
-                                        type="tel"
-                                        placeholder="(555) 123-4567"
-                                        className={inputStyles}
-                                    />
+                                    <label htmlFor="email" className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Email Address</label>
+                                    <Input id="email" type="email" placeholder="john@example.com" className="bg-white border-gray-200" />
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Service Needed</label>
-                                    <Select>
-                                        <SelectTrigger className={inputStyles}>
-                                            <SelectValue placeholder="Select a Service" />
-                                        </SelectTrigger>
-                                        <SelectContent className="rounded-none border-gray-200">
-                                            <SelectItem value="atm-placement">ATM Placement</SelectItem>
-                                            <SelectItem value="cash-loading">Cash Loading</SelectItem>
-                                            <SelectItem value="maintenance">Maintenance</SelectItem>
-                                            <SelectItem value="mobile-atm">Mobile ATM</SelectItem>
-                                            <SelectItem value="other">Other</SelectItem>
-                                        </SelectContent>
-                                    </Select>
+                                    <label htmlFor="phone" className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Phone Number</label>
+                                    <Input id="phone" type="tel" placeholder="(555) 123-4567" className="bg-white border-gray-200" />
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label htmlFor="message" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Message</label>
-                                    <Textarea
-                                        id="message"
-                                        placeholder="Tell us about your requirements..."
-                                        className={`${inputStyles} min-h-[150px] resize-none pt-4`}
-                                    />
+                                    <label htmlFor="service" className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Service Needed</label>
+                                    <select id="service" className="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                                        <option value="">Select a service...</option>
+                                        <option value="rescreening">Full Rescreening</option>
+                                        <option value="repair">Panel Repair</option>
+                                        <option value="hardware">Hardware/Doors</option>
+                                        <option value="other">Other</option>
+                                    </select>
                                 </div>
 
-                                <Button className="w-full bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-10 py-7 rounded-none shadow-md hover:shadow-lg transition-all mt-4">
-                                    Send Message
+                                <div className="space-y-2">
+                                    <label htmlFor="message" className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Message</label>
+                                    <Textarea id="message" placeholder="Tell us about your project..." className="bg-white border-gray-200 min-h-[120px]" />
+                                </div>
+
+                                <Button className="w-full bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold py-6 rounded-none">
+                                    Submit Request
                                 </Button>
                             </form>
                         </div>
-
-                        {/* RIGHT: Contact Info Panel */}
-                        <div className="bg-secondary text-white p-10 md:p-14 flex flex-col justify-between relative overflow-hidden">
-                            {/* Background Pattern/Texture */}
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none"></div>
-
-                            <div>
-                                <h3 className="text-2xl font-serif font-normal mb-10 border-b border-white/10 pb-6">Contact Information</h3>
-                                <div className="space-y-10">
-                                    <div className="flex items-start gap-5 group">
-                                        <div className="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center rounded-sm shrink-0 group-hover:bg-primary group-hover:border-primary transition-all duration-300">
-                                            <MapPin className="w-5 h-5 text-white" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Location</h4>
-                                            <a
-                                                href="https://www.google.com/maps/place/Five+Star+ATM/@38.3365071,-86.9431404,8.98z/data=!4m6!3m5!1s0xa3db494b5ca7c21d:0x4c2c117075d9f3d1!8m2!3d38.6430351!4d-86.6359605!16s%2Fg%2F11pl2qh34v?authuser=0&hl=en&entry=ttu"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-white font-light text-lg leading-relaxed hover:text-primary transition-colors"
-                                            >
-                                                Five Star ATM Location
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-start gap-5 group">
-                                        <div className="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center rounded-sm shrink-0 group-hover:bg-primary group-hover:border-primary transition-all duration-300">
-                                            <Phone className="w-5 h-5 text-white" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Phone</h4>
-                                            <p className="text-white font-light text-lg leading-relaxed">
-                                                (219) 808-5838
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-start gap-5 group">
-                                        <div className="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center rounded-sm shrink-0 group-hover:bg-primary group-hover:border-primary transition-all duration-300">
-                                            <Mail className="w-5 h-5 text-white" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Email</h4>
-                                            <p className="text-white font-light text-lg leading-relaxed">
-                                                fivestarelectricatm@gmail.com
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-start gap-5 group">
-                                        <div className="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center rounded-sm shrink-0 group-hover:bg-primary group-hover:border-primary transition-all duration-300">
-                                            <Clock className="w-5 h-5 text-white" />
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Business Hours</h4>
-                                            <div className="text-white font-light text-sm leading-relaxed space-y-2">
-                                                <div className="flex justify-between w-56 border-b border-white/10 pb-1">
-                                                    <span>Mon - Fri:</span>
-                                                    <span>9:00 AM – 5:00 PM</span>
-                                                </div>
-                                                <div className="flex justify-between w-56 text-white/50 pt-1">
-                                                    <span>Sat & Sun:</span>
-                                                    <span>Closed</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Bottom CTA in Panel */}
-                            <div className="mt-12 pt-8 border-t border-white/10">
-                                <p className="text-white/60 text-sm mb-4">
-                                    Need immediate assistance? Call our line.
-                                </p>
-                                <a href="tel:2198085838" className="text-xl font-bold text-white hover:text-primary transition-colors flex items-center gap-2">
-                                    Call Now <span className="text-primary text-2xl">→</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </section>
-
-            {/* ================= REVIEW CTA ================= */}
-            <section className="py-16 bg-secondary/5 border-t border-secondary/10">
-                <div className={`${containerClass} text-center`}>
-                    <h2 className="text-2xl font-bold mb-4 text-secondary">Already a Customer?</h2>
-                    <p className="text-muted-foreground mb-6">
-                        We'd love to hear about your experience with Five Star ATM.
-                    </p>
-                    <Link href="/review">
-                        <Button variant="outline" className="bg-white border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest font-bold px-8 py-6 rounded-none">
-                            Leave a Review
-                        </Button>
-                    </Link>
                 </div>
             </section>
 

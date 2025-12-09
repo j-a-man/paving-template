@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Phone, Clock, MapPin } from "lucide-react"
+import { Menu, X, Phone, Droplets } from "lucide-react"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -33,20 +33,16 @@ export default function Header() {
 
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="relative w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
-              <Image
-                src="/logo.svg"
-                alt="Five Star ATM Logo"
-                fill
-                className="object-contain"
-              />
+            {/* Simple Icon Representation since we don't have new logo asset yet */}
+            <div className="relative w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110 text-primary">
+              <Droplets className="w-6 h-6 md:w-8 md:h-8" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl md:text-2xl font-serif font-black tracking-tighter text-secondary leading-none">
-                FIVE STAR
+              <span className="text-lg md:text-xl font-serif font-black tracking-tight text-secondary leading-none">
+                VICTOR
               </span>
-              <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary leading-none">
-                ATM
+              <span className="text-xs md:text-xs font-bold tracking-widest text-primary leading-none uppercase">
+                Pool Screen Repair
               </span>
             </div>
           </Link>
@@ -63,15 +59,15 @@ export default function Header() {
           {/* RIGHT SIDE (Phone & CTA) */}
           <div className="hidden lg:flex items-center gap-6">
             <div className="flex flex-col items-end text-sm">
-              <a href="tel:+12198085838" className="font-bold text-secondary hover:text-primary transition-colors flex items-center gap-1">
+              <a href="tel:9415652667" className="font-bold text-secondary hover:text-primary transition-colors flex items-center gap-1">
                 <Phone className="w-4 h-4" />
-                (219) 808-5838
+                (941) 565-2667
               </a>
-              <span className="text-muted-foreground text-xs">Mon-Fri: 9am-5pm</span>
+              <span className="text-muted-foreground text-xs">Mon-Sat: 8am-6pm</span>
             </div>
             <Link href="/contact">
               <Button className={`${buttonColor} uppercase tracking-widest font-bold px-6 rounded-none`}>
-                Get Started
+                Get A Quote
               </Button>
             </Link>
           </div>
@@ -90,11 +86,6 @@ export default function Header() {
       {/* MOBILE MENU OVERLAY */}
       {isOpen && (
         <div className="fixed inset-0 z-40 bg-white flex flex-col items-center justify-center gap-8 lg:hidden animate-in slide-in-from-top-10 duration-300">
-          {/* Close button handled by toggle above, but logic requires z-index management or layout shift. 
-                 Actually the header stays on top, so the close button is visible. 
-                 We just need enough padding top or correct z-index.
-             */}
-
           <nav className="flex flex-col items-center gap-8 text-center">
             <Link href="/" className={mobileNavLinkClass} onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="/about" className={mobileNavLinkClass} onClick={() => setIsOpen(false)}>About</Link>
@@ -104,18 +95,14 @@ export default function Header() {
           </nav>
 
           <div className="flex flex-col items-center gap-4 mt-8">
-            <a href="tel:+12198085838" className="flex items-center gap-2 text-xl font-bold text-secondary">
+            <a href="tel:9415652667" className="flex items-center gap-2 text-xl font-bold text-secondary">
               <Phone className="w-5 h-5 text-primary" />
-              (219) 808-5838
+              (941) 565-2667
             </a>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Clock className="w-5 h-5 text-primary" />
-              <span>Mon-Fri: 9am-5pm</span>
-            </div>
 
             <Link href="/contact" onClick={() => setIsOpen(false)}>
               <Button className="bg-primary text-white uppercase tracking-widest font-bold px-8 py-4 text-lg rounded-none mt-4">
-                Get Started
+                Free Estimate
               </Button>
             </Link>
           </div>
