@@ -160,7 +160,7 @@ export default function ContactPage() {
                                         <div>
                                             <h4 className="font-bold uppercase tracking-wider mb-2 text-xs text-white/50">Email</h4>
                                             <p className="text-white font-light text-lg leading-relaxed">
-                                                contact@tallahasseeenergysolutions.com
+                                                tallahasseeenergysolutions@gmail.com
                                             </p>
                                         </div>
                                     </div>

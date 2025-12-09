@@ -29,7 +29,7 @@ export default function ReviewPage() {
         // Construct mailto link
         const subject = encodeURIComponent(`New Feedback - ${rating} Stars`)
         const body = encodeURIComponent(`Rating: ${rating} Stars\n\nFeedback:\n${feedback}`)
-        window.location.href = `mailto:contact@tallahasseeenergysolutions.com?subject=${subject}&body=${body}`
+        window.location.href = `mailto:tallahasseeenergysolutions@gmail.com?subject=${subject}&body=${body}`
         setSubmitted(true)
     }
 

@@ -70,7 +70,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-primary mt-1 shrink-0" />
-                <span className="text-white/70">contact@tallahasseeenergysolutions.com</span>
+                <span className="text-white/70">tallahasseeenergysolutions@gmail.com</span>
               </li>
               <li className="flex items-start gap-4">
                 <Clock className="w-6 h-6 text-primary mt-1 shrink-0" />
