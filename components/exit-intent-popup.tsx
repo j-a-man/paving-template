@@ -24,12 +24,8 @@ export default function ExitIntentPopup() {
             // Check if cursor left the top of the viewport (intent to close/switch tab)
             // and if we haven't shown the popup yet in this session.
             if (e.clientY <= 0 && !hasShown) {
-                const alreadyShownSession = sessionStorage.getItem("exit-intent-shown")
-                if (!alreadyShownSession) {
-                    setOpen(true)
-                    setHasShown(true)
-                    sessionStorage.setItem("exit-intent-shown", "true")
-                }
+                setOpen(true)
+                setHasShown(true)
             }
         }
 
@@ -49,7 +45,7 @@ export default function ExitIntentPopup() {
 
     return (
         <Dialog open={open} onOpenChange={setOpen}>
-            <DialogContent className="sm:max-w-[500px] bg-white text-foreground border-t-4 border-primary p-0 overflow-hidden gap-0 shadow-2xl rounded-none">
+            <DialogContent showCloseButton={false} className="sm:max-w-[500px] bg-white text-foreground border-t-4 border-primary p-0 overflow-hidden gap-0 shadow-2xl rounded-none">
                 {/* Header Section */}
                 <div className="bg-secondary p-6 text-center relative">
                     <DialogHeader>
