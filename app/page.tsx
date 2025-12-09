@@ -52,7 +52,7 @@ export default function Home() {
               Energy you can trust.<br />Service you Deserve.
             </h1>
             <p className="text-base md:text-lg mb-8 text-white/90 leading-relaxed max-w-xl drop-shadow-md">
-              At Tallahassee Energy Solutions, we bring reliable electrical solutions to your home and business. Safe, powered, and up to date.
+              At Tallahassee Energy Solutions, we bring reliable electrical solutions to your home and business. Safe, powered, and reliable.
             </p>
             <div>
               <Link href="/contact">
