@@ -1,29 +1,26 @@
 from PIL import Image
 from collections import Counter
+import sys
 
-def get_orange_colors(image_path):
-    image = Image.open(image_path)
-    image = image.convert('RGB')
-    # Don't resize too small to avoid losing thin lines
-    image = image.resize((300, 300)) 
-    pixels = list(image.getdata())
-    counts = Counter(pixels)
-    
-    print("Searching for orange-ish colors (R > 150, G > 50, B < 100):")
-    found = False
-    for rgb, count in counts.most_common(1000):
-        r, g, b = rgb
-        # Broad orange filter
-        if r > 150 and g > 50 and b < 100 and r > g:
-            hex_color = '#{:02x}{:02x}{:02x}'.format(*rgb)
-            print(f"Hex: {hex_color}, RGB: {rgb}, Count: {count}")
-            found = True
-            
-    if not found:
-        print("No orange colors found in top 1000.")
-
-if __name__ == "__main__":
+def analyze_image(image_path):
     try:
-        get_orange_colors('public/nick.png')
+        print(f"Analyzing {image_path}...")
+        img = Image.open(image_path)
+        img = img.resize((200, 200)) # resize for speed
+        img = img.convert("RGBA")
+        pixels = []
+        data = img.getdata()
+        for item in data:
+            if item[3] > 100: # Only mostly opaque pixels
+                pixels.append(item[:3])
+                
+        counts = Counter(pixels)
+        print("Top 20 colors:")
+        for rgb, count in counts.most_common(20):
+            hex_val = '#{:02x}{:02x}{:02x}'.format(*rgb)
+            print(f"Hex: {hex_val}, RGB: {rgb}, Count: {count}")
     except Exception as e:
         print(f"Error: {e}")
+
+if __name__ == "__main__":
+    analyze_image('public/logo.png')

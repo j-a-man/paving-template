@@ -20,38 +20,38 @@ export default function ServicesPage() {
     const services = [
         {
             icon: <Layers className="w-12 h-12 text-primary mb-6" />,
-            title: "Free ATM Placement",
-            description: "We place a brand new, state-of-the-art ATM in your business at no cost to you. You provide the space and power, we handle the rest.",
+            title: "General Maintenance",
+            description: "From fixing squeaky doors to patching drywall, we handle the small repairs so they don't become big problems.",
             link: "/contact"
         },
         {
             icon: <DollarSign className="w-12 h-12 text-primary mb-6" />,
-            title: "Cash Loading Services",
-            description: "Eliminate the hassle of filling your ATM. Our cash loading service ensures your machine is always stocked and ready for customers.",
+            title: "Kitchen Upgrades",
+            description: "Modernize your kitchen with new backsplashes, cabinet hardware, or faucet installations. Small changes, big impact.",
             link: "/contact"
         },
         {
             icon: <Orbit className="w-12 h-12 text-primary mb-6" />,
-            title: "ATM Maintenance",
-            description: "We provide comprehensive maintenance and repairs. If your machine goes down, our technicians are there to fix it fast.",
+            title: "Bathroom Repairs",
+            description: "Leaky faucets, running toilets, or recaulking showers. We ensure your bathroom is functional and watertight.",
             link: "/contact"
         },
         {
             icon: <Truck className="w-12 h-12 text-primary mb-6" />,
-            title: "Mobile ATM Events",
-            description: "Hosting an event? We bring mobile ATMs to festivals, concerts, and fairs to keep cash flowing for your vendors.",
+            title: "Furniture Assembly",
+            description: "Bought new furniture? Save yourself the frustration. We assemble desks, beds, and shelving units quickly and correctly.",
             link: "/contact"
         },
         {
             icon: <CreditCard className="w-12 h-12 text-primary mb-6" />,
-            title: "Transaction Processing",
-            description: "Secure and fast transaction processing services. We ensure every transaction is handled safely and efficiently.",
+            title: "Fixture Installation",
+            description: "We install ceiling fans, light fixtures, and smart home devices to upgrade your home's comfort and style.",
             link: "/contact"
         },
         {
             icon: <CheckCircle2 className="w-12 h-12 text-primary mb-6" />,
-            title: "Compliance Upgrades",
-            description: "We keep your ATM up to date with the latest ADA and EMV compliance standards so you never have to worry.",
+            title: "Deck & Patio Repair",
+            description: "Get ready for outdoor living. We repair loose boards, clean, and stain decks to keep them safe and beautiful.",
             link: "/contact"
         }
     ]
@@ -65,7 +65,7 @@ export default function ServicesPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/electric_image.jpg)",
+                        backgroundImage: "url(/kitchen2.jpg)",
                     }}
                 >
                     <div className="absolute inset-0 bg-secondary/60" />
@@ -76,7 +76,7 @@ export default function ServicesPage() {
                         Our Services
                     </h1>
                     <p className="text-lg text-white/90 max-w-xl font-light">
-                        Comprehensive ATM solutions provided by Five Star ATM.
+                        Comprehensive home improvement solutions provided by Handy Randy.
                     </p>
                 </div>
             </section>
@@ -106,14 +106,14 @@ export default function ServicesPage() {
             </section>
 
             {/* ================= CALL TO ACTION ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/kitchen1.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/80"></div>
                 <div className={`${containerClass} relative z-10 text-center`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-6 leading-tight">
-                        Ready to Boost Your Revenue?
+                        Ready to Start Your Project?
                     </h2>
                     <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-                        Contact Five Star ATM today to get a free ATM placement for your business.
+                        Contact Handy Randy today to get a free estimate for your home repairs.
                     </p>
                     <Link href="/contact">
                         <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-10 py-7 rounded-none">

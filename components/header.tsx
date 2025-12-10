@@ -32,21 +32,21 @@ export default function Header() {
         <div className="flex items-center justify-between">
 
           {/* LOGO */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-1 group">
             <div className="relative w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 group-hover:scale-110">
               <Image
-                src="/logo.svg"
-                alt="Five Star ATM Logo"
+                src="/logo.png"
+                alt="Handy Randy Logo"
                 fill
                 className="object-contain"
               />
             </div>
             <div className="flex flex-col">
               <span className="text-xl md:text-2xl font-serif font-black tracking-tighter text-secondary leading-none">
-                FIVE STAR
+                HANDY
               </span>
               <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary leading-none">
-                ATM
+                RANDY
               </span>
             </div>
           </Link>
@@ -63,9 +63,9 @@ export default function Header() {
           {/* RIGHT SIDE (Phone & CTA) */}
           <div className="hidden lg:flex items-center gap-6">
             <div className="flex flex-col items-end text-sm">
-              <a href="tel:+12198085838" className="font-bold text-secondary hover:text-primary transition-colors flex items-center gap-1">
+              <a href="tel:+13128410885" className="font-bold text-secondary hover:text-primary transition-colors flex items-center gap-1">
                 <Phone className="w-4 h-4" />
-                (219) 808-5838
+                (312) 841-0885
               </a>
               <span className="text-muted-foreground text-xs">Mon-Fri: 9am-5pm</span>
             </div>
@@ -104,9 +104,9 @@ export default function Header() {
           </nav>
 
           <div className="flex flex-col items-center gap-4 mt-8">
-            <a href="tel:+12198085838" className="flex items-center gap-2 text-xl font-bold text-secondary">
+            <a href="tel:+13128410885" className="flex items-center gap-2 text-xl font-bold text-secondary">
               <Phone className="w-5 h-5 text-primary" />
-              (219) 808-5838
+              (312) 841-0885
             </a>
             <div className="flex items-center gap-2 text-muted-foreground">
               <Clock className="w-5 h-5 text-primary" />

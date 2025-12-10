@@ -71,7 +71,7 @@ export default function ATMPlacementPage() {
                             </Link>
                         </div>
 
-                        <div className="relative h-[600px] w-full bg-gray-100 border-[10px] border-white shadow-2xl">
+                        <div className="relative h-[600px] w-full bg-gray-100 border-10 border-white shadow-2xl">
                             {/* Placeholder for actual ATM image */}
                             <Image
                                 src="/placeholder.svg?height=800&width=600&query=atm-machine"

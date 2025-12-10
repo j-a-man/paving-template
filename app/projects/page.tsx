@@ -15,46 +15,25 @@ export default function ProjectsPage() {
 
     const projects = [
         {
-            title: "Convenience Store ATM Placement",
+            title: "Kitchen Remodel",
             location: "Gary, IN",
             date: "October 2024",
-            image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800&q=80", // Placeholder for ATM
-            description: "Installed a new Genmega ATM for a high-traffic convenience store. The owner saw a 15% increase in in-store cash sales within the first month."
+            image: "/project-1.png",
+            description: "Complete kitchen overhaul including new cabinets, backsplash installation, and modern lighting fixtures."
         },
         {
-            title: "Festival Mobile ATM Fleet",
+            title: "Master Bathroom Renovation",
             location: "Merillville, IN",
             date: "September 2024",
-            image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80", // Concert crowd
-            description: "Deployed 4 mobile ATM units for a weekend music festival. Ensured 99.9% uptime with on-site technician support throughout the event."
+            image: "/project-2.png",
+            description: "Updated a master bath with a new vanity, tiled shower, and energy-efficient fixtures."
         },
         {
-            title: "Bar & Lounge Installation",
+            title: "Custom Deck Build",
             location: "Hammond, IN",
             date: "August 2024",
-            image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&q=80", // Bar interior
-            description: "Replaced an outdated machine with a modern Hyosung Halo II. Custom screen graphics were added to promote the venue's drink specials."
-        },
-        {
-            title: "Hotel Lobby ATM Upgrade",
-            location: "Valparaiso, IN",
-            date: "July 2024",
-            image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80", // Hotel lobby
-            description: "Upgraded the hotel's lobby ATM to a new EMV-compliant model. Provide ongoing cash loading and maintenance services."
-        },
-        {
-            title: "Gas Station Fleet Mangement",
-            location: "Michigan City, IN",
-            date: "June 2024",
-            image: "https://images.unsplash.com/photo-1527018601619-a508a2be00cd?w=800&q=80", // Gas station
-            description: "Took over management of a 3-location gas station chain's ATMs. Improved cash availability and reduced downtime by 40%."
-        },
-        {
-            title: "Shopping Plaza Outdoor Kiosk",
-            location: "Portage, IN",
-            date: "May 2024",
-            image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=800&q=80", // Shopping center
-            description: "Installed a secure, weather-resistant outdoor ATM kiosk for a busy shopping plaza, providing 24/7 access to cash for shoppers."
+            image: "/project-3.png",
+            description: "Designed and built a custom wooden deck for outdoor entertaining, complete with railings and stairs."
         }
     ]
 
@@ -67,7 +46,7 @@ export default function ProjectsPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/electric_image.jpg)",
+                        backgroundImage: "url(/kitchen1.jpg)",
                     }}
                 >
                     {/* Dark Overlay */}
@@ -79,7 +58,7 @@ export default function ProjectsPage() {
                         Our Projects
                     </h1>
                     <p className="text-lg text-white/90 max-w-xl font-light">
-                        See how Five Star ATM helps businesses succeed across Indiana.
+                        See how Handy Randy helps homeowners improve their living spaces across Indiana.
                     </p>
                 </div>
             </section>
@@ -125,15 +104,15 @@ export default function ProjectsPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/kitchen2.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/80"></div>
                 <div className={`${containerClass} relative z-10 text-center`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        Start Generating Revenue Today
+                        Start Your Renovation Today
                     </h2>
                     <Link href="/contact">
                         <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-10 py-7 rounded-none">
-                            Get Your Free ATM
+                            Get Your Free Quote
                         </Button>
                     </Link>
                 </div>

@@ -15,8 +15,8 @@ export default function ReviewPage() {
     const [feedback, setFeedback] = useState("")
     const [submitted, setSubmitted] = useState(false)
 
-    // Updated Google Review URL for Five Star ATM
-    const googleReviewUrl = "https://www.google.com/search?sca_esv=ad1c47de9cd56ce0&rlz=1C1OPNX_enUS983US983&sxsrf=AE3TifNvkAmuCVf38rLgkRX7Qx2P3Bq0bA:1765251202685&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-Ex39GJueWfeIuZPYQirfreZs9aob1RsGKRWnbopNL5y3WeTnPGwv1V_NPBeoXXlqxmBdqbtVbwVuFgDUNbQv6uvskc7y&q=Five+Star+ATM+Reviews&sa=X&ved=2ahUKEwj4jYCXya-RAxWr0PACHebzCu8Q0bkNegQIOxAC&biw=1536&bih=695&dpr=1.25#lrd=0xa3db494b5ca7c21d:0x4c2c117075d9f3d1,3,,,,"
+    // Updated Google Review URL for Handy Randy
+    const googleReviewUrl = "https://www.google.com/search?q=Handy+Randy+Home+Services+indiana+reviews&rlz=1C1OPNX_enUS983US983&oq=Handy+Randy+Home+Services+indiana+reviews&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORigARixBjIKCAEQIRigARixBtIBCDIxODlqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8&lqi=CilIYW5keSBSYW5keSBIb21lIFNlcnZpY2VzIGluZGlhbmEgcmV2aWV3cyICOAGSAQhoYW5keW1hbuABAA#lkt=LocalPoiReviews&rlimm=3053928976233671706&lrd=0xc6631540a24f85b:0x2a61bc3935ae2c1a,3,,,,"
 
     const handleStarClick = (selectedRating: number) => {
         setRating(selectedRating)
@@ -30,7 +30,7 @@ export default function ReviewPage() {
         // Construct mailto link
         const subject = encodeURIComponent(`New Feedback - ${rating} Stars`)
         const body = encodeURIComponent(`Rating: ${rating} Stars\n\nFeedback:\n${feedback}`)
-        window.location.href = `mailto:fivestarelectricatm@gmail.com?subject=${subject}&body=${body}`
+        window.location.href = `mailto:mcel_group@outlook.com?subject=${subject}&body=${body}`
         setSubmitted(true)
     }
 

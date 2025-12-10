@@ -24,7 +24,7 @@ export default function AboutPage() {
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-fixed z-0"
                     style={{
-                        backgroundImage: "url(/electric_image.jpg)",
+                        backgroundImage: "url(/bathroom1.jpg)",
                     }}
                 >
                     {/* Dark Overlay */}
@@ -35,10 +35,10 @@ export default function AboutPage() {
                     <div className="max-w-3xl">
                         <div className="w-20 h-1 bg-primary mb-6"></div> {/* Decorative line */}
                         <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-white drop-shadow-lg font-normal">
-                            About Five Star ATM
+                            About Handy Randy
                         </h1>
                         <p className="text-base md:text-lg text-white/90 max-w-xl font-light leading-relaxed">
-                            Serving Indiana and surrounding communities with reliable, full-service ATM solutions.
+                            Serving Indiana and surrounding communities with reliable, professional home improvement services.
                         </p>
                     </div>
                 </div>
@@ -58,22 +58,22 @@ export default function AboutPage() {
                             </h2>
                             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed font-light">
                                 <p>
-                                    Five Star ATM was founded with a simple mission: to provide businesses with hassle-free ATM solutions that drive revenue and customer satisfaction. We understand that cash access is critical for many businesses, and we make it our job to ensure your customers always have access to their funds.
+                                    Handy Randy was founded with a simple mission: to provide homeowners with hassle-free repair and improvement solutions. We understand that maintaining a home is a big job, and we make it our responsibility to ensure your property remains safe, functional, and beautiful.
                                 </p>
                                 <p>
-                                    Under the leadership of owner Phil, we have grown into a trusted partner for businesses across Indiana. We pride ourselves on our responsiveness—when you call, we answer. We don't just place machines; we build partnerships.
+                                    Under the leadership of owner Marcus Charles Williams, we have grown into a trusted partner for families across Indiana. We pride ourselves on our craftsmanship—when you call, we deliver quality work. We don't just fix problems; we build trust.
                                 </p>
                                 <p>
-                                    Whether you need a single ATM for your convenience store or mobile ATMs for a large festival, Five Star ATM has the expertise and equipment to deliver.
+                                    Whether you need a quick repair, a new installation, or regular maintenance, Handy Randy has the expertise and tools to get the job done right.
                                 </p>
                             </div>
 
                             <div className="mt-12 p-8 bg-secondary/5 border-l-4 border-primary">
                                 <blockquote className="text-xl font-serif italic text-secondary mb-6">
-                                    "Our goal is to make ATM ownership completely hands-off for our clients. We handle the cash, the maintenance, and the paper—you just cash the checks."
+                                    "Our goal is to make home maintenance completely hands-off for our clients. We handle the tools, the labor, and the cleanup—you just enjoy your home."
                                 </blockquote>
                                 <cite className="text-sm font-bold uppercase tracking-widest text-secondary not-italic">
-                                    - Phil, Owner
+                                    - Marcus Charles Williams, Owner
                                 </cite>
                             </div>
                         </div>
@@ -82,8 +82,8 @@ export default function AboutPage() {
                         <div className="relative">
                             <div className="relative h-[600px] w-full bg-secondary overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/electric_image.jpg" // Using existing image for now
-                                    alt="ATM Service"
+                                    src="/bathroom2.jpg" // Using existing image for now
+                                    alt="Home Renovation"
                                     fill
                                     className="object-cover opacity-90"
                                 />
@@ -115,27 +115,27 @@ export default function AboutPage() {
                             <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
                                 <CheckCircle2 className="w-10 h-10 text-primary" />
                             </div>
-                            <h3 className="text-xl font-bold mb-4">Reliability</h3>
+                            <h3 className="text-xl font-bold mb-4">Quality Craftsmanship</h3>
                             <p className="text-white/70 leading-relaxed">
-                                Our machines are monitored 24/7. We know before you do if there's an issue, and we fix it fast.
+                                We take pride in our work. Every repair and installation is done to the highest standards.
                             </p>
                         </div>
                         <div className="text-center">
                             <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
                                 <Clock className="w-10 h-10 text-primary" />
                             </div>
-                            <h3 className="text-xl font-bold mb-4">Fast Service</h3>
+                            <h3 className="text-xl font-bold mb-4">Timely Service</h3>
                             <p className="text-white/70 leading-relaxed">
-                                We pride ourselves on our quick response times for refills and maintenance.
+                                We respect your time. We arrive on schedule and complete projects efficiently.
                             </p>
                         </div>
                         <div className="text-center">
                             <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
                                 <Shield className="w-10 h-10 text-primary" />
                             </div>
-                            <h3 className="text-xl font-bold mb-4">Transparency</h3>
+                            <h3 className="text-xl font-bold mb-4">Honest Pricing</h3>
                             <p className="text-white/70 leading-relaxed">
-                                Clear contracts, no hidden fees, and transparent reporting on your ATM's performance.
+                                Clear quotes, no hidden fees, and transparent communication throughout the project.
                             </p>
                         </div>
                     </div>
@@ -143,15 +143,15 @@ export default function AboutPage() {
             </section>
 
             {/* ================= CTA BANNER ================= */}
-            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/electric_image.jpg)' }}>
+            <section className="relative py-24 bg-cover bg-center bg-fixed text-white" style={{ backgroundImage: 'url(/bathroom3.jpg)' }}>
                 <div className="absolute inset-0 bg-secondary/80"></div>
                 <div className={`${containerClass} relative z-10 text-center`}>
                     <h2 className="font-serif text-3xl md:text-5xl font-normal mb-8 leading-tight">
-                        Partner with Indiana's Trusted ATM Provider
+                        Partner with Indiana's Trusted Handyman
                     </h2>
                     <Link href="/contact">
                         <Button className="bg-primary hover:bg-primary/90 text-white uppercase tracking-widest font-bold px-10 py-7 rounded-none">
-                            Contact Phil Today
+                            Contact Us Today
                         </Button>
                     </Link>
                 </div>

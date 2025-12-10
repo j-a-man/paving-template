@@ -12,8 +12,11 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Five Star ATM",
-  description: "Reliable ATM solutions for your business.",
+  title: "Handy Randy",
+  description: "Professional home services in Indiana. Contact Handy Randy for your repair and maintenance needs.",
+  icons: {
+    icon: "/icon.png",
+  },
 }
 
 export default function RootLayout({
