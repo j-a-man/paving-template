@@ -12,8 +12,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Metrolake Electrical Services | Energy you can trust",
-  description: "Reliable electrical solutions for your home and business. From rewiring to panel upgrades, we keep your property safe and powered.",
+  title: "Five Star ATM",
+  description: "Reliable ATM solutions for your business.",
 }
 
 export default function RootLayout({
