@@ -27,42 +27,42 @@ export default function ServicesPage() {
             description: "We install, repair, and upgrade panels to ensure reliable, modern electrical service.",
             icon: Building2,
             link: "/breaker-box",
-            image: "/placeholder.svg?height=600&width=800&query=circuit-breaker-panel"
+            image: "/home-panel.png"
         },
         {
             title: "Ground Setup",
             description: "We install proper grounding systems to protect homes and electrical equipment from power surges.",
             icon: Zap,
             link: "/ground-setup",
-            image: "/placeholder.svg?height=600&width=800&query=electrical-grounding"
+            image: "/electric2.jpg"
         },
         {
             title: "Electric Meter Box",
             description: "We install and replace electric meter boxes to keep your power connection safe and up to code.",
             icon: Zap,
             link: "/electric-meter-box",
-            image: "/placeholder.svg?height=600&width=800&query=electric-meter"
+            image: "/electric3.jpeg"
         },
         {
             title: "Commercial Electrical",
             description: "Reliable electrical solutions for your business. From rewiring to panel upgrades.",
             icon: Building2,
             link: "/commercial-electrical",
-            image: "/placeholder.svg?height=600&width=800&query=commercial-electrician"
+            image: "/commercial-lighting.png"
         },
         {
             title: "Real Estate Inspections",
             description: "We offer real estate inspections to make sure your property is ready and secure.",
             icon: Home,
             link: "/inspections",
-            image: "/placeholder.svg?height=600&width=800&query=home-inspection"
+            image: "/electric1.jpg"
         },
         {
             title: "Safe Rewiring",
             description: "We handle complete rewiring projects safely and professionally for older homes and renovations.",
             icon: Shield,
             link: "/breaker-box", // Fallback or separate page
-            image: "/placeholder.svg?height=600&width=800&query=electrical-wiring"
+            image: "/smart-home.png"
         }
     ]
 

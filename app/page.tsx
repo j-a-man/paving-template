@@ -204,7 +204,7 @@ export default function Home() {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=commercial-lighting" alt="Project 1" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image src="/commercial-lighting.png" alt="Commercial Lighting Upgrade" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
                       <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Commercial Lighting Upgrade</h3>
                     </div>
@@ -214,7 +214,7 @@ export default function Home() {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=residential-panel" alt="Project 2" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image src="/home-panel.png" alt="Home Panel Upgrade" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
                       <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Home Panel Upgrade</h3>
                     </div>
@@ -224,7 +224,7 @@ export default function Home() {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=generator-install" alt="Project 3" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image src="/generator-install.png" alt="Generator Installation" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
                       <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Generator Installation</h3>
                     </div>
@@ -234,7 +234,7 @@ export default function Home() {
               <CarouselItem className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="border-0 rounded-none overflow-hidden relative h-[400px] group">
-                    <Image src="/placeholder.svg?height=500&width=400&query=smart-home-wiring" alt="Project 4" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <Image src="/smart-home.png" alt="Smart Home Wiring" fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 bg-secondary/90 p-4">
                       <h3 className="text-white font-normal text-lg uppercase tracking-wider text-center">Smart Home Wiring</h3>
                     </div>
