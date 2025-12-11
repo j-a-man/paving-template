@@ -53,7 +53,7 @@ export default function ExitIntentPopup() {
                             Wait! Don't Miss Out
                         </DialogTitle>
                         <DialogDescription className="text-white/80 text-base font-sans">
-                            Get a <span className="text-primary font-bold">FREE Estimate</span> for your paving project before you go.
+                            Get a <span className="text-primary font-bold">FREE Estimate</span> for your electrical system before you go.
                         </DialogDescription>
                     </DialogHeader>
                     {/* Close button override for style */}
